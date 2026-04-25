@@ -1,0 +1,118 @@
+/* open sans fonts */
+
+@font-face {
+  font-family: "Despair Display";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/DespairDisplay-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Open Sans"),
+    url("../fonts/OpenSans-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("Open Sans Light"),
+    url("../fonts/OpenSans-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 500;
+  src:
+    local("Open Sans SemiBold"),
+    url("../fonts/OpenSans-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src:
+    local("Open Sans Bold"),
+    url("../fonts/OpenSans-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local("Open Sans ExtraBold"),
+    url("../fonts/OpenSans-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local("Open Sans Light Regular"),
+    url("../fonts/OpenSans-Light-webfont.woff") format("woff");
+}
+
+/* helvetica font */
+
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("Helvetica"),
+    url("../fonts/Helvetica.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local("Helvetica Oblique"),
+    url("../fonts/Helvetica-Oblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  src:
+    local("Helvetica Compressed"),
+    url("../fonts/helvetica-compressed-5871d14b6903a.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Rounded Bold";
+  font-style: normal;
+  font-weight: 600;
+  src:
+    local("Helvetica Rounded Bold"),
+    url("../fonts/helvetica-rounded-bold-5871d05ead8de.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica Bold Oblique";
+  font-style: normal;
+  font-weight: 600;
+  src:
+    local("Helvetica Bold Oblique"),
+    url("../fonts/Helvetica-BoldOblique.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 300;
+  src:
+    local("Helvetica Light"),
+    url("../fonts/helvetica-light-587ebe5a59211.woff") format("woff");
+}
