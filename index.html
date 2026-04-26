@@ -1,0 +1,1433 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="./assets/photos/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artex</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/font-face.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="site-header bg-[#111111] py-5 fixed top-0 left-0 w-full z-50">
+        <div class="container-custom text-white">
+          <div class="flex items-center justify-between">
+            <a href="/">
+              <img
+                class="logo"
+                width="80"
+                src="./assets/photos/vektor_logo.svg"
+                alt="vektor_logo"
+              />
+            </a>
+            <nav
+              class="flex items-center space-x-5 list-none text-[16px] menu_wrapper"
+            >
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Каталог</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Главная</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">О компании</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Услуги</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Как мы работаем</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Отзывы</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Статьи</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Контакты</a>
+              </li>
+            </nav>
+            <div class="flex items-center space-x-3 social_item_wrapper">
+              <div class="text-[13px]">Мы онлайн:</div>
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out "
+                  href="https://t.me/Artex_manager"
+                  target="_blank"
+                >
+                  <img
+                    width="15"
+                    src="./assets/photos/socials/telegram.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out "
+                  href="https://www.instagram.com/artex_carexport?igsh=MW1ubGh3YTUzc3B1ZQ%3D%3D&utm_source=qr"
+                  target="_blank"
+                >
+                  <img
+                    width="15"
+                    src="./assets/photos/socials/instagram.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out "
+                  href="https://youtube.com/channel/UCtKEyzJ5AXjOP1odo0WIiAA?si=XSh45G-KBg_aLJVa"
+                  target="_blank"
+                >
+                  <img
+                    width="15"
+                    src="./assets/photos/socials/youtube.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out "
+                  href="https://wa.me/821080979291"
+                  target="_blank"
+                >
+                  <img
+                    width="15"
+                    src="./assets/photos/socials/whatsapp.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="section_margin"></div>
+      <section>
+        <div id="banner_wrapper" class="bg-[#111] relative h-[625px]">
+          <p id="banner_text_background">ARTEX</p>
+          <div
+            class="banner_photo w-[65%] absolute right-[5%] bottom-[-15%] fadein_five"
+          >
+            <img
+              class="w-full h-full object-contain"
+              src="./assets/photos/banner.png"
+              alt="slider photo"
+            />
+          </div>
+          <div class="swiper bannerSwiper container-custom">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide text-white pt-6">
+                <div class="flex flex-wrap">
+                  <div class="slider_left w-[50%]">
+                    <p
+                      class="text-[65px] uppercase font-[900] flex flex-col leading-[80px] font_DespairDisplay"
+                      data-swiper-parallax="-300"
+                      >
+                      <span class="fadein_one">Автомобили из</span>
+                      <span class="text-[#A87429] fadein_two">Южной Кореи</span>
+                    </p>
+                    <p class="mt-6 text-[25px] leading-[30px] fadein_three" data-swiper-parallax="-200">
+                      Подберем, сделаем видеообзор и доставим
+                      <b>до 40%</b> дешевле рынка
+                    </p>
+                    <div class="glass-card mt-12 fadein_four" data-swiper-parallax="-100">
+                      <ul
+                        class="flex flex-col p-6 gap-y-3 banner_left_list relative z-[99] text-[12px] h-[200px]"
+                      >
+                        <li>Автоподбор под ваши желания и бюджет</li>
+                        <li>Без посредников</li>
+                        <li>Имеем доступ ко всем аукционам Южной Кореи</li>
+                        <li>Работаем по договору</li>
+                      </ul>
+                      <a href="javascript:void(0)" class="btn-blue fadein_five"
+                        >Заказать авто</a
+                      >
+                    </div>
+                  </div>
+                  <div class="slider_right relative w-[50%]" data-swiper-parallax="-50"> 
+                    <div class="main-banner-die fadein_six">
+                      <div class="main-banner-die-title">Пройдите опрос</div>
+                      <div class="main-banner-die-inner">
+                        <div class="main-banner-die-descr">
+                          Чтобы получить скидку на авто
+                        </div>
+                        <div class="main-banner-die-brn">
+                          <a href="/" class="btn-blue">Рассчитать стоимость</a>
+                        </div>
+                      </div>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide text-white pt-6">
+                <div class="flex flex-wrap">
+                  <div class="slider_left w-[50%]">
+                    <p
+                      class="text-[65px] uppercase font-[900] flex flex-col leading-[80px] font_DespairDisplay"
+                      data-swiper-parallax="-300"
+                      >
+                      <span class="fadein_one">Автомобили из</span>
+                      <span class="text-[#A87429] fadein_two">Южной Кореи</span>
+                    </p>
+                    <p class="mt-6 text-[25px] leading-[30px] fadein_three" data-swiper-parallax="-200">
+                      Подберем, сделаем видеообзор и доставим
+                      <b>до 40%</b> дешевле рынка
+                    </p>
+                    <div class="glass-card mt-12 fadein_four" data-swiper-parallax="-100">
+                      <ul
+                        class="flex flex-col p-6 gap-y-3 banner_left_list relative z-[99] text-[12px] h-[200px]"
+                      >
+                        <li>Автоподбор под ваши желания и бюджет</li>
+                        <li>Без посредников</li>
+                        <li>Имеем доступ ко всем аукционам Южной Кореи</li>
+                        <li>Работаем по договору</li>
+                      </ul>
+                      <a href="javascript:void(0)" class="btn-blue fadein_five"
+                        >Заказать авто</a
+                      >
+                    </div>
+                  </div>
+                  <div class="slider_right relative w-[50%]" data-swiper-parallax="-50"> 
+                    <div class="main-banner-die fadein_six">
+                      <div class="main-banner-die-title">Пройдите опрос</div>
+                      <div class="main-banner-die-inner">
+                        <div class="main-banner-die-descr">
+                          Чтобы получить скидку на авто
+                        </div>
+                        <div class="main-banner-die-brn">
+                          <a href="/" class="btn-blue">Рассчитать стоимость</a>
+                        </div>
+                      </div>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+          </div>
+        </div>
+      </section>
+      <div class="section_margin"></div>
+      <section>
+        <div class="container-custom">
+          <div class="flex items-center justify-between">
+            <h2
+              class="uppercase text-[50px] font-[900] font_DespairDisplay fadein_three section_title"
+            >
+              Популярные бренды
+            </h2>
+            <a
+              href="#"
+              class="py-2 px-5 rounded-[12px] fadein_six bg-black text-white hover:bg-white hover:text-black border border-black section_all_link"
+              ><span>Посмотреть все</span></a
+            >
+          </div>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 grid-rows-2 gap-4 mt-6 main_brands_wrapper"
+          >
+          <div class="brand-card">
+            <a
+              href=""
+              class="flex items-center bg-black p-4 rounded-[12px] text-white"
+            >
+              <div class="brend-icon">
+                <img src="./assets/photos/brand_logo/hyundai.png" alt="Hyundai" />
+              </div>
+              <div class="brend-descr">
+                <p class="font-medium font_DespairDisplay text-[20px]">Hyundai</p>
+                <span>Моделей: 84</span>
+              </div>
+            </a>
+          </div>
+          <div class="brand-card">
+            <a
+              href=""
+              class="flex items-center bg-black p-4 rounded-[12px] text-white"
+            >
+              <div class="brend-icon">
+                <img src="./assets/photos/brand_logo/kia_new.svg" alt="Kia" />
+              </div>
+              <div class="brend-descr">
+                <p class="font-medium font_DespairDisplay text-[20px]">Kia</p>
+                <span>Моделей: 72</span>
+              </div>
+            </a>
+          </div>
+          <div class="brand-card">
+            <a
+              href=""
+              class="flex items-center bg-black p-4 rounded-[12px] text-white"
+            >
+              <div class="brend-icon">
+                <img src="./assets/photos/brand_logo/genesis.png" alt="Genesis" />
+              </div>
+              <div class="brend-descr">
+                <p class="font-medium font_DespairDisplay text-[20px]">Genesis</p>
+                <span>Моделей: 16</span>
+              </div>
+            </a>
+          </div>
+          <div class="brand-card">
+            <a
+              href=""
+              class="flex items-center bg-black p-4 rounded-[12px] text-white"
+            >
+              <div class="brend-icon">
+                <img src="./assets/photos/brand_logo/ssangyong.png" alt="SsangYong" />
+              </div>
+              <div class="brend-descr">
+                <p class="font-medium font_DespairDisplay text-[20px]">SsangYong</p>
+                <span>Моделей: 22</span>
+              </div>
+            </a>
+          </div>
+          <div class="brand-card">
+            <a
+              href=""
+              class="flex items-center bg-black p-4 rounded-[12px] text-white"
+            >
+              <div class="brend-icon">
+                <img src="./assets/photos/brand_logo/renault_korea.png" alt="Renault Korea" />
+              </div>
+              <div class="brend-descr">
+                <p class="font-medium font_DespairDisplay text-[20px]">Renault Korea</p>
+                <span>Моделей: 28</span>
+              </div>
+            </a>
+          </div>
+          <div class="brand-card">
+            <a
+              href=""
+              class="flex items-center bg-black p-4 rounded-[12px] text-white"
+            >
+              <div class="brend-icon">
+                <img src="./assets/photos/brand_logo/daewoo.png" alt="Daewoo" />
+              </div>
+              <div class="brend-descr">
+                <p class="font-medium font_DespairDisplay text-[20px]">Daewoo</p>
+                <span>Моделей: 41</span>
+              </div>
+            </a>
+          </div>
+          <div class="brand-card">
+            <a
+              href=""
+              class="flex items-center bg-black p-4 rounded-[12px] text-white"
+            >
+              <div class="brend-icon">
+                <img src="./assets/photos/brand_logo/gm_korea.png" alt="GM Korea" />
+              </div>
+              <div class="brend-descr">
+                <p class="font-medium font_DespairDisplay text-[20px]">GM Korea</p>
+                <span>Моделей: 36</span>
+              </div>
+            </a>
+          </div>
+          <div class="brand-card">
+            <a
+              href=""
+              class="flex items-center bg-black p-4 rounded-[12px] text-white"
+            >
+              <div class="brend-icon">
+                <img src="./assets/photos/brand_logo/ioniq.svg" alt="Ioniq" />
+              </div>
+              <div class="brend-descr">
+                <p class="font-medium font_DespairDisplay text-[20px]">Ioniq</p>
+                <span>Моделей: 12</span>
+              </div>
+            </a>
+          </div>
+          </div>
+        </div>
+      </section>
+      <div class="section_margin"></div>
+      <section>
+        <div class="container-custom">
+          <h2 class="uppercase text-[36px] font-[600] inViewAnim">
+            Пройдите опрос, чтобы узнать точную цену автомобиля
+          </h2>
+          <div class="p-6 rounded-[24px] bg-white inquired_wrapper mt-6 inViewAnimBottom">
+            <div class="flex">
+              <div class="quiz_left">
+                <p class="text-[40px] font-medium">
+                  Ответьте на несколько вопросов
+                </p>
+                <span class="text-[25px] font-medium"
+                  >и узнайте цену автомобиля</span
+                >
+                <div class="mt-6">
+                  <div
+                    class="progress_bar relative py-[10px] bg-[#EDEEF6] rounded-[24px] text-center"
+                  >
+                    <div class="progress_line"></div>
+                    <div class="progress_item active">
+                      <p>Вопрос 1</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="mt-6">
+                  <form id="stage_question_form">
+                    <p class="text-[25px] font-medium">
+                      1. Какой бюджет вы планируете потратить на авто?
+                    </p>
+                    <ul class="flex flex-wrap gap-3 mt-6 question_list">
+                      <li class="active">
+                        <span class="text-[20px]">Менее 300 000 ₽</span>
+                      </li>
+                      <li>
+                        <span class="text-[20px]">Менее 300 000 ₽</span>
+                      </li>
+                      <li>
+                        <span class="text-[20px]">Менее 300 000 ₽</span>
+                      </li>
+                      <li>
+                        <span class="text-[20px]">Менее 300 000 ₽</span>
+                      </li>
+                    </ul>
+                  </form>
+                </div>
+              </div>
+              <div class="quiz_right">
+                <div class="quiz-image">
+                  <img
+                    width="540"
+                    height="251"
+                    src="./assets/photos/question_car.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="mt-6">
+                  <p class="text-center text-[20px] font-medium">
+                    По окончанию опроса вы получите скидку 10 000 ₽ на фрахт до
+                    Владивостока
+                  </p>
+                  <button
+                    class="w-full border cursor-pointer hover:bg-white hover:text-black duration-300 ease-in-out text-center mt-4 bg-black text-white py-4 rounded-[50px] text-[24px] font-medium"
+                  >
+                    Далее
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <div class="section_margin"></div>
+      <section>
+        <div class="container-custom">
+          <div class="flex flex-wrap items-center justify-between">
+            <h2
+              class="uppercase text-[50px] font-[900] font_DespairDisplay fadein_three section_title"
+            >
+              Специальные предложения
+            </h2>
+            <a
+              href="#"
+              class="py-2 px-5 rounded-[12px] fadein_six bg-black text-white hover:bg-white hover:text-black border border-black section_all_link"
+              ><span>Посмотреть все</span></a
+            >
+          </div>
+          <div
+            class="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 car_cards_wrapper"
+          >
+            <a href="" class="rounded-[32px] bg-white car_card relative">
+              <div class="rounded-[32px] overflow-hidden h-[300px]">
+                <img
+                  class="w-full h-full object-cover"
+                  src="./assets/photos/offers/offer-1.jpg"
+                  alt="2021 Hyundai Sonata"
+                />
+              </div>
+              <div class="p-4">
+                <p class="text-[20px] font-[600]">2021 Hyundai Sonata, седан</p>
+                <div class="catalog-item-options text-[14px] space-y-1">
+                  <p><span>Комплектация:</span> Luxe</p>
+                  <p><span>Трансмиссия:</span> АКПП 8</p>
+                  <p><span>Привод:</span> Передний</p>
+                  <p><span>Двигатель:</span> Бензин 2.5 (191 л.с.)</p>
+                  <p><span>Пробег:</span> 48 200 км</p>
+                  <p><span>Год:</span> 2021</p>
+                </div>
+                <div class="mt-8 leading-[25px]">
+                  <p class="text-[16px] font-[500]">Стоимость под ключ:</p>
+                  <p class="font-[600] text-[24px]">1 890 000 ₽</p>
+                </div>
+              </div>
+              <div class="card_icon_link">
+                <span>
+                  <svg class="style-svg car-card-arrow" fill="none" viewBox="0 0 17 17" height="17" width="17" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path
+                      fill="white"
+                      d="M1.57533 13.3034C0.98954 13.8891 0.98954 14.8389 1.57533 15.4247C2.16111 16.0105 3.11086 16.0105 3.69665 15.4247L1.57533 13.3034ZM16.8639 1.63609C16.8639 0.807664 16.1923 0.136091 15.3639 0.136091L1.86391 0.13609C1.03548 0.13609 0.363908 0.807663 0.363908 1.63609C0.363909 2.46452 1.03548 3.13609 1.86391 3.13609H13.8639V15.1361C13.8639 15.9645 14.5355 16.6361 15.3639 16.6361C16.1923 16.6361 16.8639 15.9645 16.8639 15.1361L16.8639 1.63609ZM3.69665 15.4247L16.4246 2.69675L14.3032 0.575431L1.57533 13.3034L3.69665 15.4247Z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </a>
+            <a href="" class="rounded-[32px] bg-white car_card relative">
+              <div class="rounded-[32px] overflow-hidden h-[300px]">
+                <img
+                  class="w-full h-full object-cover"
+                  src="./assets/photos/offers/offer-2.jpg"
+                  alt="2022 Kia K5"
+                />
+              </div>
+              <div class="p-4">
+                <p class="text-[20px] font-[600]">2022 Kia K5, седан</p>
+                <div class="catalog-item-options text-[14px] space-y-1">
+                  <p><span>Комплектация:</span> GT-Line</p>
+                  <p><span>Трансмиссия:</span> АКПП 8</p>
+                  <p><span>Привод:</span> Передний</p>
+                  <p><span>Двигатель:</span> Бензин 2.0 (150 л.с.)</p>
+                  <p><span>Пробег:</span> 32 100 км</p>
+                  <p><span>Год:</span> 2022</p>
+                </div>
+                <div class="mt-8 leading-[25px]">
+                  <p class="text-[16px] font-[500]">Стоимость под ключ:</p>
+                  <p class="font-[600] text-[24px]">2 050 000 ₽</p>
+                </div>
+              </div>
+              <div class="card_icon_link">
+                <span>
+                  <svg class="style-svg car-card-arrow" fill="none" viewBox="0 0 17 17" height="17" width="17" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path
+                      fill="white"
+                      d="M1.57533 13.3034C0.98954 13.8891 0.98954 14.8389 1.57533 15.4247C2.16111 16.0105 3.11086 16.0105 3.69665 15.4247L1.57533 13.3034ZM16.8639 1.63609C16.8639 0.807664 16.1923 0.136091 15.3639 0.136091L1.86391 0.13609C1.03548 0.13609 0.363908 0.807663 0.363908 1.63609C0.363909 2.46452 1.03548 3.13609 1.86391 3.13609H13.8639V15.1361C13.8639 15.9645 14.5355 16.6361 15.3639 16.6361C16.1923 16.6361 16.8639 15.9645 16.8639 15.1361L16.8639 1.63609ZM3.69665 15.4247L16.4246 2.69675L14.3032 0.575431L1.57533 13.3034L3.69665 15.4247Z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </a>
+            <a href="" class="rounded-[32px] bg-white car_card relative">
+              <div class="rounded-[32px] overflow-hidden h-[300px]">
+                <img
+                  class="w-full h-full object-cover"
+                  src="./assets/photos/offers/offer-3.jpg"
+                  alt="2021 Genesis G70"
+                />
+              </div>
+              <div class="p-4">
+                <p class="text-[20px] font-[600]">2021 Genesis G70, седан</p>
+                <div class="catalog-item-options text-[14px] space-y-1">
+                  <p><span>Комплектация:</span> Sport</p>
+                  <p><span>Трансмиссия:</span> АКПП 8</p>
+                  <p><span>Привод:</span> Полный</p>
+                  <p><span>Двигатель:</span> Бензин 2.0 (252 л.с.)</p>
+                  <p><span>Пробег:</span> 41 800 км</p>
+                  <p><span>Год:</span> 2021</p>
+                </div>
+                <div class="mt-8 leading-[25px]">
+                  <p class="text-[16px] font-[500]">Стоимость под ключ:</p>
+                  <p class="font-[600] text-[24px]">2 680 000 ₽</p>
+                </div>
+              </div>
+              <div class="card_icon_link">
+                <span>
+                  <svg class="style-svg car-card-arrow" fill="none" viewBox="0 0 17 17" height="17" width="17" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path
+                      fill="white"
+                      d="M1.57533 13.3034C0.98954 13.8891 0.98954 14.8389 1.57533 15.4247C2.16111 16.0105 3.11086 16.0105 3.69665 15.4247L1.57533 13.3034ZM16.8639 1.63609C16.8639 0.807664 16.1923 0.136091 15.3639 0.136091L1.86391 0.13609C1.03548 0.13609 0.363908 0.807663 0.363908 1.63609C0.363909 2.46452 1.03548 3.13609 1.86391 3.13609H13.8639V15.1361C13.8639 15.9645 14.5355 16.6361 15.3639 16.6361C16.1923 16.6361 16.8639 15.9645 16.8639 15.1361L16.8639 1.63609ZM3.69665 15.4247L16.4246 2.69675L14.3032 0.575431L1.57533 13.3034L3.69665 15.4247Z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </a>
+            <a href="" class="rounded-[32px] bg-white car_card relative">
+              <div class="rounded-[32px] overflow-hidden h-[300px]">
+                <img
+                  class="w-full h-full object-cover"
+                  src="./assets/photos/offers/offer-4.jpg"
+                  alt="2023 Hyundai Tucson"
+                />
+              </div>
+              <div class="p-4">
+                <p class="text-[20px] font-[600]">2023 Hyundai Tucson, кроссовер</p>
+                <div class="catalog-item-options text-[14px] space-y-1">
+                  <p><span>Комплектация:</span> Smartstream</p>
+                  <p><span>Трансмиссия:</span> АКПП 7</p>
+                  <p><span>Привод:</span> Передний</p>
+                  <p><span>Двигатель:</span> Бензин 1.6 T-GDI (150 л.с.)</p>
+                  <p><span>Пробег:</span> 18 500 км</p>
+                  <p><span>Год:</span> 2023</p>
+                </div>
+                <div class="mt-8 leading-[25px]">
+                  <p class="text-[16px] font-[500]">Стоимость под ключ:</p>
+                  <p class="font-[600] text-[24px]">2 340 000 ₽</p>
+                </div>
+              </div>
+              <div class="card_icon_link">
+                <span>
+                  <svg class="style-svg car-card-arrow" fill="none" viewBox="0 0 17 17" height="17" width="17" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path
+                      fill="white"
+                      d="M1.57533 13.3034C0.98954 13.8891 0.98954 14.8389 1.57533 15.4247C2.16111 16.0105 3.11086 16.0105 3.69665 15.4247L1.57533 13.3034ZM16.8639 1.63609C16.8639 0.807664 16.1923 0.136091 15.3639 0.136091L1.86391 0.13609C1.03548 0.13609 0.363908 0.807663 0.363908 1.63609C0.363909 2.46452 1.03548 3.13609 1.86391 3.13609H13.8639V15.1361C13.8639 15.9645 14.5355 16.6361 15.3639 16.6361C16.1923 16.6361 16.8639 15.9645 16.8639 15.1361L16.8639 1.63609ZM3.69665 15.4247L16.4246 2.69675L14.3032 0.575431L1.57533 13.3034L3.69665 15.4247Z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </a>
+            <a href="" class="rounded-[32px] bg-white car_card relative">
+              <div class="rounded-[32px] overflow-hidden h-[300px]">
+                <img
+                  class="w-full h-full object-cover"
+                  src="./assets/photos/offers/offer-5.jpg"
+                  alt="2022 Kia Sportage"
+                />
+              </div>
+              <div class="p-4">
+                <p class="text-[20px] font-[600]">2022 Kia Sportage, кроссовер</p>
+                <div class="catalog-item-options text-[14px] space-y-1">
+                  <p><span>Комплектация:</span> Prestige</p>
+                  <p><span>Трансмиссия:</span> АКПП 6</p>
+                  <p><span>Привод:</span> Полный</p>
+                  <p><span>Двигатель:</span> Бензин 2.0 (156 л.с.)</p>
+                  <p><span>Пробег:</span> 55 000 км</p>
+                  <p><span>Год:</span> 2022</p>
+                </div>
+                <div class="mt-8 leading-[25px]">
+                  <p class="text-[16px] font-[500]">Стоимость под ключ:</p>
+                  <p class="font-[600] text-[24px]">2 120 000 ₽</p>
+                </div>
+              </div>
+              <div class="card_icon_link">
+                <span>
+                  <svg class="style-svg car-card-arrow" fill="none" viewBox="0 0 17 17" height="17" width="17" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path
+                      fill="white"
+                      d="M1.57533 13.3034C0.98954 13.8891 0.98954 14.8389 1.57533 15.4247C2.16111 16.0105 3.11086 16.0105 3.69665 15.4247L1.57533 13.3034ZM16.8639 1.63609C16.8639 0.807664 16.1923 0.136091 15.3639 0.136091L1.86391 0.13609C1.03548 0.13609 0.363908 0.807663 0.363908 1.63609C0.363909 2.46452 1.03548 3.13609 1.86391 3.13609H13.8639V15.1361C13.8639 15.9645 14.5355 16.6361 15.3639 16.6361C16.1923 16.6361 16.8639 15.9645 16.8639 15.1361L16.8639 1.63609ZM3.69665 15.4247L16.4246 2.69675L14.3032 0.575431L1.57533 13.3034L3.69665 15.4247Z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </a>
+            <a href="" class="rounded-[32px] bg-white car_card relative">
+              <div class="rounded-[32px] overflow-hidden h-[300px]">
+                <img
+                  class="w-full h-full object-cover"
+                  src="./assets/photos/offers/offer-6.jpg"
+                  alt="2021 Hyundai Palisade"
+                />
+              </div>
+              <div class="p-4">
+                <p class="text-[20px] font-[600]">2021 Hyundai Palisade, внедорожник</p>
+                <div class="catalog-item-options text-[14px] space-y-1">
+                  <p><span>Комплектация:</span> HTRAC</p>
+                  <p><span>Трансмиссия:</span> АКПП 8</p>
+                  <p><span>Привод:</span> Полный</p>
+                  <p><span>Двигатель:</span> Бензин 3.8 (295 л.с.)</p>
+                  <p><span>Пробег:</span> 62 400 км</p>
+                  <p><span>Год:</span> 2021</p>
+                </div>
+                <div class="mt-8 leading-[25px]">
+                  <p class="text-[16px] font-[500]">Стоимость под ключ:</p>
+                  <p class="font-[600] text-[24px]">3 450 000 ₽</p>
+                </div>
+              </div>
+              <div class="card_icon_link">
+                <span>
+                  <svg class="style-svg car-card-arrow" fill="none" viewBox="0 0 17 17" height="17" width="17" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path
+                      fill="white"
+                      d="M1.57533 13.3034C0.98954 13.8891 0.98954 14.8389 1.57533 15.4247C2.16111 16.0105 3.11086 16.0105 3.69665 15.4247L1.57533 13.3034ZM16.8639 1.63609C16.8639 0.807664 16.1923 0.136091 15.3639 0.136091L1.86391 0.13609C1.03548 0.13609 0.363908 0.807663 0.363908 1.63609C0.363909 2.46452 1.03548 3.13609 1.86391 3.13609H13.8639V15.1361C13.8639 15.9645 14.5355 16.6361 15.3639 16.6361C16.1923 16.6361 16.8639 15.9645 16.8639 15.1361L16.8639 1.63609ZM3.69665 15.4247L16.4246 2.69675L14.3032 0.575431L1.57533 13.3034L3.69665 15.4247Z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </a>
+            <a href="" class="rounded-[32px] bg-white car_card relative">
+              <div class="rounded-[32px] overflow-hidden h-[300px]">
+                <img
+                  class="w-full h-full object-cover"
+                  src="./assets/photos/offers/offer-7.jpg"
+                  alt="2022 Genesis GV80"
+                />
+              </div>
+              <div class="p-4">
+                <p class="text-[20px] font-[600]">2022 Genesis GV80, кроссовер</p>
+                <div class="catalog-item-options text-[14px] space-y-1">
+                  <p><span>Комплектация:</span> Luxury</p>
+                  <p><span>Трансмиссия:</span> АКПП 8</p>
+                  <p><span>Привод:</span> Полный</p>
+                  <p><span>Двигатель:</span> Бензин 2.5 T (304 л.с.)</p>
+                  <p><span>Пробег:</span> 29 900 км</p>
+                  <p><span>Год:</span> 2022</p>
+                </div>
+                <div class="mt-8 leading-[25px]">
+                  <p class="text-[16px] font-[500]">Стоимость под ключ:</p>
+                  <p class="font-[600] text-[24px]">4 100 000 ₽</p>
+                </div>
+              </div>
+              <div class="card_icon_link">
+                <span>
+                  <svg class="style-svg car-card-arrow" fill="none" viewBox="0 0 17 17" height="17" width="17" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path
+                      fill="white"
+                      d="M1.57533 13.3034C0.98954 13.8891 0.98954 14.8389 1.57533 15.4247C2.16111 16.0105 3.11086 16.0105 3.69665 15.4247L1.57533 13.3034ZM16.8639 1.63609C16.8639 0.807664 16.1923 0.136091 15.3639 0.136091L1.86391 0.13609C1.03548 0.13609 0.363908 0.807663 0.363908 1.63609C0.363909 2.46452 1.03548 3.13609 1.86391 3.13609H13.8639V15.1361C13.8639 15.9645 14.5355 16.6361 15.3639 16.6361C16.1923 16.6361 16.8639 15.9645 16.8639 15.1361L16.8639 1.63609ZM3.69665 15.4247L16.4246 2.69675L14.3032 0.575431L1.57533 13.3034L3.69665 15.4247Z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </a>
+            <a href="" class="rounded-[32px] bg-white car_card relative">
+              <div class="rounded-[32px] overflow-hidden h-[300px]">
+                <img
+                  class="w-full h-full object-cover"
+                  src="./assets/photos/offers/offer-8.jpg"
+                  alt="2022 Kia Sorento"
+                />
+              </div>
+              <div class="p-4">
+                <p class="text-[20px] font-[600]">2022 Kia Sorento, кроссовер</p>
+                <div class="catalog-item-options text-[14px] space-y-1">
+                  <p><span>Комплектация:</span> Prestige</p>
+                  <p><span>Трансмиссия:</span> АКПП 8</p>
+                  <p><span>Привод:</span> Полный</p>
+                  <p><span>Двигатель:</span> Бензин 2.5 (180 л.с.)</p>
+                  <p><span>Пробег:</span> 44 600 км</p>
+                  <p><span>Год:</span> 2022</p>
+                </div>
+                <div class="mt-8 leading-[25px]">
+                  <p class="text-[16px] font-[500]">Стоимость под ключ:</p>
+                  <p class="font-[600] text-[24px]">2 780 000 ₽</p>
+                </div>
+              </div>
+              <div class="card_icon_link">
+                <span>
+                  <svg class="style-svg car-card-arrow" fill="none" viewBox="0 0 17 17" height="17" width="17" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path
+                      fill="white"
+                      d="M1.57533 13.3034C0.98954 13.8891 0.98954 14.8389 1.57533 15.4247C2.16111 16.0105 3.11086 16.0105 3.69665 15.4247L1.57533 13.3034ZM16.8639 1.63609C16.8639 0.807664 16.1923 0.136091 15.3639 0.136091L1.86391 0.13609C1.03548 0.13609 0.363908 0.807663 0.363908 1.63609C0.363909 2.46452 1.03548 3.13609 1.86391 3.13609H13.8639V15.1361C13.8639 15.9645 14.5355 16.6361 15.3639 16.6361C16.1923 16.6361 16.8639 15.9645 16.8639 15.1361L16.8639 1.63609ZM3.69665 15.4247L16.4246 2.69675L14.3032 0.575431L1.57533 13.3034L3.69665 15.4247Z"
+                    ></path>
+                  </svg>
+                </span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="section_margin"></div>
+      <section>
+        <div class="container-custom">
+          <div class="flex flex-wrap justify-between">
+            <div
+              class="w-[46%] h-fit faq_promo_card inViewAnimLeft rounded-[32px] p-12 flex flex-col items-center justify-center"
+            >
+              <img width="150" src="./assets/photos/logo.png" alt="" />
+              <p class="text-center mt-4 font-bold text-[30px] font_DespairDisplay uppercase leading-[1.15]">
+                ARTex — подбор и доставка авто из Южной Кореи
+              </p>
+              <p class="text-center mt-4 text-[18px] leading-[1.6] faq_promo_descr">
+                Подберём автомобиль под ваш бюджет, проверим историю, организуем выкуп,
+                доставку и таможенное оформление под ключ. Работаем официально по договору.
+              </p>
+              <ul class="faq_promo_list mt-6">
+                <li>Прозрачный расчёт всех расходов до покупки</li>
+                <li>Фото- и видеоотчёт по каждому этапу</li>
+                <li>Поддержка менеджера до выдачи авто</li>
+              </ul>
+              <a
+                href=""
+                class="faq_promo_btn w-full inline-block text-center py-[14px] rounded-[12px] text-white mt-6 font-bold uppercase text-[18px]"
+                >Получить консультацию</a
+              >
+            </div>
+            <div class="w-[50%] faq_wrapper space-y-3 inViewAnimRight">
+              <div class="faq-item">
+                <button
+                  class="faq-btn w-full flex items-center justify-between gap-4 rounded-full bg-[#E2E2E7] py-[18px] px-[24px] text-left"
+                >
+                  <span
+                    class="faq-title faq-title-active text-[16px] md:text-[20px] font-bold"
+                  >
+                    Как проходит покупка авто из Южной Кореи через ARTEX?
+                  </span>
+
+                  <span
+                    class="faq-icon faq-icon-active shrink-0 w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center transition-transform duration-300 rotate-45"
+                  >
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M5 12H19M19 12L13 6M19 12L13 18"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+
+                <div class="faq-content is-open">
+                  <p
+                    class="px-6 pt-5 pb-8 text-[17px] md:text-[16px] leading-8 text-[#333] font-medium"
+                  >
+                    Вы оставляете заявку и указываете бюджет, марку и пожелания.
+                    Мы подбираем варианты на корейских площадках, присылаем подробные
+                    отчёты по состоянию автомобиля, согласовываем финальный лот,
+                    выкупаем и доставляем в РФ. На каждом этапе вы получаете
+                    фото/видео и понятный статус работ.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <button
+                  class="faq-btn w-full flex items-center justify-between gap-4 rounded-full bg-[#E2E2E7] py-[18px] px-[24px] text-left"
+                >
+                  <span
+                    class="faq-title text-[16px] md:text-[20px] font-bold"
+                  >
+                    Какие сроки доставки автомобиля в Россию?
+                  </span>
+
+                  <span
+                    class="faq-icon shrink-0 w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center transition-transform duration-300"
+                  >
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M5 12H19M19 12L13 6M19 12L13 18"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+
+                <div class="faq-content">
+                  <p
+                    class="px-6 pt-5 pb-8 text-[17px] md:text-[16px] leading-8 text-[#333] font-medium"
+                  >
+                    В среднем от 3 до 6 недель, в зависимости от порта отправки,
+                    загруженности линии и процедур оформления. Точный срок озвучиваем
+                    заранее после выбора автомобиля и маршрута.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <button
+                  class="faq-btn w-full flex items-center justify-between gap-4 rounded-full bg-[#E2E2E7] py-[18px] px-[24px] text-left"
+                >
+                  <span
+                    class="faq-title text-[16px] md:text-[20px] font-bold"
+                  >
+                    Какие гарантии и документы я получаю?
+                  </span>
+
+                  <span
+                    class="faq-icon shrink-0 w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center transition-transform duration-300"
+                  >
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M5 12H19M19 12L13 6M19 12L13 18"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+
+                <div class="faq-content">
+                  <p
+                    class="px-6 pt-5 pb-8 text-[17px] md:text-[16px] leading-8 text-[#333] font-medium"
+                  >
+                    Заключаем договор, фиксируем условия и стоимость услуг.
+                    Передаём полный пакет документов по автомобилю, таможенному
+                    оформлению и оплатам. Работаем прозрачно и сопровождаем
+                    клиента до постановки автомобиля на учёт.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <button
+                  class="faq-btn w-full flex items-center justify-between gap-4 rounded-full bg-[#E2E2E7] py-[18px] px-[24px] text-left"
+                >
+                  <span
+                    class="faq-title text-[16px] md:text-[20px] font-bold"
+                  >
+                    Можно ли заказать конкретную марку и комплектацию?
+                  </span>
+
+                  <span
+                    class="faq-icon shrink-0 w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center transition-transform duration-300"
+                  >
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M5 12H19M19 12L13 6M19 12L13 18"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+
+                <div class="faq-content">
+                  <p
+                    class="px-6 pt-5 pb-8 text-[17px] md:text-[16px] leading-8 text-[#333] font-medium"
+                  >
+                    Да. Мы работаем не по шаблону, а под ваш запрос: марка, модель,
+                    цвет, пробег, комплектация и бюджет. Если нужного варианта нет
+                    сегодня, ведём поиск по аукционам и дилерским площадкам до
+                    появления подходящего автомобиля.
+                  </p>
+                </div>
+              </div>
+              <div class="faq-item">
+                <button
+                  class="faq-btn w-full flex items-center justify-between gap-4 rounded-full bg-[#E2E2E7] py-[18px] px-[24px] text-left"
+                >
+                  <span
+                    class="faq-title text-[16px] md:text-[20px] font-bold"
+                  >
+                    Какие расходы входят в стоимость под ключ?
+                  </span>
+
+                  <span
+                    class="faq-icon shrink-0 w-12 h-12 rounded-full bg-white shadow-sm flex items-center justify-center transition-transform duration-300"
+                  >
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                      <path
+                        d="M5 12H19M19 12L13 6M19 12L13 18"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </button>
+
+                <div class="faq-content">
+                  <p
+                    class="px-6 pt-5 pb-8 text-[17px] md:text-[16px] leading-8 text-[#333] font-medium"
+                  >
+                    В расчёт под ключ обычно включаются: стоимость автомобиля,
+                    комиссия площадки, логистика, фрахт, таможенные платежи, СБКТС
+                    и другие обязательные сборы. Перед стартом мы даём прозрачную
+                    смету, чтобы вы заранее понимали финальный бюджет.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="section_margin"></div>
+      <section>
+        <div class="container-custom">
+          <div class="flex items-center flex-wrap justify-between">
+            <div class="max-w-[45%] inViewAnimTop">
+              <h2
+                class="font_DespairDisplay text-[50px] uppercase font-[900] leading-[1.1]"
+              >
+                Преимущества покупки авто из Южной Кореи
+              </h2>
+            </div>
+            <div class="w-[50%]">
+              <div class="grid grid-cols-2 gap-4 advantage_cards_wrapper">
+                <div
+                  class="advantage_card cursor-pointer relative flex bg-white p-4 rounded-[12px] flex-wrap justify-between items-center"
+                >
+                  <span class="text-[14px] font-[600]">
+                    Высокое качество и надежность
+                  </span>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="25"
+                      height="25"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 512 512"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                      class=""
+                    >
+                      <g>
+                        <path
+                          d="M256 0C114.509 0 0 114.496 0 256c0 141.489 114.496 256 256 256 141.491 0 256-114.496 256-256C512 114.511 397.504 0 256 0zm26.289 357.621c0 8.088-11.794 16.174-26.284 16.174-15.164 0-25.946-8.086-25.946-16.174V229.234c0-9.435 10.783-15.839 25.946-15.839 14.49 0 26.284 6.404 26.284 15.839v128.387zm-26.283-175.225c-15.501 0-27.631-11.457-27.631-24.263 0-12.805 12.131-23.925 27.631-23.925 15.164 0 27.296 11.12 27.296 23.925 0 12.806-12.133 24.263-27.296 24.263z"
+                          fill="#A87429"
+                          opacity="1"
+                          data-original="#000000"
+                          class=""
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="advantage_card_tooltip">
+                    Автомобили имеют высокое качество и надежные комплектующие
+                  </div>
+                </div>
+                <div
+                  class="advantage_card cursor-pointer relative flex bg-white p-4 rounded-[12px] flex-wrap justify-between items-center"
+                >
+                  <span class="text-[14px] font-[600]">
+                    Люксовые комплектации
+                  </span>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="25"
+                      height="25"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 512 512"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                      class=""
+                    >
+                      <g>
+                        <path
+                          d="M256 0C114.509 0 0 114.496 0 256c0 141.489 114.496 256 256 256 141.491 0 256-114.496 256-256C512 114.511 397.504 0 256 0zm26.289 357.621c0 8.088-11.794 16.174-26.284 16.174-15.164 0-25.946-8.086-25.946-16.174V229.234c0-9.435 10.783-15.839 25.946-15.839 14.49 0 26.284 6.404 26.284 15.839v128.387zm-26.283-175.225c-15.501 0-27.631-11.457-27.631-24.263 0-12.805 12.131-23.925 27.631-23.925 15.164 0 27.296 11.12 27.296 23.925 0 12.806-12.133 24.263-27.296 24.263z"
+                          fill="#A87429"
+                          opacity="1"
+                          data-original="#000000"
+                          class=""
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="advantage_card_tooltip">
+                    Автомобили в самых передовых комплектациях
+                  </div>
+                </div>
+                <div
+                  class="advantage_card cursor-pointer relative flex bg-white p-4 rounded-[12px] flex-wrap justify-between items-center"
+                >
+                  <span class="text-[14px] font-[600]">
+                    Люксовые комплектации
+                  </span>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="25"
+                      height="25"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 512 512"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                      class=""
+                    >
+                      <g>
+                        <path
+                          d="M256 0C114.509 0 0 114.496 0 256c0 141.489 114.496 256 256 256 141.491 0 256-114.496 256-256C512 114.511 397.504 0 256 0zm26.289 357.621c0 8.088-11.794 16.174-26.284 16.174-15.164 0-25.946-8.086-25.946-16.174V229.234c0-9.435 10.783-15.839 25.946-15.839 14.49 0 26.284 6.404 26.284 15.839v128.387zm-26.283-175.225c-15.501 0-27.631-11.457-27.631-24.263 0-12.805 12.131-23.925 27.631-23.925 15.164 0 27.296 11.12 27.296 23.925 0 12.806-12.133 24.263-27.296 24.263z"
+                          fill="#A87429"
+                          opacity="1"
+                          data-original="#000000"
+                          class=""
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="advantage_card_tooltip">
+                    Автомобили в самых передовых комплектациях
+                  </div>
+                </div>
+                <div
+                  class="advantage_card cursor-pointer relative flex bg-white p-4 rounded-[12px] flex-wrap justify-between items-center"
+                >
+                  <span class="text-[14px] font-[600]">
+                    Люксовые комплектации
+                  </span>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="25"
+                      height="25"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 512 512"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                      class=""
+                    >
+                      <g>
+                        <path
+                          d="M256 0C114.509 0 0 114.496 0 256c0 141.489 114.496 256 256 256 141.491 0 256-114.496 256-256C512 114.511 397.504 0 256 0zm26.289 357.621c0 8.088-11.794 16.174-26.284 16.174-15.164 0-25.946-8.086-25.946-16.174V229.234c0-9.435 10.783-15.839 25.946-15.839 14.49 0 26.284 6.404 26.284 15.839v128.387zm-26.283-175.225c-15.501 0-27.631-11.457-27.631-24.263 0-12.805 12.131-23.925 27.631-23.925 15.164 0 27.296 11.12 27.296 23.925 0 12.806-12.133 24.263-27.296 24.263z"
+                          fill="#A87429"
+                          opacity="1"
+                          data-original="#000000"
+                          class=""
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="advantage_card_tooltip">
+                    Автомобили в самых передовых комплектациях
+                  </div>
+                </div>
+                <div
+                  class="advantage_card cursor-pointer relative flex bg-white p-4 rounded-[12px] flex-wrap justify-between items-center"
+                >
+                  <span class="text-[14px] font-[600]">
+                    Люксовые комплектации
+                  </span>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="25"
+                      height="25"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 512 512"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                      class=""
+                    >
+                      <g>
+                        <path
+                          d="M256 0C114.509 0 0 114.496 0 256c0 141.489 114.496 256 256 256 141.491 0 256-114.496 256-256C512 114.511 397.504 0 256 0zm26.289 357.621c0 8.088-11.794 16.174-26.284 16.174-15.164 0-25.946-8.086-25.946-16.174V229.234c0-9.435 10.783-15.839 25.946-15.839 14.49 0 26.284 6.404 26.284 15.839v128.387zm-26.283-175.225c-15.501 0-27.631-11.457-27.631-24.263 0-12.805 12.131-23.925 27.631-23.925 15.164 0 27.296 11.12 27.296 23.925 0 12.806-12.133 24.263-27.296 24.263z"
+                          fill="#A87429"
+                          opacity="1"
+                          data-original="#000000"
+                          class=""
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="advantage_card_tooltip">
+                    Автомобили в самых передовых комплектациях
+                  </div>
+                </div>
+                <div
+                  class="advantage_card cursor-pointer relative flex bg-white p-4 rounded-[12px] flex-wrap justify-between items-center"
+                >
+                  <span class="text-[14px] font-[600]">
+                    Люксовые комплектации
+                  </span>
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      version="1.1"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      width="25"
+                      height="25"
+                      x="0"
+                      y="0"
+                      viewBox="0 0 512 512"
+                      style="enable-background: new 0 0 512 512"
+                      xml:space="preserve"
+                      class=""
+                    >
+                      <g>
+                        <path
+                          d="M256 0C114.509 0 0 114.496 0 256c0 141.489 114.496 256 256 256 141.491 0 256-114.496 256-256C512 114.511 397.504 0 256 0zm26.289 357.621c0 8.088-11.794 16.174-26.284 16.174-15.164 0-25.946-8.086-25.946-16.174V229.234c0-9.435 10.783-15.839 25.946-15.839 14.49 0 26.284 6.404 26.284 15.839v128.387zm-26.283-175.225c-15.501 0-27.631-11.457-27.631-24.263 0-12.805 12.131-23.925 27.631-23.925 15.164 0 27.296 11.12 27.296 23.925 0 12.806-12.133 24.263-27.296 24.263z"
+                          fill="#A87429"
+                          opacity="1"
+                          data-original="#000000"
+                          class=""
+                        ></path>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="advantage_card_tooltip">
+                    Автомобили в самых передовых комплектациях
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="section_margin"></div>
+      <section>
+        <div class="container-custom">
+          <form class="contact_card inViewAnimBottom">
+            <div class="contact_card__left">
+              <h2 class="contact_card__title">
+                Поможем подобрать автомобиль и&nbsp;ответим на&nbsp;все ваши вопросы
+              </h2>
+              <p class="contact_card__subtitle">
+                Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;течение
+                <span class="contact_card__highlight">пяти минут</span>
+              </p>
+
+              <div class="contact_card__fields">
+                <label class="contact_field">
+                  <span class="contact_field__label">Как к&nbsp;вам обращаться?</span>
+                  <input
+                    class="contact_field__input"
+                    type="text"
+                    name="name"
+                    placeholder="Ваше имя"
+                  />
+                </label>
+                <label class="contact_field">
+                  <span class="contact_field__label">Ваш номер телефона</span>
+                  <input
+                    class="contact_field__input"
+                    type="tel"
+                    name="phone"
+                    placeholder="+7 (___) ___-__-__"
+                  />
+                </label>
+              </div>
+            </div>
+
+            <div class="contact_card__operator" aria-hidden="true">
+              <img src="./assets/photos/operator.webp" alt="" />
+            </div>
+
+            <aside class="contact_card__right">
+              <p class="contact_card__right_title">
+                Через какой мессенджер с&nbsp;вами связаться?
+              </p>
+
+              <div class="contact_messengers">
+                <label class="contact_radio">
+                  <input type="radio" name="messenger" value="whatsapp" checked />
+                  <span class="contact_radio__mark" aria-hidden="true"></span>
+                  <span class="contact_radio__label">WhatsApp</span>
+                </label>
+                <label class="contact_radio">
+                  <input type="radio" name="messenger" value="telegram" />
+                  <span class="contact_radio__mark" aria-hidden="true"></span>
+                  <span class="contact_radio__label">Telegram</span>
+                </label>
+              </div>
+
+              <p class="contact_card__policy">
+                Нажимая на кнопку «Отправить» вы&nbsp;даёте согласие на
+                <a href="#">обработку персональных данных</a>
+                и соглашаетесь с
+                <a href="#">политикой конфиденциальности</a>
+              </p>
+
+              <button type="submit" class="contact_submit">
+                <span>Отправить</span>
+                <svg class="contact_submit__icon" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M228.992 146.827 48.594 250.051c-17.497 9.998-38.04-7.264-31.166-26.206l34.642-95.842L17.428 32.16C10.554 13.178 31.097-4.045 48.594 5.953l180.398 103.224c14.606 8.319 14.568 29.331 0 37.65z" fill="currentColor"/>
+                </svg>
+              </button>
+            </aside>
+          </form>
+        </div>
+      </section>
+     
+    
+      <div class="section_margin"></div>
+      <section>
+        <div class="container-custom">
+          <div class="flex items-center justify-between flex-wrap">
+            <h2 class="font-bold text-[50px] font_DespairDisplay uppercase leading-[1.1] inViewAnimLeft">Блог</h2>
+            <a href="#" class="py-2 px-5 rounded-[12px] fadein_six bg-black text-white hover:bg-white hover:text-black border border-black section_all_link"><span>Посмотреть все</span></a>
+          </div>
+          <div class="grid grid-cols-3 gap-4 mt-8 blog_grid">
+            <div class="animStagger">
+              <a href="#" class="blog_item group">
+                <h4 class="blog_item-title font-[600] text-[20px] mb-6 p-4">Как проверить авто из Кореи перед покупкой: чек-лист на 10 пунктов</h4>
+                <div class="blog_item-img rounded-[32px] overflow-hidden">
+                  <img src="./assets/photos/offers/offer-1.jpg" alt="">
+                </div>  
+                <div class="p-4 mt-4">
+                  <button class="blog_item-bottom duration-300 ease-in-out group-hover:bg-white border border-black group-hover:text-black w-full bg-black text-white rounded-[16px] py-2 font-medium">
+                    Читать
+                  </button>
+                </div>
+              </a>
+            </div>
+            <div class="animStagger">
+              <a href="#" class="blog_item group">
+                <h4 class="blog_item-title font-[600] text-[20px] mb-6 p-4">Сколько реально стоит привоз авто из Кореи в 2026 году</h4>
+                <div class="blog_item-img rounded-[32px] overflow-hidden">
+                  <img src="./assets/photos/offers/offer-2.jpg" alt="">
+                </div>  
+                <div class="p-4 mt-4">
+                  <button class="blog_item-bottom duration-300 ease-in-out group-hover:bg-white border border-black group-hover:text-black w-full bg-black text-white rounded-[16px] py-2 font-medium">
+                    Читать
+                  </button>
+                </div>
+              </a>
+            </div>
+            <div class="animStagger">
+              <a href="#" class="blog_item group">
+                <h4 class="blog_item-title font-[600] text-[20px] mb-6 p-4">ТОП-7 надёжных корейских моделей до 2 млн ₽ под ключ</h4>
+                <div class="blog_item-img rounded-[32px] overflow-hidden">
+                  <img src="./assets/photos/offers/offer-3.jpg" alt="">
+                </div>  
+                <div class="p-4 mt-4">
+                  <button class="blog_item-bottom duration-300 ease-in-out group-hover:bg-white border border-black group-hover:text-black w-full bg-black text-white rounded-[16px] py-2 font-medium">
+                    Читать
+                  </button>
+                </div>
+              </a>
+            </div>
+            <div class="animStagger">
+              <a href="#" class="blog_item group">
+                <h4 class="blog_item-title font-[600] text-[20px] mb-6 p-4">Как проходит аукцион в Корее: от ставки до погрузки</h4>
+                <div class="blog_item-img rounded-[32px] overflow-hidden">
+                  <img src="./assets/photos/offers/offer-4.jpg" alt="">
+                </div>  
+                <div class="p-4 mt-4">
+                  <button class="blog_item-bottom duration-300 ease-in-out group-hover:bg-white border border-black group-hover:text-black w-full bg-black text-white rounded-[16px] py-2 font-medium">
+                    Читать
+                  </button>
+                </div>
+              </a>
+            </div>
+            <div class="animStagger">
+              <a href="#" class="blog_item group">
+                <h4 class="blog_item-title font-[600] text-[20px] mb-6 p-4">Бензин, гибрид или дизель: что выгоднее в Корее под ваш бюджет</h4>
+                <div class="blog_item-img rounded-[32px] overflow-hidden">
+                  <img src="./assets/photos/offers/offer-5.jpg" alt="">
+                </div>  
+                <div class="p-4 mt-4">
+                  <button class="blog_item-bottom duration-300 ease-in-out group-hover:bg-white border border-black group-hover:text-black w-full bg-black text-white rounded-[16px] py-2 font-medium">
+                    Читать
+                  </button>
+                </div>
+              </a>
+            </div>
+            <div class="animStagger">
+              <a href="#" class="blog_item group">
+                <h4 class="blog_item-title font-[600] text-[20px] mb-6 p-4">5 ошибок при заказе авто из Кореи, которые стоят дорого</h4>
+                <div class="blog_item-img rounded-[32px] overflow-hidden">
+                  <img src="./assets/photos/offers/offer-6.jpg" alt="">
+                </div>  
+                <div class="p-4 mt-4">
+                  <button class="blog_item-bottom duration-300 ease-in-out group-hover:bg-white border border-black group-hover:text-black w-full bg-black text-white rounded-[16px] py-2 font-medium">
+                    Читать
+                  </button>
+                </div>
+              </a>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <div class="section_margin"></div>
+      <section>
+        <div class="container-custom">
+          <div class="flex flex-wrap justify-between">
+            <div class="w-[45%] md:mt-12">
+              <h2
+                class="font-bold text-[50px] font_DespairDisplay uppercase leading-[1.1] inViewAnimTop"
+              >
+                Подпишитесь на наши соц. сети
+              </h2>
+              <p class="mt-6 text-justify text-[20px] max-w-[450px] font-[400] inViewAnimLeft">
+                Полезные статьи, советы, актуальные новости и интересные факты о
+                процессе пригона автомобилей из Южной Кореи в РФ и страны СНГ
+              </p>
+              <div class="flex items-center justify-between flex-wrap mt-6 anim_stager_wrapper gap-y-3">
+                <div class="animStagger w-[48%]">
+                  <a href="https://t.me/Artex_manager" target="_blank" rel="noopener noreferrer" class="hover:bg-[#EACC6B] duration-300 ease-in-out flex items-center justify-center items-center gap-3 font-semibold bg-black uppercase text-white text-[24px] rounded-[16px] py-4 w-full">
+                      <img class="invert" width="28" src="./assets/photos/socials/telegram.png" alt="">
+                      telegram
+                  </a>
+                </div>
+                <div class="animStagger w-[48%]">
+                  <a href="https://wa.me/821080979291" target="_blank" rel="noopener noreferrer" class="hover:bg-[#EACC6B] duration-300 ease-in-out flex items-center justify-center items-center gap-3 font-semibold bg-black uppercase text-white text-[24px] rounded-[16px] py-4 w-full">
+                      <img class="invert" width="28" src="./assets/photos/socials/whatsapp.png" alt="">
+                      whatsapp
+                  </a>
+                </div>
+                <div class="animStagger w-[48%]">
+                  <a href="https://www.instagram.com/artex_carexport?igsh=MW1ubGh3YTUzc3B1ZQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" class="hover:bg-[#EACC6B] duration-300 ease-in-out flex items-center justify-center items-center gap-3 font-semibold bg-black uppercase text-white text-[24px] rounded-[16px] py-4 w-full">
+                      <img class="invert" width="28" src="./assets/photos/socials/instagram.png" alt="">
+                      instagram
+                  </a>
+                </div>
+                <div class="animStagger w-[48%]">
+                  <a href="https://youtube.com/channel/UCtKEyzJ5AXjOP1odo0WIiAA?si=XSh45G-KBg_aLJVa" target="_blank" rel="noopener noreferrer" class="hover:bg-[#EACC6B] duration-300 ease-in-out flex items-center justify-center items-center gap-3 font-semibold bg-black uppercase text-white text-[24px] rounded-[16px] py-4 w-full">
+                      <img class="invert" width="28" src="./assets/photos/socials/youtube.png" alt="">
+                      youtube
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="w-[45%] h-full relative inViewScale">
+              <img src="./assets/photos/mockup.webp" alt="">                
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="bg-[#111111] text-white py-12">
+        <div class="container-custom">
+          <div class="flex flex-wrap items-center justify-between">
+            <a href="" class="">
+              <img width="100" src="./assets/photos/logo.png" alt="">
+            </a>
+            <ul class="flex items-center gap-4 menu_wrapper">
+              <li><a href="" class="text-white hover:text-[#A87429] duration-300 ease-in-out">Каталог</a></li>
+              <li><a href="" class="text-white hover:text-[#A87429] duration-300 ease-in-out">О компании</a></li>
+              <li><a href="" class="text-white hover:text-[#A87429] duration-300 ease-in-out">Услуги</a></li>
+              <li><a href="" class="text-white hover:text-[#A87429] duration-300 ease-in-out">Как мы работаем</a></li>
+              <li><a href="" class="text-white hover:text-[#A87429] duration-300 ease-in-out">Отзывы</a></li>
+              <li><a href="" class="text-white hover:text-[#A87429] duration-300 ease-in-out">Контакты</a></li>
+            </ul>
+            <div class="flex items-center space-x-3 social_item_wrapper">
+              <div class="text-[13px]">Мы онлайн:</div>
+              <div class="social_item" >
+                <a class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out " href="https://t.me/Artex_manager" target="_blank">
+                  <img width="15" src="./assets/photos/socials/telegram.png" alt="">
+                </a>
+              </div>
+              <div class="social_item" >
+                <a class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out " href="https://www.instagram.com/artex_carexport?igsh=MW1ubGh3YTUzc3B1ZQ%3D%3D&amp;utm_source=qr" target="_blank">
+                  <img width="15" src="./assets/photos/socials/instagram.png" alt="">
+                </a>
+              </div>
+              <div class="social_item" >
+                <a class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out " href="https://youtube.com/channel/UCtKEyzJ5AXjOP1odo0WIiAA?si=XSh45G-KBg_aLJVa" target="_blank">
+                  <img width="15" src="./assets/photos/socials/youtube.png" alt="">
+                </a>
+              </div>
+              <div class="social_item" >
+                <a class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out " href="https://wa.me/821080979291" target="_blank">
+                  <img width="15" src="./assets/photos/socials/whatsapp.png" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+          <hr class="mt-8 mb-4" />
+          <div class="flex items-center justify-between text-[13px]">
+            <span>© Все права защищены, 2026</span>
+            <span>Политика конфиденциальности</span>
+            <a href="#" class="text-[#A87429] hover:text-white duration-300 ease-in-out">Разработка сайта - JeywaStudio</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
