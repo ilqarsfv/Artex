@@ -117,7 +117,7 @@
     <main>
       <div class="section_margin"></div>
       <section>
-        <div id="banner_wrapper" class="bg-[#111] relative h-[625px]">
+        <div id="banner_wrapper" class="bg-[#111] relative h-[100vh]">
           <p id="banner_text_background">ARTEX</p>
           <div
             class="banner_photo w-[65%] absolute right-[5%] bottom-[-15%] fadein_five"
@@ -128,55 +128,11 @@
               alt="slider photo"
             />
           </div>
-          <div class="swiper bannerSwiper container-custom">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide text-white pt-6">
-                <div class="flex flex-wrap">
-                  <div class="slider_left w-[50%]">
-                    <p
-                      class="text-[65px] uppercase font-[900] flex flex-col leading-[80px] font_DespairDisplay"
-                      data-swiper-parallax="-300"
-                      >
-                      <span class="fadein_one">Автомобили из</span>
-                      <span class="text-[#A87429] fadein_two">Южной Кореи</span>
-                    </p>
-                    <p class="mt-6 text-[25px] leading-[30px] fadein_three" data-swiper-parallax="-200">
-                      Подберем, сделаем видеообзор и доставим
-                      <b>до 40%</b> дешевле рынка
-                    </p>
-                    <div class="glass-card mt-12 fadein_four" data-swiper-parallax="-100">
-                      <ul
-                        class="flex flex-col p-6 gap-y-3 banner_left_list relative z-[99] text-[12px] h-[200px]"
-                      >
-                        <li>Автоподбор под ваши желания и бюджет</li>
-                        <li>Без посредников</li>
-                        <li>Имеем доступ ко всем аукционам Южной Кореи</li>
-                        <li>Работаем по договору</li>
-                      </ul>
-                      <a href="javascript:void(0)" class="btn-blue fadein_five"
-                        >Заказать авто</a
-                      >
-                    </div>
-                  </div>
-                  <div class="slider_right relative w-[50%]" data-swiper-parallax="-50"> 
-                    <div class="main-banner-die fadein_six">
-                      <div class="main-banner-die-title">Пройдите опрос</div>
-                      <div class="main-banner-die-inner">
-                        <div class="main-banner-die-descr">
-                          Чтобы получить скидку на авто
-                        </div>
-                        <div class="main-banner-die-brn">
-                          <a href="/" class="btn-blue">Рассчитать стоимость</a>
-                        </div>
-                      </div>
-                      <span></span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide text-white pt-6">
-                <div class="flex flex-wrap">
-                  <div class="slider_left w-[50%]">
+          <div class="swiper bannerSwiper h-full container-custom">
+            <div class="swiper-wrapper h-full">
+              <div class="swiper-slide h-full text-white pt-6">
+                <div class="flex h-full flex-wrap">
+                  <div class="slider_left w-[50%] items-start justify-center flex flex-col">
                     <p
                       class="text-[65px] uppercase font-[900] flex flex-col leading-[80px] font_DespairDisplay"
                       data-swiper-parallax="-300"
@@ -224,6 +180,7 @@
           </div>
         </div>
       </section>
+
       <div class="section_margin"></div>
       <section>
         <div class="container-custom">
@@ -357,6 +314,7 @@
           </div>
         </div>
       </section>
+
       <div class="section_margin"></div>
       <section id="quiz-cta-section">
         <div class="container-custom">
