@@ -1,3 +1,69 @@
+// ==========================================
+// Site Preloader Logic
+// ==========================================
+(function () {
+  const preloader = document.getElementById("site-preloader");
+  const preloaderBar = document.getElementById("preloaderBar");
+  const preloaderPerc = document.getElementById("preloaderPerc");
+  const body = document.body;
+
+  if (!preloader || !preloaderBar || !preloaderPerc) return;
+
+  let width = 0;
+  let interval = setInterval(() => {
+    if (width >= 85) {
+      clearInterval(interval);
+    } else {
+      width += Math.random() * 5;
+      if (width > 85) width = 85;
+      updateProgress(width);
+    }
+  }, 100);
+
+  function updateProgress(val) {
+    const rounded = Math.floor(val);
+    preloaderBar.style.width = rounded + "%";
+    preloaderPerc.textContent = rounded + "%";
+  }
+
+  window.addEventListener("load", () => {
+    clearInterval(interval);
+    let finishWidth = width;
+    let finishInterval = setInterval(() => {
+      if (finishWidth >= 100) {
+        clearInterval(finishInterval);
+        setTimeout(() => {
+          hidePreloader();
+        }, 500);
+      } else {
+        finishWidth += 2;
+        updateProgress(finishWidth);
+      }
+    }, 20);
+  });
+
+  function hidePreloader() {
+    preloader.classList.add("preloader-hidden");
+    body.classList.remove("overflow-hidden");
+    
+    // Animate site content entry
+    if (typeof Motion !== 'undefined') {
+        const { animate, stagger } = Motion;
+        animate(
+            ".preloader",
+            { scale: 1.1, opacity: 0 },
+            { duration: 0.8, ease: "easeIn" }
+        ).then(() => {
+            preloader.style.display = "none";
+        });
+    } else {
+        setTimeout(() => {
+            preloader.style.display = "none";
+        }, 600);
+    }
+  }
+})();
+
 new Swiper(".bannerSwiper", {
   slidesPerView: 1,
   spaceBetween: 30,
