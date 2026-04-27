@@ -205,7 +205,7 @@ body {
   text-align: center;
   font-size: 40px;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #000, #fff, #000);
+  background: linear-gradient(90deg, #000000, #f5dd05, #000);
   letter-spacing: 5px;
   -webkit-background-clip: text;
   background-clip: text;
@@ -1138,3 +1138,727 @@ body {
 
 
 /* ceyhun copy css */
+
+/* ========================================
+   Quiz CTA Section — Premium Dark Design
+   ======================================== */
+
+#quiz-cta-section {
+  overflow: hidden;
+}
+
+.quiz-cta__heading {
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.quiz-cta__label {
+  display: inline-block;
+  background: rgba(168, 116, 41, 0.12);
+  color: #A87429;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 6px 18px;
+  border-radius: 50px;
+  border: 1px solid rgba(168, 116, 41, 0.3);
+  margin-bottom: 16px;
+}
+
+.quiz-cta__title {
+  font-family: "Despair Display", "Open Sans", sans-serif;
+  font-size: clamp(28px, 3.5vw, 48px);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.15;
+  color: #111111;
+}
+
+.quiz-cta__title-accent {
+  color: #A87429;
+}
+
+/* Card */
+.quiz-cta__card {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 0;
+  /* background: #111111; */
+  border-radius: 32px;
+  overflow: hidden;
+  /* box-shadow: 0 40px 100px rgba(0, 0, 0, 0.18); */
+  /* border: 1px solid rgba(255,255,255,0.06); */
+}
+
+/* LEFT */
+.quiz-cta__left {
+  padding: 44px 48px 44px 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #ffffff;
+  position: relative;
+}
+
+.quiz-cta__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(168, 116, 41, 0.08);
+  color: #A87429;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 50px;
+  border: 1px solid rgba(168, 116, 41, 0.2);
+  width: fit-content;
+}
+
+.quiz-cta__left-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+  margin-top: -8px;
+}
+
+/* Progress */
+.quiz-cta__progress-wrap {
+  position: relative;
+}
+
+.quiz-cta__progress-track {
+  background: #EDEEF6;
+  border-radius: 50px;
+  height: 44px;
+  position: relative;
+  overflow: hidden;
+}
+
+.quiz-cta__progress-fill {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  bottom: 2px;
+  width: 25%;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #A87429, #d4a55a);
+  transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.quiz-cta__progress-steps {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  height: 100%;
+}
+
+.quiz-cta__step {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #999;
+  cursor: default;
+  transition: color 0.3s ease;
+}
+
+.quiz-cta__step.active {
+  color: #fff;
+}
+
+.quiz-cta__step.done {
+  color: rgba(255,255,255,0.75);
+}
+
+/* Questions */
+.quiz-cta__body {
+  position: relative;
+  min-height: 200px;
+}
+
+.quiz-cta__question {
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  animation: quizFadeIn 0.35s ease;
+}
+
+.quiz-cta__question.active {
+  display: flex;
+}
+
+@keyframes quizFadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.quiz-cta__q-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.4;
+}
+
+.quiz-cta__options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quiz-cta__option {
+  padding: 14px 18px;
+  border-radius: 50px;
+  border: 2px solid #e0e0e0;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.25s ease;
+  background: #fafafa;
+}
+
+.quiz-cta__option:hover {
+  border-color: #A87429;
+  color: #A87429;
+  background: rgba(168, 116, 41, 0.06);
+}
+
+.quiz-cta__option.selected {
+  border-color: #A87429;
+  color: #A87429;
+  background: rgba(168, 116, 41, 0.08);
+  border-width: 3px;
+}
+
+/* Nav */
+.quiz-cta__nav {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.quiz-cta__nav-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  border: 2px solid transparent;
+}
+
+.quiz-cta__nav-btn--prev {
+  background: transparent;
+  border-color: #ddd;
+  color: #888;
+}
+
+.quiz-cta__nav-btn--prev:not(:disabled):hover {
+  border-color: #111;
+  color: #111;
+}
+
+.quiz-cta__nav-btn--prev:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.quiz-cta__nav-btn--next {
+  background: #111;
+  color: #fff;
+  flex: 1;
+  justify-content: center;
+}
+
+.quiz-cta__nav-btn--next:hover {
+  background: #A87429;
+}
+
+.quiz-cta__nav-btn--next.quiz-finish {
+  background: linear-gradient(135deg, #A87429, #d4a55a);
+}
+
+/* RIGHT */
+.quiz-cta__right {
+  background: linear-gradient(160deg, #1a1a1a 0%, #0d0d0d 100%);
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.quiz-cta__right::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: rgba(168, 116, 41, 0.1);
+  filter: blur(60px);
+  pointer-events: none;
+}
+
+/* Car image */
+.quiz-cta__car-wrap {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.quiz-cta__car-glow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 30px;
+  background: rgba(168, 116, 41, 0.25);
+  border-radius: 50%;
+  filter: blur(20px);
+}
+
+.quiz-cta__car-img {
+  width: 100%;
+  max-width: 340px;
+  object-fit: contain;
+  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));
+  position: relative;
+  z-index: 1;
+}
+
+/* Promo box */
+.quiz-cta__promo-box {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 18px 22px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  backdrop-filter: blur(10px);
+}
+
+.quiz-cta__promo-icon {
+  font-size: 28px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.quiz-cta__promo-text {
+  font-size: 14px;
+  color: rgba(255,255,255,0.8);
+  line-height: 1.5;
+}
+
+.quiz-cta__promo-text strong {
+  color: #d4a55a;
+}
+
+/* Stats */
+.quiz-cta__stats {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+.quiz-cta__stat {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.quiz-cta__stat-num {
+  font-size: 24px;
+  font-weight: 900;
+  color: #A87429;
+  font-family: "Despair Display", "Open Sans", sans-serif;
+}
+
+.quiz-cta__stat-label {
+  font-size: 12px;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.4;
+}
+
+.quiz-cta__stat-divider {
+  width: 1px;
+  height: 40px;
+  background: rgba(255,255,255,0.12);
+}
+
+/* =============================================
+   Premium Offers Section — Glassmorphism Design
+   ============================================= */
+
+#prem-offers-section {
+  overflow: visible;
+}
+
+.prem-offers__bg {
+  background: transparent;
+  position: relative;
+  padding: 0 0 20px;
+}
+
+/* Hide old glow divs */
+.prem-offers__glow { display: none; }
+
+.prem-offers__bg .container-custom {
+  position: relative;
+  z-index: 1;
+}
+
+/* Header */
+.prem-offers__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.prem-offers__header-left { flex: 1; }
+
+.prem-offers__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: #A87429;
+  padding: 6px 16px;
+  border: 1px solid rgba(168, 116, 41, 0.3);
+  border-radius: 50px;
+  background: rgba(168, 116, 41, 0.07);
+  backdrop-filter: blur(8px);
+  margin-bottom: 14px;
+}
+
+.prem-offers__eyebrow::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #A87429;
+  display: block;
+  animation: pulse-dot 2s ease-in-out infinite;
+}
+
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.5; transform: scale(0.7); }
+}
+
+.prem-offers__title {
+  font-size: clamp(34px, 4.5vw, 56px);
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.1;
+  color: #111111;
+  letter-spacing: -0.02em;
+}
+
+.prem-offers__header-right {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.prem-offers__subtitle {
+  font-size: 14px;
+  color: #777;
+  line-height: 1.65;
+}
+
+.prem-offers__view-all {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 28px;
+  border-radius: 50px;
+  background: rgba(255,255,255,0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  color: #111;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  text-decoration: none;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  transition: background 0.28s ease, color 0.28s ease,
+              box-shadow 0.28s ease, gap 0.28s ease;
+}
+.prem-offers__view-all:hover {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+  gap: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+}
+
+/* Grid */
+.prem-offers__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+/* ── CARD ── */
+.prem-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  overflow: hidden;
+  text-decoration: none;
+  /* glassmorphism base */
+  background: rgba(255, 255, 255, 0.52);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.07),
+    inset 0 1px 0 rgba(255,255,255,0.9);
+  transition:
+    transform 0.38s cubic-bezier(0.34, 1.4, 0.64, 1),
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+  position: relative;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.prem-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(
+    135deg,
+    rgba(255,255,255,0.6) 0%,
+    rgba(255,255,255,0.1) 100%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.prem-card:hover {
+  transform: translateY(-10px);
+  box-shadow:
+    0 20px 60px rgba(0,0,0,0.14),
+    0 0 0 1.5px rgba(168,116,41,0.35),
+    inset 0 1px 0 rgba(255,255,255,0.95);
+  border-color: rgba(168,116,41,0.3);
+}
+
+/* Image */
+.prem-card__img-wrap {
+  position: relative;
+  overflow: hidden;
+  height: 196px;
+  flex-shrink: 0;
+  border-radius: 20px 20px 0 0;
+  z-index: 1;
+}
+
+.prem-card__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: block;
+}
+
+.prem-card:hover .prem-card__img {
+  transform: scale(1.09);
+}
+
+.prem-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 35%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  transition: opacity 0.35s ease;
+}
+
+/* Badge */
+.prem-card__badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 3;
+  font-size: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 4px 11px;
+  border-radius: 50px;
+  background: rgba(255,255,255,0.22);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.4);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+}
+
+.prem-card__badge--gold {
+  background: rgba(168,116,41,0.2);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-color: rgba(168,116,41,0.55);
+  color: #c4882a;
+}
+
+/* Body */
+.prem-card__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 16px 18px 16px;
+  gap: 11px;
+  position: relative;
+  z-index: 1;
+}
+
+.prem-card__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.prem-card__name {
+  font-size: 15px;
+  font-weight: 700;
+  color: #111;
+  line-height: 1.3;
+  flex: 1;
+}
+
+.prem-card__type {
+  font-size: 10px;
+  font-weight: 600;
+  color: #888;
+  background: rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 6px;
+  padding: 3px 9px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* Specs */
+.prem-card__specs {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+}
+
+.prem-card__specs li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 1.4;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+.prem-card__specs li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.prem-card__specs li span {
+  color: #999;
+}
+
+.prem-card__specs li b {
+  color: #222;
+  font-weight: 600;
+  text-align: right;
+  max-width: 55%;
+}
+
+/* Card Footer */
+.prem-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  border-top: 1px solid rgba(0,0,0,0.07);
+  gap: 10px;
+}
+
+.prem-card__price-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.prem-card__price-label {
+  font-size: 10px;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.prem-card__price {
+  font-size: 19px;
+  font-weight: 800;
+  color: #111;
+  letter-spacing: -0.02em;
+}
+
+.prem-card__arrow {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  flex-shrink: 0;
+  transition: background 0.28s ease, color 0.28s ease,
+              border-color 0.28s ease, transform 0.28s ease;
+}
+
+.prem-card:hover .prem-card__arrow {
+  background: #111;
+  border-color: #111;
+  color: #fff;
+  transform: rotate(45deg);
+}
