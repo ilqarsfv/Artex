@@ -45,21 +45,21 @@
   function hidePreloader() {
     preloader.classList.add("preloader-hidden");
     body.classList.remove("overflow-hidden");
-    
+
     // Animate site content entry
-    if (typeof Motion !== 'undefined') {
-        const { animate, stagger } = Motion;
-        animate(
-            ".preloader",
-            { scale: 1.1, opacity: 0 },
-            { duration: 0.8, ease: "easeIn" }
-        ).then(() => {
-            preloader.style.display = "none";
-        });
+    if (typeof Motion !== "undefined") {
+      const { animate, stagger } = Motion;
+      animate(
+        ".preloader",
+        { scale: 1.1, opacity: 0 },
+        { duration: 0.8, ease: "easeIn" },
+      ).then(() => {
+        preloader.style.display = "none";
+      });
     } else {
-        setTimeout(() => {
-            preloader.style.display = "none";
-        }, 600);
+      setTimeout(() => {
+        preloader.style.display = "none";
+      }, 600);
     }
   }
 })();
@@ -455,7 +455,9 @@ faqItems.forEach((item) => {
 
   function showQuestion(step) {
     questions.forEach((q) => q.classList.remove("active"));
-    const target = document.querySelector(`.quiz-cta__question[data-q="${step}"]`);
+    const target = document.querySelector(
+      `.quiz-cta__question[data-q="${step}"]`,
+    );
     if (target) target.classList.add("active");
   }
 
@@ -474,9 +476,9 @@ faqItems.forEach((item) => {
   document.querySelectorAll(".quiz-cta__option").forEach((opt) => {
     opt.addEventListener("click", () => {
       const q = opt.dataset.q;
-      document.querySelectorAll(`.quiz-cta__option[data-q="${q}"]`).forEach((o) =>
-        o.classList.remove("selected")
-      );
+      document
+        .querySelectorAll(`.quiz-cta__option[data-q="${q}"]`)
+        .forEach((o) => o.classList.remove("selected"));
       opt.classList.add("selected");
       answers[q] = opt.dataset.val;
 
@@ -495,7 +497,11 @@ faqItems.forEach((item) => {
     } else {
       // Final step — animate card out, show success
       const card = document.getElementById("quiz-cta-card");
-      animate(card, { opacity: [1, 0], scale: [1, 0.96] }, { duration: 0.3, ease: "easeIn" }).then(() => {
+      animate(
+        card,
+        { opacity: [1, 0], scale: [1, 0.96] },
+        { duration: 0.3, ease: "easeIn" },
+      ).then(() => {
         card.innerHTML = `
           <div style="
             grid-column: 1 / -1;
@@ -534,7 +540,11 @@ faqItems.forEach((item) => {
             </a>
           </div>
         `;
-        animate(card, { opacity: [0, 1], scale: [0.96, 1] }, { duration: 0.4, ease: "easeOut" });
+        animate(
+          card,
+          { opacity: [0, 1], scale: [0.96, 1] },
+          { duration: 0.4, ease: "easeOut" },
+        );
       });
     }
   });
@@ -558,32 +568,32 @@ faqItems.forEach((item) => {
     animate(
       "#quiz-cta-heading",
       { opacity: [0, 1], y: [40, 0] },
-      { duration: 0.6, ease: "easeOut" }
+      { duration: 0.6, ease: "easeOut" },
     );
     animate(
       "#quiz-cta-left",
       { opacity: [0, 1], x: [-50, 0] },
-      { duration: 0.65, ease: "easeOut", delay: 0.15 }
+      { duration: 0.65, ease: "easeOut", delay: 0.15 },
     );
     animate(
       "#quiz-cta-right",
       { opacity: [0, 1], x: [50, 0] },
-      { duration: 0.65, ease: "easeOut", delay: 0.25 }
+      { duration: 0.65, ease: "easeOut", delay: 0.25 },
     );
     animate(
       ".quiz-cta__car-img",
       { opacity: [0, 1], y: [30, 0], scale: [0.9, 1] },
-      { duration: 0.7, ease: "easeOut", delay: 0.45 }
+      { duration: 0.7, ease: "easeOut", delay: 0.45 },
     );
     animate(
       ".quiz-cta__promo-box",
       { opacity: [0, 1], y: [20, 0] },
-      { duration: 0.5, ease: "easeOut", delay: 0.6 }
+      { duration: 0.5, ease: "easeOut", delay: 0.6 },
     );
     animate(
       ".quiz-cta__stats",
       { opacity: [0, 1], y: [20, 0] },
-      { duration: 0.5, ease: "easeOut", delay: 0.75 }
+      { duration: 0.5, ease: "easeOut", delay: 0.75 },
     );
   });
 })();
@@ -601,22 +611,22 @@ faqItems.forEach((item) => {
     animate(
       ".prem-offers__eyebrow",
       { opacity: [0, 1], y: [-16, 0] },
-      { duration: 0.45, ease: "easeOut" }
+      { duration: 0.45, ease: "easeOut" },
     );
     animate(
       ".prem-offers__title",
       { opacity: [0, 1], x: [-40, 0] },
-      { duration: 0.6, ease: "easeOut", delay: 0.1 }
+      { duration: 0.6, ease: "easeOut", delay: 0.1 },
     );
     animate(
       ".prem-offers__subtitle",
       { opacity: [0, 1], x: [30, 0] },
-      { duration: 0.5, ease: "easeOut", delay: 0.2 }
+      { duration: 0.5, ease: "easeOut", delay: 0.2 },
     );
     animate(
       ".prem-offers__view-all",
       { opacity: [0, 1], x: [30, 0] },
-      { duration: 0.5, ease: "easeOut", delay: 0.3 }
+      { duration: 0.5, ease: "easeOut", delay: 0.3 },
     );
   });
 
@@ -630,7 +640,7 @@ faqItems.forEach((item) => {
         duration: 0.55,
         delay: stagger(0.08, { from: "first" }),
         ease: [0.22, 1, 0.36, 1],
-      }
+      },
     );
   });
 })();

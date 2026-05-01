@@ -1,6 +1,7 @@
 /* custom-responsive-container.css */
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
 }
 
@@ -24,7 +25,9 @@ body {
   justify-content: center;
   z-index: 99999;
   overflow: hidden;
-  transition: opacity 0.6s ease, visibility 0.6s ease;
+  transition:
+    opacity 0.6s ease,
+    visibility 0.6s ease;
 }
 
 .preloader-inner {
@@ -54,15 +57,19 @@ body {
   left: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, #A87429, transparent);
-  box-shadow: 0 0 10px #A87429;
+  background: linear-gradient(90deg, transparent, #a87429, transparent);
+  box-shadow: 0 0 10px #a87429;
   animation: scan 2s linear infinite;
   opacity: 0.7;
 }
 
 @keyframes scan {
-  0% { top: 0; }
-  100% { top: 100%; }
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 100%;
+  }
 }
 
 .preloader-progress-wrap {
@@ -81,13 +88,13 @@ body {
   left: 0;
   height: 100%;
   width: 0%;
-  background: linear-gradient(90deg, #A87429, #EACC6B);
+  background: linear-gradient(90deg, #a87429, #eacc6b);
   box-shadow: 0 0 15px rgba(168, 116, 41, 0.5);
   transition: width 0.3s ease;
 }
 
 .preloader-percentage {
-  color: #A87429;
+  color: #a87429;
   font-family: "Despair Display", sans-serif;
   font-weight: 800;
   font-size: 24px;
@@ -109,7 +116,6 @@ body {
   visibility: hidden;
   pointer-events: none;
 }
-
 
 :root {
   --container-padding-x: 16px;
@@ -218,7 +224,9 @@ body {
 .site-header .container-custom {
   padding-left: 28px;
   padding-right: 28px;
-  transition: padding-left 0.35s ease, padding-right 0.35s ease;
+  transition:
+    padding-left 0.35s ease,
+    padding-right 0.35s ease;
 }
 .site-header.is-scrolled .container-custom {
   padding-left: 14px;
@@ -287,7 +295,7 @@ body {
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
-  background: #A87429;
+  background: #a87429;
   color: #fff;
   border: none;
   -webkit-transition: background 0.3s ease 0s;
@@ -361,7 +369,7 @@ body {
   content: "";
   width: 18px;
   height: 18px;
-  background: #A87429;
+  background: #a87429;
   border-radius: 50%;
   position: absolute;
   left: 0;
@@ -408,7 +416,7 @@ body {
   transform: translateY(-10px);
 }
 .main_brands_wrapper a {
-  transition: transform .3s ease;
+  transition: transform 0.3s ease;
 }
 .section_title {
   max-width: 400px;
@@ -583,20 +591,24 @@ body {
   transition: color 0.25s ease;
 }
 .faq-title-active {
-  color: #A87429;
+  color: #a87429;
 }
 .faq-icon {
   color: #111111;
-  transition: color 0.25s ease, transform 0.3s ease;
+  transition:
+    color 0.25s ease,
+    transform 0.3s ease;
 }
 .faq-icon-active {
-  color: #A87429;
+  color: #a87429;
 }
 .faq-content {
   overflow: hidden;
   max-height: 0;
   opacity: 0;
-  transition: max-height 0.35s ease, opacity 0.35s ease;
+  transition:
+    max-height 0.35s ease,
+    opacity 0.35s ease;
 }
 .faq-content.is-open {
   max-height: 320px;
@@ -631,7 +643,7 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #A87429;
+  background: #a87429;
   position: absolute;
   left: 0;
   top: 8px;
@@ -667,7 +679,7 @@ body {
   pointer-events: auto;
 }
 .advantage_card svg path {
-  fill: #A87429 !important;
+  fill: #a87429 !important;
 }
 .advantage_card_tooltip::after {
   content: "";
@@ -722,7 +734,7 @@ body {
   margin-top: 6px;
 }
 .contact_card__highlight {
-  color: #A87429;
+  color: #a87429;
 }
 .contact_card__fields {
   display: grid;
@@ -748,7 +760,9 @@ body {
   padding: 0 18px;
   font-size: 15px;
   color: #111111;
-  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
   width: 100%;
 }
 .contact_field__input::placeholder {
@@ -756,7 +770,7 @@ body {
 }
 .contact_field__input:focus {
   outline: none;
-  border-color: #A87429;
+  border-color: #a87429;
   box-shadow: 0 0 0 4px rgba(168, 116, 41, 0.16);
 }
 .contact_card__right {
@@ -817,7 +831,9 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  transition: border-color 0.2s ease, background-color 0.2s ease;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
   position: relative;
   flex-shrink: 0;
 }
@@ -826,12 +842,12 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background: #A87429;
+  background: #a87429;
   transform: scale(0);
   transition: transform 0.2s ease;
 }
 .contact_radio input:checked + .contact_radio__mark {
-  border-color: #A87429;
+  border-color: #a87429;
 }
 .contact_radio input:checked + .contact_radio__mark::after {
   transform: scale(1);
@@ -866,13 +882,17 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.04em;
   cursor: pointer;
-  transition: background-color 0.25s ease, color 0.25s ease,
-    border-color 0.25s ease, box-shadow 0.25s ease, transform 0.25s ease;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease;
 }
 .contact_submit:hover {
-  background: #A87429;
+  background: #a87429;
   color: #fff;
-  border-color: #A87429;
+  border-color: #a87429;
 }
 .contact_submit span {
   transition: transform 0.25s ease;
@@ -942,7 +962,7 @@ body {
 .cta-status {
   display: inline-block;
   margin-bottom: 15px;
-  color: #A87429;
+  color: #a87429;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -1236,7 +1256,6 @@ body {
 
 /* banner */
 
-
 /* ceyhun copy css */
 
 /* ========================================
@@ -1255,7 +1274,7 @@ body {
 .quiz-cta__label {
   display: inline-block;
   background: rgba(168, 116, 41, 0.12);
-  color: #A87429;
+  color: #a87429;
   font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1276,7 +1295,7 @@ body {
 }
 
 .quiz-cta__title-accent {
-  color: #A87429;
+  color: #a87429;
 }
 
 /* Card */
@@ -1306,7 +1325,7 @@ body {
   align-items: center;
   gap: 8px;
   background: rgba(168, 116, 41, 0.08);
-  color: #A87429;
+  color: #a87429;
   font-size: 14px;
   font-weight: 600;
   padding: 8px 16px;
@@ -1328,7 +1347,7 @@ body {
 }
 
 .quiz-cta__progress-track {
-  background: #EDEEF6;
+  background: #edeef6;
   border-radius: 50px;
   height: 44px;
   position: relative;
@@ -1342,7 +1361,7 @@ body {
   bottom: 2px;
   width: 25%;
   border-radius: 50px;
-  background: linear-gradient(90deg, #A87429, #d4a55a);
+  background: linear-gradient(90deg, #a87429, #d4a55a);
   transition: width 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1370,7 +1389,7 @@ body {
 }
 
 .quiz-cta__step.done {
-  color: rgba(255,255,255,0.75);
+  color: rgba(255, 255, 255, 0.75);
 }
 
 /* Questions */
@@ -1391,8 +1410,14 @@ body {
 }
 
 @keyframes quizFadeIn {
-  from { opacity: 0; transform: translateY(12px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .quiz-cta__q-title {
@@ -1425,14 +1450,14 @@ body {
 }
 
 .quiz-cta__option:hover {
-  border-color: #A87429;
-  color: #A87429;
+  border-color: #a87429;
+  color: #a87429;
   background: rgba(168, 116, 41, 0.06);
 }
 
 .quiz-cta__option.selected {
-  border-color: #A87429;
-  color: #A87429;
+  border-color: #a87429;
+  color: #a87429;
   background: rgba(168, 116, 41, 0.08);
   border-width: 3px;
 }
@@ -1481,11 +1506,11 @@ body {
 }
 
 .quiz-cta__nav-btn--next:hover {
-  background: #A87429;
+  background: #a87429;
 }
 
 .quiz-cta__nav-btn--next.quiz-finish {
-  background: linear-gradient(135deg, #A87429, #d4a55a);
+  background: linear-gradient(135deg, #a87429, #d4a55a);
 }
 
 /* RIGHT */
@@ -1537,15 +1562,15 @@ body {
   width: 100%;
   max-width: 340px;
   object-fit: contain;
-  filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));
+  filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
   position: relative;
   z-index: 1;
 }
 
 /* Promo box */
 .quiz-cta__promo-box {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   padding: 18px 22px;
   display: flex;
@@ -1563,7 +1588,7 @@ body {
 
 .quiz-cta__promo-text {
   font-size: 14px;
-  color: rgba(255,255,255,0.8);
+  color: rgba(255, 255, 255, 0.8);
   line-height: 1.5;
 }
 
@@ -1590,20 +1615,20 @@ body {
 .quiz-cta__stat-num {
   font-size: 24px;
   font-weight: 900;
-  color: #A87429;
+  color: #a87429;
   font-family: "Despair Display", "Open Sans", sans-serif;
 }
 
 .quiz-cta__stat-label {
   font-size: 12px;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255, 255, 255, 0.5);
   line-height: 1.4;
 }
 
 .quiz-cta__stat-divider {
   width: 1px;
   height: 40px;
-  background: rgba(255,255,255,0.12);
+  background: rgba(255, 255, 255, 0.12);
 }
 
 /* =============================================
@@ -1621,7 +1646,9 @@ body {
 }
 
 /* Hide old glow divs */
-.prem-offers__glow { display: none; }
+.prem-offers__glow {
+  display: none;
+}
 
 .prem-offers__bg .container-custom {
   position: relative;
@@ -1637,7 +1664,9 @@ body {
   margin-bottom: 40px;
 }
 
-.prem-offers__header-left { flex: 1; }
+.prem-offers__header-left {
+  flex: 1;
+}
 
 .prem-offers__eyebrow {
   display: inline-flex;
@@ -1647,7 +1676,7 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.14em;
-  color: #A87429;
+  color: #a87429;
   padding: 6px 16px;
   border: 1px solid rgba(168, 116, 41, 0.3);
   border-radius: 50px;
@@ -1661,14 +1690,21 @@ body {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #A87429;
+  background: #a87429;
   display: block;
   animation: pulse-dot 2s ease-in-out infinite;
 }
 
 @keyframes pulse-dot {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50%       { opacity: 0.5; transform: scale(0.7); }
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.7);
+  }
 }
 
 .prem-offers__title {
@@ -1700,7 +1736,7 @@ body {
   gap: 10px;
   padding: 12px 28px;
   border-radius: 50px;
-  background: rgba(255,255,255,0.55);
+  background: rgba(255, 255, 255, 0.55);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   color: #111;
@@ -1709,17 +1745,20 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.07em;
   text-decoration: none;
-  border: 1px solid rgba(0,0,0,0.1);
-  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
-  transition: background 0.28s ease, color 0.28s ease,
-              box-shadow 0.28s ease, gap 0.28s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.07);
+  transition:
+    background 0.28s ease,
+    color 0.28s ease,
+    box-shadow 0.28s ease,
+    gap 0.28s ease;
 }
 .prem-offers__view-all:hover {
   background: #111;
   color: #fff;
   border-color: #111;
   gap: 16px;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* Grid */
@@ -1743,7 +1782,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.75);
   box-shadow:
     0 4px 24px rgba(0, 0, 0, 0.07),
-    inset 0 1px 0 rgba(255,255,255,0.9);
+    inset 0 1px 0 rgba(255, 255, 255, 0.9);
   transition:
     transform 0.38s cubic-bezier(0.34, 1.4, 0.64, 1),
     box-shadow 0.3s ease,
@@ -1760,8 +1799,8 @@ body {
   border-radius: inherit;
   background: linear-gradient(
     135deg,
-    rgba(255,255,255,0.6) 0%,
-    rgba(255,255,255,0.1) 100%
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0.1) 100%
   );
   pointer-events: none;
   z-index: 0;
@@ -1770,10 +1809,10 @@ body {
 .prem-card:hover {
   transform: translateY(-10px);
   box-shadow:
-    0 20px 60px rgba(0,0,0,0.14),
-    0 0 0 1.5px rgba(168,116,41,0.35),
-    inset 0 1px 0 rgba(255,255,255,0.95);
-  border-color: rgba(168,116,41,0.3);
+    0 20px 60px rgba(0, 0, 0, 0.14),
+    0 0 0 1.5px rgba(168, 116, 41, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95);
+  border-color: rgba(168, 116, 41, 0.3);
 }
 
 /* Image */
@@ -1821,19 +1860,19 @@ body {
   letter-spacing: 0.1em;
   padding: 4px 11px;
   border-radius: 50px;
-  background: rgba(255,255,255,0.22);
+  background: rgba(255, 255, 255, 0.22);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   color: #fff;
-  border: 1px solid rgba(255,255,255,0.4);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.12);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
 }
 
 .prem-card__badge--gold {
-  background: rgba(168,116,41,0.2);
+  background: rgba(168, 116, 41, 0.2);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  border-color: rgba(168,116,41,0.55);
+  border-color: rgba(168, 116, 41, 0.55);
   color: #c4882a;
 }
 
@@ -1867,8 +1906,8 @@ body {
   font-size: 10px;
   font-weight: 600;
   color: #888;
-  background: rgba(0,0,0,0.05);
-  border: 1px solid rgba(0,0,0,0.08);
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.08);
   border-radius: 6px;
   padding: 3px 9px;
   white-space: nowrap;
@@ -1893,7 +1932,7 @@ body {
   font-size: 12px;
   line-height: 1.4;
   padding-bottom: 5px;
-  border-bottom: 1px solid rgba(0,0,0,0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 .prem-card__specs li:last-child {
   border-bottom: none;
@@ -1917,7 +1956,7 @@ body {
   align-items: center;
   justify-content: space-between;
   padding-top: 12px;
-  border-top: 1px solid rgba(0,0,0,0.07);
+  border-top: 1px solid rgba(0, 0, 0, 0.07);
   gap: 10px;
 }
 
@@ -1945,15 +1984,18 @@ body {
   width: 38px;
   height: 38px;
   border-radius: 50%;
-  background: rgba(0,0,0,0.06);
-  border: 1px solid rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   color: #555;
   flex-shrink: 0;
-  transition: background 0.28s ease, color 0.28s ease,
-              border-color 0.28s ease, transform 0.28s ease;
+  transition:
+    background 0.28s ease,
+    color 0.28s ease,
+    border-color 0.28s ease,
+    transform 0.28s ease;
 }
 
 .prem-card:hover .prem-card__arrow {
@@ -1961,4 +2003,21 @@ body {
   border-color: #111;
   color: #fff;
   transform: rotate(45deg);
+}
+
+/* about page */
+#about_wrapper_top {
+  background: url("/assets/photos/about_bg.jpg") 50% 150% / cover no-repeat;
+  position: relative;
+  background-attachment: fixed;
+}
+#about_wrapper_top::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }

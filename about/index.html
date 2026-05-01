@@ -1,0 +1,808 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="../assets/photos/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artex</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/font-face.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="site-header bg-[#111111] py-5 fixed top-0 left-0 w-full z-50">
+        <div class="container-custom text-white">
+          <div class="flex items-center justify-between">
+            <a href="/">
+              <img
+                class="logo"
+                width="80"
+                src="../assets/photos/vektor_logo.svg"
+                alt="vektor_logo"
+              />
+            </a>
+            <nav
+              class="flex items-center space-x-5 list-none text-[16px] menu_wrapper font-[600]"
+            >
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Каталог</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Главная</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">О компании</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Услуги</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Как мы работаем</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Отзывы</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Статьи</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Контакты</a>
+              </li>
+            </nav>
+            <div class="flex items-center space-x-3 social_item_wrapper">
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out"
+                  href="https://t.me/Artex_manager"
+                  target="_blank"
+                >
+                  <img
+                    width="15"
+                    src="../assets/photos/socials/telegram.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out"
+                  href="https://www.instagram.com/artex_carexport?igsh=MW1ubGh3YTUzc3B1ZQ%3D%3D&utm_source=qr"
+                  target="_blank"
+                >
+                  <img
+                    width="15"
+                    src="../assets/photos/socials/instagram.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out"
+                  href="https://youtube.com/channel/UCtKEyzJ5AXjOP1odo0WIiAA?si=XSh45G-KBg_aLJVa"
+                  target="_blank"
+                >
+                  <img
+                    width="15"
+                    src="../assets/photos/socials/youtube.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out"
+                  href="https://wa.me/821080979291"
+                  target="_blank"
+                >
+                  <img
+                    width="15"
+                    src="../assets/photos/socials/whatsapp.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="section_margin"></div>
+      <section>
+        <div class="bg-[#0B0B0B]">
+          <div
+            id="about_wrapper_top"
+            class="py-[112px] px-[64px] text-white h-[475px]"
+          >
+            <div class="container-custom">
+              <div class="text-center relative z-2">
+                <h1
+                  class="text-[84px] font-[700] leading-[100%] tracking-[-0.01em] uppercase"
+                >
+                  О компании <br />
+                  ARTEX
+                </h1>
+                <p class="mt-[18px] text-[19px]">
+                  Мы привозим лучшие автомобили из Южной Кореи с полной
+                  гарантией качества
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="py-12 container-custom">
+            <div class="flex flex-wrap justify-between text-white">
+              <div class="w-[49%]">
+                <div>
+                  <span class="font-medium">История</span>
+                  <p
+                    class="mt-4 text-[60px] leading-[82px] font-bold uppercase"
+                  >
+                    Десять лет опыта в премиальном автоподборе
+                  </p>
+                </div>
+              </div>
+              <div class="w-[45%]">
+                <p class="text-[20px] leading-[150%]">
+                  ARTEX родилась из простой идеи: дать людям доступ к лучшим
+                  корейским автомобилям без посредников и скрытых платежей. Мы
+                  начали с одного человека и одного контакта на заводе, теперь
+                  же наша сеть охватывает всю Россию и страны СНГ.
+                </p>
+                <div class="flex justify-between flex-wrap mt-8">
+                  <div class="w-[49%]">
+                    <div>
+                      <svg
+                        width="48"
+                        height="48"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M24.0002 33.337C26.6215 33.337 28.8772 32.3923 30.7672 30.503C32.6572 28.6137 33.6022 26.36 33.6022 23.742C33.6022 21.1237 32.6567 18.8695 30.7657 16.9795C28.875 15.0895 26.6193 14.1445 23.9987 14.1445C21.3783 14.1445 19.1252 15.0893 17.2392 16.979C15.3532 18.8683 14.4102 21.1223 14.4102 23.741C14.4102 26.3593 15.3532 28.6132 17.2392 30.5025C19.1252 32.3922 21.3788 33.337 24.0002 33.337ZM24.9217 23.6105L28.3602 26.749C28.5678 26.9317 28.6782 27.1638 28.6912 27.4455C28.7038 27.7275 28.605 27.9732 28.3947 28.1825C28.2177 28.3652 27.9948 28.4648 27.7262 28.4815C27.4575 28.4982 27.2162 28.4152 27.0022 28.2325L23.2382 24.7685C23.0555 24.6098 22.9165 24.4242 22.8212 24.2115C22.7262 23.9985 22.6787 23.7737 22.6787 23.537V18.496C22.6787 18.171 22.784 17.9028 22.9947 17.6915C23.2053 17.4805 23.4713 17.375 23.7927 17.375C24.1137 17.375 24.3822 17.4805 24.5982 17.6915C24.8138 17.9028 24.9217 18.1705 24.9217 18.4945V23.6105ZM24.0002 44.087C23.7988 44.087 23.6103 44.0683 23.4347 44.031C23.2587 43.9937 23.0867 43.9377 22.9187 43.863C18.2453 42.2963 14.5408 39.4518 11.8052 35.3295C9.06917 31.2068 7.70117 26.7118 7.70117 21.8445V12.1335C7.70117 11.4042 7.90434 10.7448 8.31067 10.1555C8.71701 9.56618 9.2515 9.14401 9.91417 8.88901L22.8067 4.07501C23.2133 3.92568 23.6112 3.85101 24.0002 3.85101C24.3892 3.85101 24.787 3.92568 25.1937 4.07501L38.0862 8.88901C38.7488 9.14401 39.2853 9.56618 39.6957 10.1555C40.106 10.7448 40.3112 11.4042 40.3112 12.1335V21.8445C40.3112 26.7118 38.9412 31.2068 36.2012 35.3295C33.4615 39.4518 29.755 42.2963 25.0817 43.863C24.9137 43.9377 24.7417 43.9937 24.5657 44.031C24.39 44.0683 24.2015 44.087 24.0002 44.087ZM24.0002 40.7545C27.7935 39.4478 30.8907 37.0542 33.2917 33.5735C35.6923 30.0925 36.8927 26.1858 36.8927 21.8535V12.1335L24.0002 7.26951L11.1077 12.1395V21.848C11.1077 26.184 12.308 30.0925 14.7087 33.5735C17.1097 37.0542 20.2068 39.4478 24.0002 40.7545Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                    <p
+                      class="text-[26px] font-medium mt-4 leading-[130%] uppercase"
+                    >
+                      Честность прежде всего
+                    </p>
+                    <p class="mt-4">
+                      Каждый автомобиль проходит тщательную проверку перед
+                      отправкой клиенту.
+                    </p>
+                  </div>
+                  <div class="w-[49%]">
+                    <div>
+                      <svg
+                        width="48"
+                        height="48"
+                        viewBox="0 0 48 48"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M15.9181 14.1C14.1834 14.1 12.7176 13.5043 11.5206 12.313C10.3233 11.1216 9.72461 9.65847 9.72461 7.92347C9.72461 6.18814 10.3234 4.72131 11.5211 3.52298C12.7188 2.32431 14.1853 1.72498 15.9206 1.72498C17.3293 1.72498 18.5743 2.17298 19.6556 3.06898C20.7373 3.96498 21.4859 5.10031 21.9016 6.47498H36.6431C37.1108 6.47498 37.4996 6.62997 37.8096 6.93998C38.1196 7.24998 38.2746 7.63881 38.2746 8.10648C38.2746 8.57981 38.1289 8.98798 37.8376 9.33098C37.5463 9.67398 37.1481 9.81364 36.6431 9.74998H36.1311V12.4685C36.1311 12.9308 35.9741 13.3183 35.6601 13.631C35.3464 13.9436 34.9574 14.1 34.4931 14.1C34.0291 14.1 33.6423 13.9436 33.3326 13.631C33.0229 13.3183 32.8681 12.9308 32.8681 12.4685V9.74998H21.9016C21.5113 11.058 20.7583 12.11 19.6426 12.906C18.5269 13.702 17.2854 14.1 15.9181 14.1ZM15.9206 10.9685C16.7776 10.9685 17.4998 10.674 18.0871 10.085C18.6744 9.49598 18.9681 8.77098 18.9681 7.90998C18.9681 7.04898 18.6736 6.32681 18.0846 5.74348C17.4956 5.16014 16.7706 4.86848 15.9096 4.86848C15.0486 4.86848 14.3264 5.16097 13.7431 5.74598C13.1598 6.33097 12.8681 7.05597 12.8681 7.92097C12.8681 8.77797 13.1606 9.50014 13.7456 10.0875C14.3306 10.6748 15.0556 10.9685 15.9206 10.9685ZM16.2586 34.9815C16.6859 34.9815 17.0413 34.837 17.3246 34.548C17.6079 34.2586 17.7496 33.9003 17.7496 33.473C17.7496 33.0453 17.6049 32.6898 17.3156 32.4065C17.0266 32.1231 16.6683 31.9815 16.2406 31.9815C15.8133 31.9815 15.4579 32.1261 15.1746 32.4155C14.8913 32.7045 14.7496 33.0628 14.7496 33.4905C14.7496 33.9178 14.8943 34.2731 15.1836 34.5565C15.4726 34.8398 15.8309 34.9815 16.2586 34.9815ZM31.7586 34.9815C32.1859 34.9815 32.5413 34.837 32.8246 34.548C33.1079 34.2586 33.2496 33.9003 33.2496 33.473C33.2496 33.0453 33.1049 32.6898 32.8156 32.4065C32.5266 32.1231 32.1683 31.9815 31.7406 31.9815C31.3133 31.9815 30.9579 32.1261 30.6746 32.4155C30.3913 32.7045 30.2496 33.0628 30.2496 33.4905C30.2496 33.9178 30.3943 34.2731 30.6836 34.5565C30.9726 34.8398 31.3309 34.9815 31.7586 34.9815ZM13.2746 40.0065V42.6315C13.2746 43.1361 13.1013 43.5581 12.7546 43.8975C12.4083 44.2368 11.9869 44.4065 11.4906 44.4065C10.9946 44.4065 10.5763 44.2368 10.2356 43.8975C9.89494 43.5581 9.72461 43.1361 9.72461 42.6315V29.8675C9.72461 29.6788 9.73694 29.4971 9.76161 29.3225C9.78628 29.1475 9.83194 28.9686 9.89861 28.786L12.8506 20.1435C13.0826 19.4631 13.4979 18.914 14.0966 18.496C14.6953 18.0776 15.3614 17.8685 16.0951 17.8685H31.8921C32.6298 17.8685 33.2949 18.0756 33.8876 18.49C34.4803 18.904 34.8926 19.4511 35.1246 20.1315L38.1006 28.786C38.1753 28.9686 38.2229 29.1475 38.2436 29.3225C38.2643 29.4971 38.2746 29.6788 38.2746 29.8675V42.6315C38.2746 43.1361 38.1013 43.5581 37.7546 43.8975C37.4083 44.2368 36.9869 44.4065 36.4906 44.4065C35.9946 44.4065 35.5763 44.2368 35.2356 43.8975C34.8949 43.5581 34.7246 43.1361 34.7246 42.6315V40.0065H13.2746ZM13.8496 27.2315H34.1996L32.1496 21.1315H15.8496L13.8496 27.2315ZM12.9996 36.7315H34.9996V30.2315H12.9996V36.7315Z"
+                          fill="white"
+                        />
+                      </svg>
+                    </div>
+                    <p
+                      class="text-[26px] font-medium mt-4 leading-[130%] uppercase"
+                    >
+                      Забота о деталях
+                    </p>
+                    <p class="mt-4">
+                      От выбора машины до доставки на дом, мы контролируем
+                      каждый этап.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-24 h-[500px]">
+              <div class="eye_effect_car relative"></div>
+              <img
+                class="w-full h-full object-cover mix-blend-lighten"
+                src="
+              https://4kwallpapers.com/images/wallpapers/ferrari-omologata-supercars-black-background-2020-5k-3440x1440-2783.jpg
+              "
+                alt=""
+              />
+              <div class="ferrari_right_eye eye_effect_car"></div>
+            </div>
+            <div id="nasi_rezultati_wrapper" class="text-white">
+              <div class="flex flex-wrap justify-between items-start">
+                <!-- Left Side -->
+                <div class="w-full lg:w-[45%] pr-4">
+                  <span class="text-[14px] block mb-4 font-medium">Цифры</span>
+                  <h2
+                    class="text-[54px] md:text-[60px] font-bold leading-[1.05] uppercase mb-8 tracking-tight"
+                  >
+                    Наши<br />
+                    результаты<br />
+                    говорят<br />
+                    сами за<br />
+                    себя
+                  </h2>
+                  <p
+                    class="text-[#B0B0B0] text-[16px] leading-[1.6] mb-10 w-[95%]"
+                  >
+                    За десятилетие работы мы завоевали доверие тысяч клиентов и
+                    стали лидером в своей нише. Каждый день мы доказываем, что
+                    качество и честность это не просто слова.
+                  </p>
+                  <div class="flex items-center gap-6">
+                    <a
+                      href="#"
+                      class="bg-[#2A2A2A] hover:bg-[#3A3A3A] text-white py-[14px] px-8 rounded-full transition-colors duration-300 text-[14px] font-medium"
+                    >
+                      Статистика
+                    </a>
+                    <a
+                      href="#"
+                      class="text-[#B0B0B0] hover:text-white transition-colors duration-300 text-[14px] font-medium flex items-center gap-2 group"
+                    >
+                      Посмотреть отзывы
+                      <svg
+                        class="group-hover:translate-x-1 transition-transform duration-300"
+                        width="6"
+                        height="10"
+                        viewBox="0 0 6 10"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 9L5 5L1 1"
+                          stroke="currentColor"
+                          stroke-width="1.5"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Right Side (Cards) -->
+                <div class="w-full lg:w-[50%] mt-12 lg:mt-0">
+                  <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                    <!-- Card 1 -->
+                    <div
+                      class="bg-[#161616] p-8 rounded-[12px] border border-[#242424] hover:border-[#333333] transition-colors duration-300 flex flex-col justify-center"
+                    >
+                      <h3 class="text-[52px] font-bold mb-4 leading-none">
+                        3500+
+                      </h3>
+                      <p
+                        class="text-[14px] font-bold uppercase mb-2 leading-snug"
+                      >
+                        Автомобилей<br />доставлено
+                      </p>
+                      <p class="text-[13px] text-[#888888] leading-snug">
+                        Клиентов получили свои машины в срок
+                      </p>
+                    </div>
+                    <!-- Card 2 -->
+                    <div
+                      class="bg-[#161616] p-8 rounded-[12px] border border-[#242424] hover:border-[#333333] transition-colors duration-300 flex flex-col justify-center"
+                    >
+                      <h3 class="text-[52px] font-bold mb-4 leading-none">
+                        15+
+                      </h3>
+                      <p
+                        class="text-[14px] font-bold uppercase mb-2 leading-snug"
+                      >
+                        Лет на рынке
+                      </p>
+                      <p class="text-[13px] text-[#888888] leading-snug">
+                        Опыт работы с корейскими производителями
+                      </p>
+                    </div>
+                    <!-- Card 3 -->
+                    <div
+                      class="bg-[#161616] p-8 rounded-[12px] border border-[#242424] hover:border-[#333333] transition-colors duration-300 flex flex-col justify-center"
+                    >
+                      <h3 class="text-[52px] font-bold mb-4 leading-none">
+                        98%
+                      </h3>
+                      <p
+                        class="text-[14px] font-bold uppercase mb-2 leading-snug"
+                      >
+                        Клиентов<br />рекомендуют нас<br />друзьям
+                      </p>
+                      <p class="text-[13px] text-[#888888] leading-snug">
+                        Доверие, которое мы заслужили годами
+                      </p>
+                    </div>
+                    <!-- Card 4 -->
+                    <div
+                      class="bg-[#161616] p-8 rounded-[12px] border border-[#242424] hover:border-[#333333] transition-colors duration-300 flex flex-col justify-center"
+                    >
+                      <h3 class="text-[52px] font-bold mb-4 leading-none">
+                        12
+                      </h3>
+                      <p
+                        class="text-[14px] font-bold uppercase mb-2 leading-snug"
+                      >
+                        Стран СНГ где мы<br />работаем
+                      </p>
+                      <p class="text-[13px] text-[#888888] leading-snug">
+                        Логистика охватывает весь регион
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="artex_employers" class="mt-32 pt-8 text-center text-white">
+              <!-- Header -->
+              <div class="mb-16">
+                <p class="text-[13px] text-[#A0A0A0] font-medium mb-3">Команда</p>
+                <h2 class="text-[44px] md:text-[52px] font-bold uppercase mb-4 leading-tight tracking-wide font_DespairDisplay">
+                  ЛЮДИ ЗА ARTEX
+                </h2>
+                <p class="text-[15px] text-[#A0A0A0]">
+                  Профессионалы с многолетним опытом в автомобильной индустрии
+                </p>
+              </div>
+
+              <!-- Grid -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-12">
+                
+                <!-- Card 1 -->
+                <div class="flex flex-col items-center">
+                  <div class="w-full overflow-hidden aspect-[4/5] bg-[#D4D4D4] rounded-[12px] mb-5 flex items-center justify-center">
+                    <img class="w-full h-full object-cover" src="/assets/photos/demo_employer.jpg" alt="">
+                  </div>
+                  <h4 class="text-[17px] font-bold text-white mb-1">Иван Морозов</h4>
+                  <p class="text-[13px] text-[#A0A0A0] mb-3">Основатель и директор</p>
+                  <p class="text-[12px] text-[#888888] leading-[1.6] mb-5 px-2">Двадцать лет в автобизнесе.<br>Создал ARTEX из убеждения в<br>честности.</p>
+                  <!-- Social Icons -->
+                  <div class="flex items-center gap-3 mt-auto">
+                    <a href="#" class="text-white hover:text-[#A87429] transition-colors"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                    <a href="#" class="text-white hover:text-[#A87429] transition-colors"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                    <a href="#" class="text-white hover:text-[#A87429] transition-colors"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg></a>
+                  </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="flex flex-col items-center">
+                  <div class="w-full overflow-hidden aspect-[4/5] bg-[#D4D4D4] rounded-[12px] mb-5 flex items-center justify-center">
+                    <img class="w-full h-full object-cover" src="/assets/photos/demo_employer.jpg" alt="">
+                  </div>
+                  <h4 class="text-[17px] font-bold text-white mb-1">Сергей Волков</h4>
+                  <p class="text-[13px] text-[#A0A0A0] mb-3">Начальник логистики</p>
+                  <p class="text-[12px] text-[#888888] leading-[1.6] mb-5 px-2">Управляет доставкой<br>автомобилей по всему СНГ с<br>военной точностью.</p>
+                  <!-- Social Icons -->
+                  <div class="flex items-center gap-3 mt-auto">
+                    <a href="#" class="text-white hover:text-[#A87429] transition-colors"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                    <a href="#" class="text-white hover:text-[#A87429] transition-colors"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                    <a href="#" class="text-white hover:text-[#A87429] transition-colors"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg></a>
+                  </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="flex flex-col items-center">
+                  <div class="w-full overflow-hidden aspect-[4/5] bg-[#D4D4D4] rounded-[12px] mb-5 flex items-center justify-center">
+                    <img class="w-full h-full object-cover" src="/assets/photos/demo_employer.jpg" alt="">
+                  </div>
+                  <h4 class="text-[17px] font-bold text-white mb-1">Екатерина Петрова</h4>
+                  <p class="text-[13px] text-[#A0A0A0] mb-3">Главный инспектор</p>
+                  <p class="text-[12px] text-[#888888] leading-[1.6] mb-5 px-2">Проверяет каждый автомобиль<br>перед отправкой с неумолимым<br>вниманием.</p>
+                  <!-- Social Icons -->
+                  <div class="flex items-center gap-3 mt-auto">
+                    <a href="#" class="text-white hover:text-[#A87429] transition-colors"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                    <a href="#" class="text-white hover:text-[#A87429] transition-colors"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                    <a href="#" class="text-white hover:text-[#A87429] transition-colors"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg></a>
+                  </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="flex flex-col items-center">
+                  <div class="w-full overflow-hidden aspect-[4/5] bg-[#D4D4D4] rounded-[12px] mb-5 flex items-center justify-center">
+                    <img class="w-full h-full object-cover" src="/assets/photos/demo_employer.jpg" alt="">
+                  </div>
+                  <h4 class="text-[17px] font-bold text-white mb-1">Алексей Кузнецов</h4>
+                  <p class="text-[13px] text-[#A0A0A0] mb-3">Менеджер по продажам</p>
+                  <p class="text-[12px] text-[#888888] leading-[1.6] mb-5 px-2">Слушает клиентов и находит<br>именно то, что им нужно.</p>
+                  <!-- Social Icons -->
+                  <div class="flex items-center gap-3 mt-auto">
+                    <a href="#" class="text-white hover:text-[#A87429] transition-colors"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg></a>
+                    <a href="#" class="text-white hover:text-[#A87429] transition-colors"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+                    <a href="#" class="text-white hover:text-[#A87429] transition-colors"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/><path d="M2 12h20"/></svg></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <div id="wrapper_single_types" class="mt-32 text-white">
+              <!-- Item 1 -->
+              <div class="border-t border-[#333333] pt-12 pb-24">
+                <div class="flex flex-wrap justify-between items-start">
+                  <!-- Header Number & Title (Top aligned or maybe part of the grid? Actually it looks like it spans the top left) -->
+                  <div class="w-full flex items-center gap-4 mb-16 text-[15px] font-medium text-white">
+                    <span>01</span>
+                    <span>Прямой контакт</span>
+                  </div>
+
+                  <!-- Left Side -->
+                  <div class="w-full lg:w-[45%] pr-4">
+                    <span class="text-[12px] text-[#A0A0A0] font-bold uppercase tracking-wider block mb-4">Источник</span>
+                    <h2 class="text-[40px] md:text-[46px] font-bold leading-[1.05] uppercase mb-8 tracking-tight font_DespairDisplay">
+                      Мы работаем<br>
+                      напрямую с<br>
+                      корейскими<br>
+                      производител<br>
+                      ями
+                    </h2>
+                    <p class="text-[#B0B0B0] text-[15px] leading-[1.6] mb-10 w-[95%]">
+                      Без посредников, без скрытых комиссий. Вы платите только за машину и доставку. Это просто и честно.
+                    </p>
+                    <div class="flex items-center gap-6">
+                      <a href="#" class="bg-[#333333] hover:bg-[#444444] text-white py-3 px-6 rounded-full transition-colors duration-300 text-[13px] font-medium">
+                        Узнать больше
+                      </a>
+                      <a href="#" class="text-white hover:text-[#A87429] transition-colors duration-300 text-[13px] font-medium flex items-center gap-2 group">
+                        Подробнее
+                        <svg class="group-hover:translate-x-1 transition-transform duration-300" width="5" height="9" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Right Side -->
+                  <div class="w-full lg:w-[48%] mt-12 lg:mt-0">
+                    <div class="w-full aspect-square bg-[#D4D4D4] rounded-[16px] flex items-center justify-center relative overflow-hidden">
+                       <img class="w-full h-full object-cover" src="/assets/photos/about_pramoy_kontakt.png" alt="">
+                       <span class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[35px] text-[#A3A3A3] text-[24px] font-bold bg-[#D4D4D4] px-2 ml-14">1</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div class="border-t border-[#333333] pt-12 pb-24">
+                <div class="flex flex-wrap justify-between items-start">
+                  <!-- Header Number & Title -->
+                  <div class="w-full flex items-center gap-4 mb-16 text-[15px] font-medium text-white">
+                    <span>02</span>
+                    <span>Полная проверка</span>
+                  </div>
+
+                  <!-- Left Side -->
+                  <div class="w-full lg:w-[45%] pr-4">
+                    <span class="text-[12px] text-[#A0A0A0] font-bold uppercase tracking-wider block mb-4">Качество</span>
+                    <h2 class="text-[40px] md:text-[46px] font-bold leading-[1.05] uppercase mb-8 tracking-tight font_DespairDisplay">
+                      Каждый<br>
+                      автомобиль<br>
+                      проходит<br>
+                      тщательную<br>
+                      техническую<br>
+                      инспекцию
+                    </h2>
+                    <p class="text-[#B0B0B0] text-[15px] leading-[1.6] mb-10 w-[95%]">
+                      Мы проверяем кузов, двигатель, электронику и историю. Если что-то не так, машина не едет к вам.
+                    </p>
+                    <div class="flex items-center gap-6">
+                      <a href="#" class="bg-[#333333] hover:bg-[#444444] text-white py-3 px-6 rounded-full transition-colors duration-300 text-[13px] font-medium">
+                        Узнать больше
+                      </a>
+                      <a href="#" class="text-white hover:text-[#A87429] transition-colors duration-300 text-[13px] font-medium flex items-center gap-2 group">
+                        Подробнее
+                        <svg class="group-hover:translate-x-1 transition-transform duration-300" width="5" height="9" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Right Side -->
+                  <div class="w-full lg:w-[48%] mt-12 lg:mt-0">
+                    <div class="w-full aspect-square bg-[#D4D4D4] rounded-[16px] flex items-center justify-center relative overflow-hidden">
+                       <img class="w-full h-full object-cover" src="/assets/photos/proverka.png" alt="">
+                       <span class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[35px] text-[#A3A3A3] text-[24px] font-bold bg-[#D4D4D4] px-2 ml-14">2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div class="border-t border-[#333333] pt-12 pb-24">
+                <div class="flex flex-wrap justify-between items-start">
+                  <!-- Header Number & Title -->
+                  <div class="w-full flex items-center gap-4 mb-16 text-[15px] font-medium text-white">
+                    <span>03</span>
+                    <span>Оформление документов</span>
+                  </div>
+
+                  <!-- Left Side -->
+                  <div class="w-full lg:w-[45%] pr-4">
+                    <span class="text-[12px] text-[#A0A0A0] font-bold uppercase tracking-wider block mb-4">Качество</span>
+                    <h2 class="text-[40px] md:text-[46px] font-bold leading-[1.05] uppercase mb-8 tracking-tight font_DespairDisplay">
+                      Мы оформляем<br>
+                      все документы,<br>
+                      чтобы вы<br>
+                      не тратили<br>
+                      свое время
+                    </h2>
+                    <p class="text-[#B0B0B0] text-[15px] leading-[1.6] mb-10 w-[95%]">
+                      Мы проверяем кузов, двигатель, электронику и историю. Если что-то не так, машина не едет к вам.
+                    </p>
+                    <div class="flex items-center gap-6">
+                      <a href="#" class="bg-[#333333] hover:bg-[#444444] text-white py-3 px-6 rounded-full transition-colors duration-300 text-[13px] font-medium">
+                        Узнать больше
+                      </a>
+                      <a href="#" class="text-white hover:text-[#A87429] transition-colors duration-300 text-[13px] font-medium flex items-center gap-2 group">
+                        Подробнее
+                        <svg class="group-hover:translate-x-1 transition-transform duration-300" width="5" height="9" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M1 9L5 5L1 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </a>
+                    </div>
+                  </div>
+
+                  <!-- Right Side -->
+                  <div class="w-full lg:w-[48%] mt-12 lg:mt-0">
+                    <div class="w-full aspect-square bg-[#D4D4D4] rounded-[16px] flex items-center justify-center relative overflow-hidden">
+                       <img class="w-full h-full object-cover" src="/assets/photos/oformleniya.png" alt="">
+                       <span class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-[35px] text-[#A3A3A3] text-[24px] font-bold bg-[#D4D4D4] px-2 ml-14">2</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section></section>
+    </main>
+
+    <footer class="bg-[#111] text-white pt-16 pb-8 font-sans">
+      <div class="container-custom">
+        <!-- Top Part -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+          <!-- Brand & Logo -->
+          <div class="lg:col-span-1">
+            <div class="mb-4">
+              <img
+                width="100"
+                src="../assets/photos/vektor_logo.svg"
+                alt="artex logo"
+              />
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <h4 class="font-bold text-lg mb-6">Полезные ссылки</h4>
+            <ul class="space-y-2 text-white">
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Главная</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >О компании</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Каталог</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Услуги</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Блог</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Статьи</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="font-bold text-lg mb-6">Быстрые ссылки</h4>
+            <ul class="space-y-2 text-white">
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Связаться с нами</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Центр помощи</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Онлайн чат</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Как это работает</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Our Brands -->
+          <div>
+            <h4 class="font-bold text-lg mb-6">Наши бренды</h4>
+            <ul class="space-y-2 text-white">
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Aston Martin</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Audi</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >BMW</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Ferrari</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Mercedes</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Lamborghini</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Jaguar</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Vehicles Type -->
+          <div>
+            <h4 class="font-bold text-lg mb-6">Блог</h4>
+            <ul class="space-y-2 text-white">
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Как проверить авто из Кореи перед покупкой: чек-лист на 10
+                  пунктов</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Рейтинг электромобилей 2025: ТОП-10 моделей по запасу хода,
+                  цене и характеристикам</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Сколько реально стоит привоз авто из Кореи в 2026 году</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div
+          class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-6"
+        >
+          <div class="flex gap-8 text-sm font-medium text-white">
+            <img
+              width="120"
+              src="../assets/photos/jeywa_logo.png"
+              alt="created"
+            />
+          </div>
+          <div>
+            <div class="flex gap-3">
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-[#A87429] flex items-center justify-center text-white hover:opacity-80 transition-opacity"
+              >
+                <img
+                  class="invert"
+                  width="20"
+                  src="../assets/photos/socials/telegram.png"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-[#A87429] flex items-center justify-center text-white hover:opacity-80 transition-opacity"
+              >
+                <img
+                  class="invert"
+                  width="20"
+                  src="../assets/photos/socials/youtube.png"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-[#A87429] flex items-center justify-center text-white hover:opacity-80 transition-opacity"
+              >
+                <img
+                  class="invert"
+                  width="20"
+                  src="../assets/photos/socials/instagram.png"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-[#A87429] flex items-center justify-center text-white hover:opacity-80 transition-opacity"
+              >
+                <img
+                  class="invert"
+                  width="20"
+                  src="../assets/photos/socials/whatsapp.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <button
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+            class="flex cursor-pointer items-center gap-2 bg-black text-white border border-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition-colors shadow-sm group"
+          >
+            <span class="text-sm font-bold">Наверх</span>
+            <div
+              class="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all duration-300"
+            >
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 19V5M5 12l7-7 7 7" />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
