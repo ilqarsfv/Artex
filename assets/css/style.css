@@ -2007,7 +2007,7 @@ body {
 
 /* about page */
 #about_wrapper_top {
-  background: url("../assets/photos/about_bg.jpg") 50% 150% / cover no-repeat;
+  background: url("../photos/about_bg.jpg") 50% 150% / cover no-repeat;
   position: relative;
   background-attachment: fixed;
 }
