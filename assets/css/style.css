@@ -581,14 +581,21 @@ body {
 }
 .faq-btn {
   cursor: pointer;
-  transition: background-color 0.25s ease;
+  overflow: hidden;
+  transition: all 0.25s ease;
+}
+
+.faq-title {
+  color: #fff;
+  transition: color 0.25s ease;
 }
 .faq-btn:hover {
-  background-color: #d8d8df;
+  background-color: #fff;
+  border-radius: 16px;
 }
-.faq-title {
+.faq-btn:hover .faq-title,
+.faq-btn:hover .faq-icon {
   color: #111111;
-  transition: color 0.25s ease;
 }
 .faq-title-active {
   color: #a87429;
@@ -2006,12 +2013,14 @@ body {
 }
 
 /* about page */
-#about_wrapper_top {
+#about_wrapper_top,
+#contact-top-wrapper {
   background: url("../photos/about_bg.jpg") 50% 150% / cover no-repeat;
   position: relative;
   background-attachment: fixed;
 }
-#about_wrapper_top::after {
+#about_wrapper_top::after,
+#contact-top-wrapper::after {
   content: "";
   position: absolute;
   top: 0;
@@ -2020,4 +2029,109 @@ body {
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1;
+}
+
+/* =============================================
+   Contact Premium Form Styles
+   ============================================= */
+#contact_form_wrapper input::placeholder,
+#contact_form_wrapper textarea::placeholder {
+  color: #555;
+}
+
+#contact_form_wrapper input,
+#contact_form_wrapper textarea {
+  transition: all 0.3s ease;
+}
+
+#contact_form_wrapper input:focus,
+#contact_form_wrapper textarea:focus {
+  background-color: #050505;
+  box-shadow: 0 0 20px rgba(168, 116, 41, 0.15);
+}
+
+/* Checkbox Custom Styles */
+#agree:checked {
+  background-color: #a87429;
+  border-color: #a87429;
+}
+
+@keyframes check-bounce {
+  0% { transform: scale(0); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+#agree:checked + svg {
+  animation: check-bounce 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* =============================================
+   Dark FAQ Section Styles
+   ============================================= */
+#faq_wrapper .faq-item {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+
+
+#faq_wrapper .faq-content {
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#faq_wrapper .faq-content.is-open {
+  max-height: 500px; /* Adjust based on content */
+  opacity: 1;
+  padding-bottom: 24px;
+}
+
+#faq_wrapper .rotate-45 {
+  transform: rotate(45deg);
+}
+
+#faq_wrapper .faq-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+#faq_wrapper .faq-item .faq-title-active {
+  color: #a87429;
+}
+
+#faq_wrapper .faq-icon-active {
+  background: #a87429;
+  color: #fff;
+}
+
+/* =============================================
+   Comparison Cards Section Styles
+   ============================================= */
+#kontakty_podderjka .italic {
+  font-family: "Despair Display", "Open Sans", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+#kontakty_podderjka .bg-[#0a0a0a] {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+#kontakty_podderjka .group:hover {
+  box-shadow: 0 0 40px rgba(168, 116, 41, 0.1);
+}
+
+#kontakty_podderjka h3 {
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+  #kontakty_podderjka .text-5xl {
+    font-size: 3rem;
+  }
 }

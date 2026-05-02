@@ -1,0 +1,795 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="../assets/photos/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artex</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/font-face.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="site-header bg-[#111111] py-5 fixed top-0 left-0 w-full z-50">
+        <div class="container-custom text-white">
+          <div class="flex items-center justify-between">
+            <a href="https://ilqarsfv.github.io/Artex/">
+              <img
+                class="logo"
+                width="80"
+                src="../assets/photos/vektor_logo.svg"
+                alt="vektor_logo"
+              />
+            </a>
+            <nav
+              class="flex items-center space-x-5 list-none text-[16px] menu_wrapper font-[600]"
+            >
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Каталог</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/">Главная</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/about/">О компании</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Услуги</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Как мы работаем</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Отзывы</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Статьи</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Контакты</a>
+              </li>
+            </nav>
+            <div class="flex items-center space-x-3 social_item_wrapper">
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out"
+                  href="https://t.me/Artex_manager"
+                  target="_blank"
+                >
+                  <img
+                    width="15"
+                    src="../assets/photos/socials/telegram.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out"
+                  href="https://www.instagram.com/artex_carexport?igsh=MW1ubGh3YTUzc3B1ZQ%3D%3D&utm_source=qr"
+                  target="_blank"
+                >
+                  <img
+                    width="15"
+                    src="../assets/photos/socials/instagram.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out"
+                  href="https://youtube.com/channel/UCtKEyzJ5AXjOP1odo0WIiAA?si=XSh45G-KBg_aLJVa"
+                  target="_blank"
+                >
+                  <img
+                    width="15"
+                    src="../assets/photos/socials/youtube.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out"
+                  href="https://wa.me/821080979291"
+                  target="_blank"
+                >
+                  <img
+                    width="15"
+                    src="../assets/photos/socials/whatsapp.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="section_margin"></div>
+      <section>
+        <div
+          id="contact-top-wrapper"
+          class="py-[112px] px-[64px] text-white h-[475px]"
+        >
+          <div class="container-custom">
+            <div class="text-center relative z-2">
+              <h1
+                class="text-[84px] font-[700] leading-[100%] tracking-[-0.01em] uppercase"
+              >
+                Свяжитесь с нами <br />
+                Artex
+              </h1>
+              <p class="mt-[18px] text-[19px]">
+                Мы всегда на связи и готовы помочь с выбором автомобиля мечты.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="contact_form_wrapper" class="bg-black py-24 px-4 sm:px-8">
+          <div class="container-custom">
+            <div class="max-w-[700px] mx-auto text-white">
+              <div class="text-center mb-16">
+                <h2
+                  class="text-5xl md:text-7xl font-black uppercase leading-none mb-6"
+                >
+                  Узнайте цену
+                </h2>
+                <p class="text-xl md:text-2xl opacity-70">
+                  Расскажите о желаемом автомобиле
+                </p>
+              </div>
+
+              <form class="space-y-8">
+                <div class="space-y-2">
+                  <label for="name" class="block text-lg font-medium"
+                    >Имя</label
+                  >
+                  <input
+                    type="text"
+                    id="name"
+                    placeholder="Ваше имя"
+                    class="w-full bg-[#111] border border-[#222] rounded-2xl h-[64px] px-6 text-lg focus:outline-none focus:border-[#A87429] focus:ring-1 focus:ring-[#A87429] transition-all duration-300"
+                  />
+                </div>
+
+                <div class="space-y-2">
+                  <label for="email" class="block text-lg font-medium"
+                    >Почта</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="example@mail.com"
+                    class="w-full bg-[#111] border border-[#222] rounded-2xl h-[64px] px-6 text-lg focus:outline-none focus:border-[#A87429] focus:ring-1 focus:ring-[#A87429] transition-all duration-300"
+                  />
+                </div>
+
+                <div class="space-y-2">
+                  <label for="comment" class="block text-lg font-medium"
+                    >Комментарий</label
+                  >
+                  <textarea
+                    id="comment"
+                    placeholder="Добавьте детали о машине"
+                    class="w-full bg-[#111] border border-[#222] rounded-2xl h-[220px] p-6 text-lg focus:outline-none focus:border-[#A87429] focus:ring-1 focus:ring-[#A87429] transition-all duration-300 resize-none"
+                  ></textarea>
+                </div>
+
+                <div class="flex items-center gap-4 group cursor-pointer">
+                  <div class="relative flex items-center justify-center">
+                    <input
+                      type="checkbox"
+                      id="agree"
+                      class="peer appearance-none w-7 h-7 border-2 border-[#333] rounded-lg checked:bg-[#A87429] checked:border-[#A87429] transition-all duration-300 cursor-pointer"
+                    />
+                    <svg
+                      class="absolute w-4 h-4 text-white opacity-0 peer-checked:opacity-100 transition-opacity duration-300 pointer-events-none"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="4"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <label
+                    for="agree"
+                    class="text-lg opacity-70 group-hover:opacity-100 transition-opacity cursor-pointer"
+                    >Согласен с условиями обработки</label
+                  >
+                </div>
+
+                <div class="pt-8 text-center">
+                  <button
+                    type="submit"
+                    class="bg-[#B88A44] cursor-pointer hover:bg-[#A87429] text-white font-bold text-xl px-16 py-5 rounded-full transition-all duration-500 transform hover:scale-105 hover:shadow-[0_0_30px_rgba(184,138,68,0.4)]"
+                  >
+                    Отправить
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="faq_wrapper" class="bg-[#111] py-24 px-4 sm:px-8 text-white">
+          <div class="container-custom">
+            <!-- Header -->
+            <div class="text-center mb-16">
+              <h2 class="text-5xl md:text-6xl font-black uppercase mb-6">
+                Вопросы
+              </h2>
+              <p class="text-lg max-w-2xl mx-auto">
+                Ответы на самые частые вопросы о расчете стоимости и доставке
+              </p>
+            </div>
+
+            <!-- FAQ Accordion -->
+            <div class="max-w-[900px] text-white mx-auto space-y-4">
+              <!-- Item 1 -->
+              <div
+                class="faq-item border border-[#333] rounded-2xl bg-[#1a1a1a] transition-all duration-300"
+              >
+                <button
+                  class="faq-btn w-full flex items-center justify-between p-6 text-left focus:outline-none"
+                >
+                  <span class="faq-title text-xl font-bold transition-colors"
+                    >Как рассчитывается цена?</span
+                  >
+                  <div class="faq-icon transition-transform duration-300">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </div>
+                </button>
+                <div
+                  class="faq-content overflow-hidden max-h-0 transition-all duration-500"
+                >
+                  <div class="p-6 pt-0 text-lg opacity-70 leading-relaxed">
+                    Стоимость включает цену автомобиля в Корее, таможенные
+                    пошлины, доставку морским транспортом и оформление
+                    документов. Каждый автомобиль проходит независимую оценку
+                    перед расчетом финальной цены.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2 -->
+              <div
+                class="faq-item border border-[#333] rounded-2xl bg-[#1a1a1a] transition-all duration-300"
+              >
+                <button
+                  class="faq-btn w-full flex items-center justify-between p-6 text-left focus:outline-none"
+                >
+                  <span class="faq-title text-xl font-bold transition-colors"
+                    >Когда позвонит специалист?</span
+                  >
+                  <div class="faq-icon transition-transform duration-300">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </div>
+                </button>
+                <div
+                  class="faq-content overflow-hidden max-h-0 transition-all duration-500"
+                >
+                  <div class="p-6 pt-0 text-lg opacity-70 leading-relaxed">
+                    Мы свяжемся с вами в течение 10 минут после отправки заявки.
+                    Если это выходной день, то в первый рабочий день с утра.
+                    Время звонка согласуется с вашим удобством.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3 -->
+              <div
+                class="faq-item border border-[#333] rounded-2xl bg-[#1a1a1a] transition-all duration-300"
+              >
+                <button
+                  class="faq-btn w-full flex items-center justify-between p-6 text-left focus:outline-none"
+                >
+                  <span class="faq-title text-xl font-bold transition-colors"
+                    >Защищены ли мои данные?</span
+                  >
+                  <div class="faq-icon transition-transform duration-300">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </div>
+                </button>
+                <div
+                  class="faq-content overflow-hidden max-h-0 transition-all duration-500"
+                >
+                  <div class="p-6 pt-0 text-lg opacity-70 leading-relaxed">
+                    Ваша информация хранится в защищенной базе данных и не
+                    передается третьим лицам. Мы соблюдаем все требования
+                    законодательства о защите персональных данных.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4 -->
+              <div
+                class="faq-item border border-[#333] rounded-2xl bg-[#1a1a1a] transition-all duration-300"
+              >
+                <button
+                  class="faq-btn w-full flex items-center justify-between p-6 text-left focus:outline-none"
+                >
+                  <span class="faq-title text-xl font-bold transition-colors"
+                    >Можно ли изменить заявку?</span
+                  >
+                  <div class="faq-icon transition-transform duration-300">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </div>
+                </button>
+                <div
+                  class="faq-content overflow-hidden max-h-0 transition-all duration-500"
+                >
+                  <div class="p-6 pt-0 text-lg opacity-70 leading-relaxed">
+                    Да, вы можете отредактировать параметры автомобиля или
+                    бюджет в течение часа после отправки. После этого
+                    потребуется новая заявка с актуальными данными.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 5 -->
+              <div
+                class="faq-item border border-[#333] rounded-2xl bg-[#1a1a1a] transition-all duration-300"
+              >
+                <button
+                  class="faq-btn w-full flex items-center justify-between p-6 text-left focus:outline-none"
+                >
+                  <span class="faq-title text-xl font-bold transition-colors"
+                    >Какие марки вы предлагаете?</span
+                  >
+                  <div class="faq-icon transition-transform duration-300">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <line x1="12" y1="5" x2="12" y2="19"></line>
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                    </svg>
+                  </div>
+                </button>
+                <div
+                  class="faq-content overflow-hidden max-h-0 transition-all duration-500"
+                >
+                  <div class="p-6 pt-0 text-lg opacity-70 leading-relaxed">
+                    Мы работаем со всеми популярными корейскими брендами:
+                    Hyundai, Kia, Genesis и другими. Специалист поможет выбрать
+                    оптимальный вариант в вашем бюджете.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Bottom Section -->
+            <div class="text-center mt-24">
+              <h3 class="text-4xl md:text-5xl font-black uppercase mb-4">
+                Остались вопросы?
+              </h3>
+              <p class="text-lg mb-10">
+                Напишите нам или позвоните в любое время
+              </p>
+              <a
+                href="#"
+                class="inline-block bg-[#222] border border-[#333] text-white px-10 py-4 rounded-full font-bold hover:bg-white hover:text-black transition-all transform hover:scale-105"
+              >
+                Контакты
+              </a>
+            </div>
+          </div>
+        </div>
+                <div id="kontakty_podderjka" class="bg-black py-24 px-4 sm:px-8 text-white">
+          <div class="container-custom">
+            <!-- Header -->
+            <div class="text-center mb-20">
+              <span class="text-sm font-bold tracking-[0.3em] uppercase block mb-4">Artex</span>
+              <h2 class="text-5xl md:text-7xl font-black uppercase leading-tight mb-6">
+                Контакты и <br> поддержка
+              </h2>
+              <p class="text-xl opacity-60">Свяжитесь с нами для помощи</p>
+            </div>
+
+            <!-- Comparison Cards Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-[1100px] mx-auto">
+              
+              <!-- Standard Card -->
+              <div class="bg-[#0a0a0a] border border-[#222] rounded-[32px] p-8 md:p-12 flex flex-col transition-all duration-500 hover:border-[#444]">
+                <div class="mb-8">
+                  <div class="w-16 h-16 bg-[#111] rounded-2xl flex items-center justify-center mb-6 border border-[#222]">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                  </div>
+                  <h3 class="text-2xl font-black uppercase mb-2">Стандартный расчет</h3>
+                  <p class="opacity-50 text-sm">Полная оценка автомобиля</p>
+                </div>
+
+                <div class="space-y-6 mb-10">
+                  <div class="flex justify-between items-center pb-4 border-b border-[#222]">
+                    <span class="text-sm uppercase font-bold tracking-wider">Время доставки</span>
+                    <span class="text-2xl font-black italic">30 ДНЕЙ</span>
+                  </div>
+                  <div class="flex justify-between items-center pb-4 border-b border-[#222]">
+                    <span class="text-sm uppercase font-bold tracking-wider">Таможенное оформление</span>
+                    <span class="text-2xl font-black italic">ВКЛЮЧЕНО</span>
+                  </div>
+                  <div class="flex justify-between items-center pb-4 border-b border-[#222]">
+                    <span class="text-sm uppercase font-bold tracking-wider">Гарантия качества</span>
+                    <span class="text-2xl font-black italic">ДА</span>
+                  </div>
+                  <div class="flex justify-between items-center pb-4 border-b border-[#222]">
+                    <span class="text-sm uppercase font-bold tracking-wider">Поддержка после покупки</span>
+                    <span class="text-2xl font-black italic">ВКЛЮЧЕНА</span>
+                  </div>
+                </div>
+
+                <ul class="space-y-4">
+                  <li class="flex items-center gap-4 text-sm font-medium">
+                    <svg class="text-white opacity-40" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Консультация специалиста</span>
+                  </li>
+                  <li class="flex items-center gap-4 text-sm font-medium">
+                    <svg class="text-white opacity-40" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Помощь с выбором</span>
+                  </li>
+                  <li class="flex items-center gap-4 text-sm font-medium opacity-30">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    <span>Проверка документов</span>
+                  </li>
+                  <li class="flex items-center gap-4 text-sm font-medium opacity-30">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    <span>Сопровождение доставки</span>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Premium Card -->
+              <div class="bg-[#0a0a0a] border border-[#A87429]/30 rounded-[32px] p-8 md:p-12 flex flex-col transition-all duration-500 hover:border-[#A87429] relative overflow-hidden group">
+                <div class="mb-8">
+                  <div class="w-16 h-16 bg-[#111] rounded-2xl flex items-center justify-center mb-6 border border-[#A87429]/20 group-hover:border-[#A87429]/50 transition-colors">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                  </div>
+                  <h3 class="text-2xl font-black uppercase mb-2">Премиум расчет</h3>
+                  <p class="opacity-50 text-sm">Детальная диагностика авто</p>
+                </div>
+
+                <div class="space-y-6 mb-10">
+                  <div class="flex justify-between items-center pb-4 border-b border-[#222]">
+                    <span class="text-sm uppercase font-bold tracking-wider">Время доставки</span>
+                    <span class="text-2xl font-black italic">20 ДНЕЙ</span>
+                  </div>
+                  <div class="flex justify-between items-center pb-4 border-b border-[#222]">
+                    <span class="text-sm uppercase font-bold tracking-wider">Таможенное оформление</span>
+                    <span class="text-2xl font-black italic">ВКЛЮЧЕНО</span>
+                  </div>
+                  <div class="flex justify-between items-center pb-4 border-b border-[#222]">
+                    <span class="text-sm uppercase font-bold tracking-wider">Гарантия качества</span>
+                    <span class="text-2xl font-black italic">ДА</span>
+                  </div>
+                  <div class="flex justify-between items-center pb-4 border-b border-[#222]">
+                    <span class="text-sm uppercase font-bold tracking-wider text-left max-w-[150px]">Поддержка после покупки</span>
+                    <span class="text-2xl font-black italic">РАСШИРЕННАЯ</span>
+                  </div>
+                </div>
+
+                <ul class="space-y-4">
+                  <li class="flex items-center gap-4 text-sm font-medium">
+                    <svg class="text-[#A87429]" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Консультация специалиста</span>
+                  </li>
+                  <li class="flex items-center gap-4 text-sm font-medium">
+                    <svg class="text-[#A87429]" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Приоритетная помощь</span>
+                  </li>
+                  <li class="flex items-center gap-4 text-sm font-medium">
+                    <svg class="text-[#A87429]" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Проверка в Корее</span>
+                  </li>
+                  <li class="flex items-center gap-4 text-sm font-medium">
+                    <svg class="text-[#A87429]" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Видеоотчет о состоянии</span>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#111] text-white pt-16 pb-8 font-sans">
+      <div class="container-custom">
+        <!-- Top Part -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+          <!-- Brand & Logo -->
+          <div class="lg:col-span-1">
+            <div class="mb-4">
+              <img
+                width="100"
+                src="../assets/photos/vektor_logo.svg"
+                alt="artex logo"
+              />
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <h4 class="font-bold text-lg mb-6">Полезные ссылки</h4>
+            <ul class="space-y-2 text-white">
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Главная</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >О компании</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Каталог</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Услуги</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Блог</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Статьи</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="font-bold text-lg mb-6">Быстрые ссылки</h4>
+            <ul class="space-y-2 text-white">
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Связаться с нами</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Центр помощи</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Онлайн чат</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Как это работает</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Our Brands -->
+          <div>
+            <h4 class="font-bold text-lg mb-6">Наши бренды</h4>
+            <ul class="space-y-2 text-white">
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Aston Martin</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Audi</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >BMW</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Ferrari</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Mercedes</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Lamborghini</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Jaguar</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Vehicles Type -->
+          <div>
+            <h4 class="font-bold text-lg mb-6">Блог</h4>
+            <ul class="space-y-2 text-white">
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Как проверить авто из Кореи перед покупкой: чек-лист на 10
+                  пунктов</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Рейтинг электромобилей 2025: ТОП-10 моделей по запасу хода,
+                  цене и характеристикам</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Сколько реально стоит привоз авто из Кореи в 2026 году</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div
+          class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-6"
+        >
+          <div class="flex gap-8 text-sm font-medium text-white">
+            <img
+              width="120"
+              src="../assets/photos/jeywa_logo.png"
+              alt="created"
+            />
+          </div>
+          <div>
+            <div class="flex gap-3">
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-[#A87429] flex items-center justify-center text-white hover:opacity-80 transition-opacity"
+              >
+                <img
+                  class="invert"
+                  width="20"
+                  src="../assets/photos/socials/telegram.png"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-[#A87429] flex items-center justify-center text-white hover:opacity-80 transition-opacity"
+              >
+                <img
+                  class="invert"
+                  width="20"
+                  src="../assets/photos/socials/youtube.png"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-[#A87429] flex items-center justify-center text-white hover:opacity-80 transition-opacity"
+              >
+                <img
+                  class="invert"
+                  width="20"
+                  src="../assets/photos/socials/instagram.png"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-[#A87429] flex items-center justify-center text-white hover:opacity-80 transition-opacity"
+              >
+                <img
+                  class="invert"
+                  width="20"
+                  src="../assets/photos/socials/whatsapp.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <button
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+            class="flex cursor-pointer items-center gap-2 bg-black text-white border border-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition-colors shadow-sm group"
+          >
+            <span class="text-sm font-bold">Наверх</span>
+            <div
+              class="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all duration-300"
+            >
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 19V5M5 12l7-7 7 7" />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
