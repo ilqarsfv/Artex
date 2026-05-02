@@ -14,6 +14,24 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
+    <!-- Site Preloader -->
+    <div id="site-preloader" class="preloader">
+      <div class="preloader-inner">
+        <div class="preloader-logo-container">
+          <img
+            src="./assets/photos/vektor_logo.svg"
+            alt="Artex Logo"
+            class="preloader-logo"
+          />
+          <div class="preloader-scan-line"></div>
+        </div>
+        <div class="preloader-progress-wrap">
+          <div class="preloader-progress-bar" id="preloaderBar"></div>
+          <div class="preloader-percentage" id="preloaderPerc">0%</div>
+        </div>
+        <div class="preloader-loading-text">ИНЖЕНЕРНОЕ СОВЕРШЕНСТВО</div>
+      </div>
+    </div>
     <header>
       <div class="site-header bg-[#111111] py-5 fixed top-0 left-0 w-full z-50">
         <div class="container-custom text-white">
@@ -51,7 +69,7 @@
                 <a href="">Статьи</a>
               </li>
               <li class="duration-300 ease-in-out hover:text-[#A87429]">
-                <a href="">Контакты</a>
+                <a href="https://ilqarsfv.github.io/Artex/contact/">Контакты</a>
               </li>
             </nav>
             <div class="flex items-center space-x-3 social_item_wrapper">
@@ -440,118 +458,301 @@
             </div>
           </div>
         </div>
-                <div id="kontakty_podderjka" class="bg-black py-24 px-4 sm:px-8 text-white">
+        <div
+          id="kontakty_podderjka"
+          class="bg-black py-24 px-4 sm:px-8 text-white"
+        >
           <div class="container-custom">
             <!-- Header -->
             <div class="text-center mb-20">
-              <span class="text-sm font-bold tracking-[0.3em] uppercase block mb-4">Artex</span>
-              <h2 class="text-5xl md:text-7xl font-black uppercase leading-tight mb-6">
-                Контакты и <br> поддержка
+              <span
+                class="text-sm font-bold tracking-[0.3em] uppercase block mb-4"
+                >Artex</span
+              >
+              <h2
+                class="text-5xl md:text-7xl font-black uppercase leading-tight mb-6"
+              >
+                Контакты и <br />
+                поддержка
               </h2>
               <p class="text-xl opacity-60">Свяжитесь с нами для помощи</p>
             </div>
 
             <!-- Comparison Cards Grid -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-[1100px] mx-auto">
-              
+            <div
+              class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-[1100px] mx-auto"
+            >
               <!-- Standard Card -->
-              <div class="bg-[#0a0a0a] border border-[#222] rounded-[32px] p-8 md:p-12 flex flex-col transition-all duration-500 hover:border-[#444]">
+              <div
+                class="bg-[#0a0a0a] border border-[#222] rounded-[32px] p-8 md:p-12 flex flex-col transition-all duration-500 hover:border-[#444]"
+              >
                 <div class="mb-8">
-                  <div class="w-16 h-16 bg-[#111] rounded-2xl flex items-center justify-center mb-6 border border-[#222]">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg>
+                  <div
+                    class="w-16 h-16 bg-[#111] rounded-2xl flex items-center justify-center mb-6 border border-[#222]"
+                  >
+                    <svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#fff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <rect x="1" y="3" width="15" height="13"></rect>
+                      <polygon
+                        points="16 8 20 8 23 11 23 16 16 16 16 8"
+                      ></polygon>
+                      <circle cx="5.5" cy="18.5" r="2.5"></circle>
+                      <circle cx="18.5" cy="18.5" r="2.5"></circle>
+                    </svg>
                   </div>
-                  <h3 class="text-2xl font-black uppercase mb-2">Стандартный расчет</h3>
+                  <h3 class="text-2xl font-black uppercase mb-2">
+                    Стандартный расчет
+                  </h3>
                   <p class="opacity-50 text-sm">Полная оценка автомобиля</p>
                 </div>
 
                 <div class="space-y-6 mb-10">
-                  <div class="flex justify-between items-center pb-4 border-b border-[#222]">
-                    <span class="text-sm uppercase font-bold tracking-wider">Время доставки</span>
+                  <div
+                    class="flex justify-between items-center pb-4 border-b border-[#222]"
+                  >
+                    <span class="text-sm uppercase font-bold tracking-wider"
+                      >Время доставки</span
+                    >
                     <span class="text-2xl font-black italic">30 ДНЕЙ</span>
                   </div>
-                  <div class="flex justify-between items-center pb-4 border-b border-[#222]">
-                    <span class="text-sm uppercase font-bold tracking-wider">Таможенное оформление</span>
+                  <div
+                    class="flex justify-between items-center pb-4 border-b border-[#222]"
+                  >
+                    <span class="text-sm uppercase font-bold tracking-wider"
+                      >Таможенное оформление</span
+                    >
                     <span class="text-2xl font-black italic">ВКЛЮЧЕНО</span>
                   </div>
-                  <div class="flex justify-between items-center pb-4 border-b border-[#222]">
-                    <span class="text-sm uppercase font-bold tracking-wider">Гарантия качества</span>
+                  <div
+                    class="flex justify-between items-center pb-4 border-b border-[#222]"
+                  >
+                    <span class="text-sm uppercase font-bold tracking-wider"
+                      >Гарантия качества</span
+                    >
                     <span class="text-2xl font-black italic">ДА</span>
                   </div>
-                  <div class="flex justify-between items-center pb-4 border-b border-[#222]">
-                    <span class="text-sm uppercase font-bold tracking-wider">Поддержка после покупки</span>
+                  <div
+                    class="flex justify-between items-center pb-4 border-b border-[#222]"
+                  >
+                    <span class="text-sm uppercase font-bold tracking-wider"
+                      >Поддержка после покупки</span
+                    >
                     <span class="text-2xl font-black italic">ВКЛЮЧЕНА</span>
                   </div>
                 </div>
 
                 <ul class="space-y-4">
                   <li class="flex items-center gap-4 text-sm font-medium">
-                    <svg class="text-white opacity-40" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <svg
+                      class="text-white opacity-40"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
                     <span>Консультация специалиста</span>
                   </li>
                   <li class="flex items-center gap-4 text-sm font-medium">
-                    <svg class="text-white opacity-40" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <svg
+                      class="text-white opacity-40"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
                     <span>Помощь с выбором</span>
                   </li>
-                  <li class="flex items-center gap-4 text-sm font-medium opacity-30">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                  <li
+                    class="flex items-center gap-4 text-sm font-medium opacity-30"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
                     <span>Проверка документов</span>
                   </li>
-                  <li class="flex items-center gap-4 text-sm font-medium opacity-30">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                  <li
+                    class="flex items-center gap-4 text-sm font-medium opacity-30"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <line x1="18" y1="6" x2="6" y2="18"></line>
+                      <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
                     <span>Сопровождение доставки</span>
                   </li>
                 </ul>
               </div>
 
               <!-- Premium Card -->
-              <div class="bg-[#0a0a0a] border border-[#A87429]/30 rounded-[32px] p-8 md:p-12 flex flex-col transition-all duration-500 hover:border-[#A87429] relative overflow-hidden group">
+              <div
+                class="bg-[#0a0a0a] border border-[#A87429]/30 rounded-[32px] p-8 md:p-12 flex flex-col transition-all duration-500 hover:border-[#A87429] relative overflow-hidden group"
+              >
                 <div class="mb-8">
-                  <div class="w-16 h-16 bg-[#111] rounded-2xl flex items-center justify-center mb-6 border border-[#A87429]/20 group-hover:border-[#A87429]/50 transition-colors">
-                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
+                  <div
+                    class="w-16 h-16 bg-[#111] rounded-2xl flex items-center justify-center mb-6 border border-[#A87429]/20 group-hover:border-[#A87429]/50 transition-colors"
+                  >
+                    <svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="#fff"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+                      ></path>
+                    </svg>
                   </div>
-                  <h3 class="text-2xl font-black uppercase mb-2">Премиум расчет</h3>
+                  <h3 class="text-2xl font-black uppercase mb-2">
+                    Премиум расчет
+                  </h3>
                   <p class="opacity-50 text-sm">Детальная диагностика авто</p>
                 </div>
 
                 <div class="space-y-6 mb-10">
-                  <div class="flex justify-between items-center pb-4 border-b border-[#222]">
-                    <span class="text-sm uppercase font-bold tracking-wider">Время доставки</span>
+                  <div
+                    class="flex justify-between items-center pb-4 border-b border-[#222]"
+                  >
+                    <span class="text-sm uppercase font-bold tracking-wider"
+                      >Время доставки</span
+                    >
                     <span class="text-2xl font-black italic">20 ДНЕЙ</span>
                   </div>
-                  <div class="flex justify-between items-center pb-4 border-b border-[#222]">
-                    <span class="text-sm uppercase font-bold tracking-wider">Таможенное оформление</span>
+                  <div
+                    class="flex justify-between items-center pb-4 border-b border-[#222]"
+                  >
+                    <span class="text-sm uppercase font-bold tracking-wider"
+                      >Таможенное оформление</span
+                    >
                     <span class="text-2xl font-black italic">ВКЛЮЧЕНО</span>
                   </div>
-                  <div class="flex justify-between items-center pb-4 border-b border-[#222]">
-                    <span class="text-sm uppercase font-bold tracking-wider">Гарантия качества</span>
+                  <div
+                    class="flex justify-between items-center pb-4 border-b border-[#222]"
+                  >
+                    <span class="text-sm uppercase font-bold tracking-wider"
+                      >Гарантия качества</span
+                    >
                     <span class="text-2xl font-black italic">ДА</span>
                   </div>
-                  <div class="flex justify-between items-center pb-4 border-b border-[#222]">
-                    <span class="text-sm uppercase font-bold tracking-wider text-left max-w-[150px]">Поддержка после покупки</span>
+                  <div
+                    class="flex justify-between items-center pb-4 border-b border-[#222]"
+                  >
+                    <span
+                      class="text-sm uppercase font-bold tracking-wider text-left max-w-[150px]"
+                      >Поддержка после покупки</span
+                    >
                     <span class="text-2xl font-black italic">РАСШИРЕННАЯ</span>
                   </div>
                 </div>
 
                 <ul class="space-y-4">
                   <li class="flex items-center gap-4 text-sm font-medium">
-                    <svg class="text-[#A87429]" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <svg
+                      class="text-[#A87429]"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
                     <span>Консультация специалиста</span>
                   </li>
                   <li class="flex items-center gap-4 text-sm font-medium">
-                    <svg class="text-[#A87429]" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <svg
+                      class="text-[#A87429]"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
                     <span>Приоритетная помощь</span>
                   </li>
                   <li class="flex items-center gap-4 text-sm font-medium">
-                    <svg class="text-[#A87429]" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <svg
+                      class="text-[#A87429]"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
                     <span>Проверка в Корее</span>
                   </li>
                   <li class="flex items-center gap-4 text-sm font-medium">
-                    <svg class="text-[#A87429]" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <svg
+                      class="text-[#A87429]"
+                      width="18"
+                      height="18"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
                     <span>Видеоотчет о состоянии</span>
                   </li>
                 </ul>
               </div>
-
             </div>
           </div>
         </div>
