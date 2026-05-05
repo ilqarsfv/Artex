@@ -2014,7 +2014,8 @@ body {
 
 /* about page */
 #about_wrapper_top,
-#contact-top-wrapper {
+#contact-top-wrapper,
+#how_to_work_wrapper_top {
   background: url("../photos/about_bg.jpg") 50% 150% / cover no-repeat;
   position: relative;
   background-attachment: fixed;

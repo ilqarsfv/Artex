@@ -1,0 +1,899 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="../assets/photos/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artex - Как мы работаем</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/css/font-face.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <style>
+      #how_to_work_wrap {
+        position: relative;
+        overflow: hidden;
+        padding: 104px 0 110px;
+        color: #fff;
+      }
+
+      #how_to_work_wrap::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: radial-gradient(circle at top center, rgba(255, 255, 255, 0.06), transparent 32%), linear-gradient(180deg, rgba(255, 255, 255, 0.015), transparent 28%);
+        pointer-events: none;
+      }
+
+      #how_to_work_wrap .how-work-shell {
+        position: relative;
+        z-index: 1;
+      }
+
+      #how_to_work_wrap .how-work-intro {
+        text-align: center;
+      }
+
+      #how_to_work_wrap .how-work-eyebrow {
+        margin-bottom: 14px;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.08em;
+        color: rgba(255, 255, 255, 0.82);
+      }
+
+      #how_to_work_wrap .how-work-title {
+        margin-top: 30px;
+        font-weight: 600;
+        font-size: clamp(42px, 5vw, 72px);
+        line-height: 0.94;
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+      }
+
+      #how_to_work_wrap .how-work-copy {
+        max-width: 620px;
+        margin: 32px auto 0;
+        font-size: 18px;
+        line-height: 1.55;
+        color: rgba(255, 255, 255, 0.76);
+      }
+
+      #how_to_work_wrap .how-work-actions {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 14px;
+        margin-top: 30px;
+      }
+
+      #how_to_work_wrap .how-work-btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        min-height: 46px;
+        padding: 0 30px;
+        border-radius: 32px;
+        font-size: 14px;
+        font-weight: 500;
+        text-decoration: none;
+        transition:
+          transform 0.25s ease,
+          background-color 0.25s ease,
+          color 0.25s ease,
+          border-color 0.25s ease;
+      }
+
+      #how_to_work_wrap .how-work-btn:hover {
+        transform: translateY(-2px);
+      }
+
+      #how_to_work_wrap .how-work-btn--solid {
+        background: #2c2c2c;
+        color: #fff;
+      }
+
+      #how_to_work_wrap .how-work-btn--solid:hover {
+        background: #3a3a3a;
+      }
+
+      #how_to_work_wrap .how-work-btn--ghost {
+        color: rgba(255, 255, 255, 0.9);
+      }
+
+      #how_to_work_wrap .how-work-btn--ghost:hover {
+        color: #fff;
+      }
+
+      #how_to_work_wrap .how-work-steps {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 26px;
+        margin-top: 82px;
+      }
+
+      #how_to_work_wrap .how-work-steps::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 68%;
+        height: 2px;
+        background: rgba(255, 255, 255, 0.86);
+      }
+
+      #how_to_work_wrap .how-work-step {
+        position: relative;
+      }
+
+      #how_to_work_wrap .how-work-step::before {
+        content: "";
+        position: absolute;
+        top: 67%;
+        left: 50%;
+        width: 10px;
+        height: 10px;
+        border-radius: 999px;
+        background: #fff;
+        transform: translateX(-50%);
+        box-shadow: 0 0 0 6px #0b0b0b;
+      }
+
+      #how_to_work_wrap .how-work-step__media {
+        overflow: hidden;
+        border: 1px solid #fff2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 250px;
+        margin: 0 auto;
+        border-radius: 14px;
+      }
+      #how_to_work_wrap .how-work-step__media img {
+        image-rendering: auto;
+      }
+      #how_to_work_wrap .how-work-step__icon {
+        width: 44px;
+        height: 44px;
+        color: rgba(32, 32, 32, 0.18);
+      }
+
+      #how_to_work_wrap .how-work-step__content {
+        padding-top: 50px;
+        text-align: center;
+      }
+
+      #how_to_work_wrap .how-work-step__title {
+        font-size: 22px;
+        line-height: 1;
+        font-weight: 600;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
+      }
+
+      #how_to_work_wrap .how-work-step__text {
+        margin-top: 10px;
+        font-size: 15px;
+        line-height: 1.45;
+        color: rgba(255, 255, 255, 0.78);
+      }
+
+      @media (max-width: 1199px) {
+        #how_to_work_wrap {
+          padding: 88px 0 96px;
+        }
+
+        #how_to_work_wrap .how-work-steps {
+          grid-template-columns: repeat(3, minmax(0, 1fr));
+          gap: 28px 22px;
+        }
+
+        #how_to_work_wrap .how-work-steps::before {
+          display: none;
+        }
+
+        #how_to_work_wrap .how-work-step::before {
+          top: 214px;
+          opacity: 0;
+        }
+
+        #how_to_work_wrap .how-work-step__media {
+          height: 170px;
+        }
+
+        #how_to_work_wrap .how-work-step__content {
+          padding-top: 24px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        #how_to_work_wrap {
+          padding: 74px 0 82px;
+        }
+
+        #how_to_work_wrap .how-work-title {
+          font-size: 34px;
+        }
+
+        #how_to_work_wrap .how-work-copy {
+          font-size: 15px;
+          margin-top: 18px;
+        }
+
+        #how_to_work_wrap .how-work-actions {
+          flex-wrap: wrap;
+          gap: 10px;
+          margin-top: 24px;
+        }
+
+        #how_to_work_wrap .how-work-btn {
+          width: 100%;
+        }
+
+        #how_to_work_wrap .how-work-steps {
+          grid-template-columns: 1fr;
+          gap: 30px;
+          margin-top: 56px;
+        }
+
+        #how_to_work_wrap .how-work-step {
+          padding-left: 22px;
+        }
+
+        #how_to_work_wrap .how-work-step::after {
+          content: "";
+          position: absolute;
+          left: 4px;
+          top: 210px;
+          bottom: -30px;
+          width: 2px;
+          background: rgba(255, 255, 255, 0.5);
+        }
+
+        #how_to_work_wrap .how-work-step:last-child::after {
+          display: none;
+        }
+
+        #how_to_work_wrap .how-work-step::before {
+          top: 204px;
+          left: 4px;
+          opacity: 1;
+          transform: none;
+          box-shadow: 0 0 0 4px #0b0b0b;
+        }
+
+        #how_to_work_wrap .how-work-step__media {
+          height: 180px;
+        }
+
+        #how_to_work_wrap .how-work-step__content {
+          text-align: left;
+        }
+      }
+
+      #artex_advantages_wrapper {
+        padding: 44px 0 110px;
+        color: #fff;
+      }
+
+      #artex_advantages_wrapper .advantages-shell {
+        position: relative;
+      }
+
+      #artex_advantages_wrapper .advantages-intro {
+        margin: 0 auto 52px;
+        text-align: center;
+      }
+
+      #artex_advantages_wrapper .advantages-eyebrow {
+        display: inline-block;
+        margin-bottom: 16px;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        color: rgba(255, 255, 255, 0.82);
+      }
+
+      #artex_advantages_wrapper .advantages-title {
+        font-size: clamp(36px, 4.3vw, 64px);
+        line-height: 0.95;
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+        font-weight: 500;
+      }
+
+      #artex_advantages_wrapper .advantages-copy {
+        margin-top: 20px;
+        font-size: 17px;
+        line-height: 1.5;
+        color: rgba(255, 255, 255, 0.72);
+      }
+
+      #artex_advantages_wrapper .advantages-grid {
+        display: grid;
+        grid-template-columns: 0.9fr 0.9fr 2fr;
+        gap: 14px;
+        align-items: stretch;
+      }
+
+      #artex_advantages_wrapper .adv-card {
+        overflow: hidden;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 14px;
+        background: #212121;
+        transition:
+          transform 0.28s ease,
+          border-color 0.28s ease,
+          box-shadow 0.28s ease;
+      }
+
+      #artex_advantages_wrapper .adv-card:hover {
+        transform: translateY(-4px);
+        border-color: rgba(255, 255, 255, 0.22);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+      }
+
+      #artex_advantages_wrapper .adv-card__media {
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        justify-content: center;
+        height: 186px;
+        background: linear-gradient(180deg, #d8d8d8 0%, #d2d2d2 100%);
+      }
+
+      #artex_advantages_wrapper .adv-card__icon {
+        width: 46px;
+        height: 46px;
+        color: rgba(36, 36, 36, 0.18);
+      }
+
+      #artex_advantages_wrapper .adv-card__body {
+        display: flex;
+        min-height: 162px;
+        flex-direction: column;
+        padding: 18px 12px 16px;
+      }
+
+      #artex_advantages_wrapper .adv-card__meta {
+        margin-bottom: 10px;
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.78);
+      }
+
+      #artex_advantages_wrapper .adv-card__title {
+        font-size: 29px;
+        font-weight: 500;
+        line-height: 40px;
+        letter-spacing: -0.04em;
+        text-transform: uppercase;
+      }
+
+      #artex_advantages_wrapper .adv-card__text {
+        margin-top: 12px;
+        max-width: 220px;
+        font-size: 15px;
+        line-height: 1.35;
+        color: rgba(255, 255, 255, 0.72);
+      }
+
+      #artex_advantages_wrapper .adv-card__link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        margin-top: auto;
+        padding-top: 14px;
+        font-size: 15px;
+        font-weight: 600;
+        color: #fff;
+        text-decoration: none;
+      }
+
+      #artex_advantages_wrapper .adv-card__link svg {
+        width: 12px;
+        height: 12px;
+      }
+
+      #artex_advantages_wrapper .adv-card--feature {
+        display: grid;
+        grid-template-columns: 1.15fr 0.95fr;
+        background: #232323;
+      }
+
+      #artex_advantages_wrapper .adv-card--feature .adv-card__media {
+        height: 100%;
+        min-height: 248px;
+      }
+
+      #artex_advantages_wrapper .adv-card--feature .adv-card__body {
+        min-height: 248px;
+        justify-content: center;
+        padding: 24px 22px 20px 18px;
+      }
+
+      #artex_advantages_wrapper .adv-card--feature .adv-card__title {
+        font-size: 25px;
+      }
+
+      #artex_advantages_wrapper .adv-card--feature .adv-card__text {
+        max-width: 240px;
+      }
+
+      @media (max-width: 1199px) {
+        #artex_advantages_wrapper {
+          padding: 38px 0 96px;
+        }
+
+        #artex_advantages_wrapper .advantages-grid {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        #artex_advantages_wrapper .adv-card--feature {
+          grid-column: 1 / -1;
+        }
+      }
+
+      @media (max-width: 767px) {
+        #artex_advantages_wrapper {
+          padding: 30px 0 82px;
+        }
+
+        #artex_advantages_wrapper .advantages-intro {
+          margin-bottom: 34px;
+        }
+
+        #artex_advantages_wrapper .advantages-title {
+          font-size: 34px;
+        }
+
+        #artex_advantages_wrapper .advantages-copy {
+          font-size: 15px;
+        }
+
+        #artex_advantages_wrapper .advantages-grid {
+          grid-template-columns: 1fr;
+        }
+
+        #artex_advantages_wrapper .adv-card__media {
+          height: 170px;
+        }
+
+        #artex_advantages_wrapper .adv-card__body {
+          min-height: 0;
+          padding: 18px 16px 16px;
+        }
+
+        #artex_advantages_wrapper .adv-card__title {
+          font-size: 26px;
+        }
+
+        #artex_advantages_wrapper .adv-card__text {
+          max-width: none;
+        }
+
+        #artex_advantages_wrapper .adv-card--feature {
+          grid-template-columns: 1fr;
+        }
+
+        #artex_advantages_wrapper .adv-card--feature .adv-card__media {
+          min-height: 190px;
+        }
+
+        #artex_advantages_wrapper .adv-card--feature .adv-card__body {
+          min-height: 0;
+          padding: 20px 16px 16px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Site Preloader -->
+    <!-- <div id="site-preloader" class="preloader">
+      <div class="preloader-inner">
+        <div class="preloader-logo-container">
+          <img
+            src="../assets/photos/vektor_logo.svg"
+            alt="Artex Logo"
+            class="preloader-logo"
+          />
+          <div class="preloader-scan-line"></div>
+        </div>
+        <div class="preloader-progress-wrap">
+          <div class="preloader-progress-bar" id="preloaderBar"></div>
+          <div class="preloader-percentage" id="preloaderPerc">0%</div>
+        </div>
+        <div class="preloader-loading-text">ИНЖЕНЕРНОЕ СОВЕРШЕНСТВО</div>
+      </div>
+    </div> -->
+
+    <header>
+      <div class="site-header bg-[#111111] py-5 fixed top-0 left-0 w-full z-50">
+        <div class="container-custom text-white">
+          <div class="flex items-center justify-between">
+            <a href="https://ilqarsfv.github.io/Artex/">
+              <img class="logo" width="80" src="../assets/photos/vektor_logo.svg" alt="vektor_logo" />
+            </a>
+            <nav class="flex items-center space-x-5 list-none text-[16px] menu_wrapper font-[600]">
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Каталог</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/">Главная</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/about/">О компании</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/services/">Услуги</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/how-to-work/">Как мы работаем</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Отзывы</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Статьи</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/contact/">Контакты</a>
+              </li>
+            </nav>
+            <div class="flex items-center space-x-3 social_item_wrapper">
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out"
+                  href="https://t.me/Artex_manager"
+                  target="_blank"
+                >
+                  <img width="15" src="../assets/photos/socials/telegram.png" alt="" />
+                </a>
+              </div>
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out"
+                  href="https://www.instagram.com/artex_carexport?igsh=MW1ubGh3YTUzc3B1ZQ%3D%3D&utm_source=qr"
+                  target="_blank"
+                >
+                  <img width="15" src="../assets/photos/socials/instagram.png" alt="" />
+                </a>
+              </div>
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out"
+                  href="https://youtube.com/channel/UCtKEyzJ5AXjOP1odo0WIiAA?si=XSh45G-KBg_aLJVa"
+                  target="_blank"
+                >
+                  <img width="15" src="../assets/photos/socials/youtube.png" alt="" />
+                </a>
+              </div>
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out"
+                  href="https://wa.me/821080979291"
+                  target="_blank"
+                >
+                  <img width="15" src="../assets/photos/socials/whatsapp.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="section_margin"></div>
+      <section>
+        <div id="how_to_work_wrapper_top" class="py-[112px] px-[64px] text-white h-[475px]">
+          <div class="container-custom">
+            <div class="text-center relative z-2">
+              <h1 class="text-[84px] font-[700] leading-[100%] tracking-[-0.01em] uppercase">
+                Как мы <br />
+                работаем
+              </h1>
+              <p class="mt-[18px] text-[19px]">Подробная пошаговая инструкция покупки авто из Кореи.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="bg-[#0B0B0B]">
+          <div id="how_to_work_wrap">
+            <div class="how-work-shell">
+              <div class="how-work-intro">
+                <span class="how-work-eyebrow">Процесс</span>
+                <h2 class="how-work-title">
+                  Шесть простых этапов
+                  <br />
+                  от идеи до владения
+                </h2>
+                <p class="how-work-copy">
+                  Каждый шаг прозрачен и контролируется нами. Вы всегда знаете, где находится ваш автомобиль и что происходит дальше. Никаких скрытых платежей или неожиданных
+                  задержек.
+                </p>
+                <div class="how-work-actions">
+                  <a class="how-work-btn how-work-btn--solid" href="#">Подробнее</a>
+                  <a class="how-work-btn how-work-btn--ghost" href="#">
+                    <span>Смотреть</span>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M4 2.5L9 7L4 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="container-custom">
+                <div class="how-work-steps">
+                  <article class="how-work-step">
+                    <div class="how-work-step__media">
+                      <img class="w-full h-full object-cover" src="../assets/photos/how-to-work/g1.png" alt="Заявка" />
+                    </div>
+                    <div class="how-work-step__content">
+                      <h3 class="how-work-step__title">Заявка</h3>
+                      <p class="how-work-step__text">Вы оставляете заявку и получаете первичную консультацию от нашего специалиста по телефону.</p>
+                    </div>
+                  </article>
+
+                  <article class="how-work-step">
+                    <div class="how-work-step__media">
+                      <img class="w-full h-full object-cover" src="../assets/photos/how-to-work/g2.png" alt="Заявка" />
+                    </div>
+                    <div class="how-work-step__content">
+                      <h3 class="how-work-step__title">Подбор</h3>
+                      <p class="how-work-step__text">Мы ищем подходящий автомобиль на корейских аукционах согласно вашим требованиям и бюджету.</p>
+                    </div>
+                  </article>
+
+                  <article class="how-work-step">
+                    <div class="how-work-step__media">
+                      <img class="w-full h-full object-cover" src="../assets/photos/how-to-work/g3.png" alt="Заявка" />
+                    </div>
+                    <div class="how-work-step__content">
+                      <h3 class="how-work-step__title">Проверка</h3>
+                      <p class="how-work-step__text">Наш инспектор осматривает машину и отправляет вам детальный видеоотчет с полной информацией.</p>
+                    </div>
+                  </article>
+
+                  <article class="how-work-step">
+                    <div class="how-work-step__media">
+                      <img class="w-full h-full object-cover" src="../assets/photos/how-to-work/g4.png" alt="Заявка" />
+                    </div>
+                    <div class="how-work-step__content">
+                      <h3 class="how-work-step__title">Покупка</h3>
+                      <p class="how-work-step__text">Мы покупаем автомобиль на аукционе и оформляем все необходимые документы в Корее.</p>
+                    </div>
+                  </article>
+
+                  <article class="how-work-step">
+                    <div class="how-work-step__media">
+                      <img class="w-full h-full object-cover" src="../assets/photos/how-to-work/g5.png" alt="Заявка" />
+                    </div>
+                    <div class="how-work-step__content">
+                      <h3 class="how-work-step__title">Доставка</h3>
+                      <p class="how-work-step__text">Автомобиль отправляется контейнерным судном и проходит растаможку при прибытии в Россию.</p>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="bg-[#0B0B0B]">
+          <div class="container-custom">
+            <div id="artex_advantages_wrapper">
+              <div class="advantages-shell">
+                <div class="advantages-intro">
+                  <span class="advantages-eyebrow">Преимущества</span>
+                  <h2 class="advantages-title">
+                    Почему выбирают
+                    <br />
+                    Artex
+                  </h2>
+                  <p class="advantages-copy">Три причины доверить нам поиск вашего автомобиля</p>
+                </div>
+
+                <div class="advantages-grid">
+                  <article class="adv-card">
+                    <div class="adv-card__media">
+                      <img class="w-full h-full object-cover" src="../assets/photos/how-to-work/in1.png" alt="Заявка"/>
+                    </div>
+                    <div class="adv-card__body">
+                      <div class="adv-card__meta">Подход</div>
+                      <h3 class="adv-card__title line-clamp-2">Индивидуал ьный подход</h3>
+                      <p class="adv-card__text line-clamp-2">Мы слушаем ваши пожелания и находим именно то</p>
+                      <a class="adv-card__link" href="#">
+                        <span>Узнать</span>
+                        <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4 2.5L9 7L4 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                    </div>
+                  </article>
+
+                  <article class="adv-card">
+                    <div class="adv-card__media">
+                      <img class="w-full h-full object-cover" src="../assets/photos/how-to-work/in2.png" alt="Заявка"/>
+                    </div>
+                    <div class="adv-card__body">
+                      <div class="adv-card__meta">Связь</div>
+                      <h3 class="adv-card__title line-clamp-2">Постоянная связь с вами</h3>
+                      <p class="adv-card__text line-clamp-2">Вы в курсе каждого шага от начала до конца</p>
+                      <a class="adv-card__link" href="#">
+                        <span>Узнать</span>
+                        <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4 2.5L9 7L4 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                    </div>
+                  </article>
+
+                  <article class="adv-card adv-card--feature">
+                    <div class="adv-card__media">
+                      <img class="w-full h-full object-cover" src="../assets/photos/how-to-work/in3.png" alt="Заявка"/>
+                    </div>
+                    <div class="adv-card__body">
+                      <div class="adv-card__meta">Гарантия</div>
+                      <h3 class="adv-card__title line-clamp-2">Гарантия результата и защита инвестиций</h3>
+                      <p class="adv-card__text line-clamp-5">Каждый автомобиль проверен и застрахован полностью</p>
+                      <a class="adv-card__link" href="#">
+                        <span>Узнать</span>
+                        <svg viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4 2.5L9 7L4 11.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </a>
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#111] text-white pt-16 pb-8 font-sans">
+      <div class="container-custom">
+        <!-- Top Part -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+          <!-- Brand & Logo -->
+          <div class="lg:col-span-1">
+            <div class="mb-4">
+              <img width="100" src="../assets/photos/vektor_logo.svg" alt="artex logo" />
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <h4 class="font-bold text-lg mb-6">Полезные ссылки</h4>
+            <ul class="space-y-2 text-white">
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Главная</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">О компании</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Каталог</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Услуги</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Блог</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Статьи</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="font-bold text-lg mb-6">Быстрые ссылки</h4>
+            <ul class="space-y-2 text-white">
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Связаться с нами</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Центр помощи</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Онлайн чат</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Как это работает</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Our Brands -->
+          <div>
+            <h4 class="font-bold text-lg mb-6">Наши бренды</h4>
+            <ul class="space-y-2 text-white">
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Aston Martin</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Audi</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">BMW</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Ferrari</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Mercedes</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Lamborghini</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Jaguar</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Vehicles Type -->
+          <div>
+            <h4 class="font-bold text-lg mb-6">Блог</h4>
+            <ul class="space-y-2 text-white">
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Как проверить авто из Кореи перед покупкой: чек-лист на 10 пунктов</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Рейтинг электромобилей 2025: ТОП-10 моделей по запасу хода, цене и характеристикам</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Сколько реально стоит привоз авто из Кореи в 2026 году</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-6">
+          <div class="flex gap-8 text-sm font-medium text-white">
+            <img width="120" src="../assets/photos/jeywa_logo.png" alt="created" />
+          </div>
+          <div>
+            <div class="flex gap-3">
+              <a href="#" class="w-10 h-10 rounded-full bg-[#A87429] flex items-center justify-center text-white hover:opacity-80 transition-opacity">
+                <img class="invert" width="20" src="../assets/photos/socials/telegram.png" alt="" />
+              </a>
+              <a href="#" class="w-10 h-10 rounded-full bg-[#A87429] flex items-center justify-center text-white hover:opacity-80 transition-opacity">
+                <img class="invert" width="20" src="../assets/photos/socials/youtube.png" alt="" />
+              </a>
+              <a href="#" class="w-10 h-10 rounded-full bg-[#A87429] flex items-center justify-center text-white hover:opacity-80 transition-opacity">
+                <img class="invert" width="20" src="../assets/photos/socials/instagram.png" alt="" />
+              </a>
+              <a href="#" class="w-10 h-10 rounded-full bg-[#A87429] flex items-center justify-center text-white hover:opacity-80 transition-opacity">
+                <img class="invert" width="20" src="../assets/photos/socials/whatsapp.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <button
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+            class="flex cursor-pointer items-center gap-2 bg-black text-white border border-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition-colors shadow-sm group"
+          >
+            <span class="text-sm font-bold">Наверх</span>
+            <div class="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all duration-300">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 19V5M5 12l7-7 7 7" />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
