@@ -1,0 +1,752 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="../assets/photos/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artex - Отзывы</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/css/font-face.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    
+  </head>
+  <body>
+    <!-- Site Preloader -->
+    <div id="site-preloader" class="preloader">
+      <div class="preloader-inner">
+        <div class="preloader-logo-container">
+          <img src="../assets/photos/vektor_logo.svg" alt="Artex Logo" class="preloader-logo" />
+          <div class="preloader-scan-line"></div>
+        </div>
+        <div class="preloader-progress-wrap">
+          <div class="preloader-progress-bar" id="preloaderBar"></div>
+          <div class="preloader-percentage" id="preloaderPerc">0%</div>
+        </div>
+        <div class="preloader-loading-text">ИНЖЕНЕРНОЕ СОВЕРШЕНСТВО</div>
+      </div>
+    </div>
+
+    <header>
+      <div class="site-header bg-[#111111] py-5 fixed top-0 left-0 w-full z-50">
+        <div class="container-custom text-white">
+          <div class="flex items-center justify-between">
+            <a href="https://ilqarsfv.github.io/Artex/">
+              <img class="logo" width="80" src="../assets/photos/vektor_logo.svg" alt="vektor_logo" />
+            </a>
+            <nav class="flex items-center space-x-5 list-none text-[16px] menu_wrapper font-[600]">
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Каталог</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/">Главная</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/about/">О компании</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/services/">Услуги</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/how-to-work/">Как мы работаем</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/reviews/">Отзывы</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/articles/">Статьи</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/contact/">Контакты</a>
+              </li>
+            </nav>
+            <div class="flex items-center space-x-3 social_item_wrapper">
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out"
+                  href="https://t.me/Artex_manager"
+                  target="_blank"
+                >
+                  <img width="15" src="../assets/photos/socials/telegram.png" alt="" />
+                </a>
+              </div>
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out"
+                  href="https://www.instagram.com/artex_carexport?igsh=MW1ubGh3YTUzc3B1ZQ%3D%3D&utm_source=qr"
+                  target="_blank"
+                >
+                  <img width="15" src="../assets/photos/socials/instagram.png" alt="" />
+                </a>
+              </div>
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out"
+                  href="https://youtube.com/channel/UCtKEyzJ5AXjOP1odo0WIiAA?si=XSh45G-KBg_aLJVa"
+                  target="_blank"
+                >
+                  <img width="15" src="../assets/photos/socials/youtube.png" alt="" />
+                </a>
+              </div>
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out"
+                  href="https://wa.me/821080979291"
+                  target="_blank"
+                >
+                  <img width="15" src="../assets/photos/socials/whatsapp.png" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="section_margin"></div>
+
+      <section>
+        <div id="reviews_wrapper_top" class="py-[112px] px-[64px] text-white h-[475px]">
+          <div class="container-custom">
+            <div class="text-center relative z-2">
+              <h1 class="text-[84px] font-[700] leading-[100%] tracking-[-0.01em] uppercase">
+                Отзывы <br />
+                клиентов
+              </h1>
+              <p class="mt-[18px] text-[19px]">Истории людей, которые нашли свой идеальный автомобиль через ARTEX и получили его в целости</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="reviews_wrapper">
+          <div class="container-custom">
+            <div class="reviews-shell">
+              <div class="reviews-intro">
+                <h2 class="reviews-title">
+                  Голоса довольных
+                  <br />
+                  владельцев
+                </h2>
+                <p class="reviews-copy">Машина приехала в идеальном состоянии, все документы в порядке.</p>
+              </div>
+
+              <div class="reviews-grid">
+                <article class="review-card">
+                  <div class="review-stars" aria-label="5 stars">
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                  </div>
+                  <p class="review-text">«Я не верил, что можно найти такой автомобиль по этой цене. ARTEX сделал невозможное реальностью»</p>
+                  <div class="review-author">
+                    <span class="review-author__avatar" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z" />
+                        <path
+                          d="M12 13.5C8.96243 13.5 6.5 15.9624 6.5 19H7.9C7.9 16.7356 9.73563 14.9 12 14.9C14.2644 14.9 16.1 16.7356 16.1 19H17.5C17.5 15.9624 15.0376 13.5 12 13.5Z"
+                        />
+                      </svg>
+                    </span>
+                    <div>
+                      <div class="review-author__name">Дмитрий Волков</div>
+                      <div class="review-author__meta">Москва, Россия</div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="review-card">
+                  <div class="review-stars" aria-label="5 stars">
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                  </div>
+                  <p class="review-text">«Процесс был прозрачным от начала до конца. Ребята знают свое дело и не торгуют качеством»</p>
+                  <div class="review-author">
+                    <span class="review-author__avatar" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z" />
+                        <path
+                          d="M12 13.5C8.96243 13.5 6.5 15.9624 6.5 19H7.9C7.9 16.7356 9.73563 14.9 12 14.9C14.2644 14.9 16.1 16.7356 16.1 19H17.5C17.5 15.9624 15.0376 13.5 12 13.5Z"
+                        />
+                      </svg>
+                    </span>
+                    <div>
+                      <div class="review-author__name">Сергей Петров</div>
+                      <div class="review-author__meta">Санкт-Петербург, Россия</div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="review-card">
+                  <div class="review-stars" aria-label="5 stars">
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                  </div>
+                  <p class="review-text">«Доставили быстро, машина выглядит лучше, чем на фото. Спасибо за честный подход»</p>
+                  <div class="review-author">
+                    <span class="review-author__avatar" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z" />
+                        <path
+                          d="M12 13.5C8.96243 13.5 6.5 15.9624 6.5 19H7.9C7.9 16.7356 9.73563 14.9 12 14.9C14.2644 14.9 16.1 16.7356 16.1 19H17.5C17.5 15.9624 15.0376 13.5 12 13.5Z"
+                        />
+                      </svg>
+                    </span>
+                    <div>
+                      <div class="review-author__name">Александр Морозов</div>
+                      <div class="review-author__meta">Казань, Россия</div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="review-card">
+                  <div class="review-stars" aria-label="5 stars">
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                  </div>
+                  <p class="review-text">«Я не верил, что можно найти такой автомобиль по этой цене. ARTEX сделал невозможное реальностью»</p>
+                  <div class="review-author">
+                    <span class="review-author__avatar" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z" />
+                        <path
+                          d="M12 13.5C8.96243 13.5 6.5 15.9624 6.5 19H7.9C7.9 16.7356 9.73563 14.9 12 14.9C14.2644 14.9 16.1 16.7356 16.1 19H17.5C17.5 15.9624 15.0376 13.5 12 13.5Z"
+                        />
+                      </svg>
+                    </span>
+                    <div>
+                      <div class="review-author__name">Дмитрий Волков</div>
+                      <div class="review-author__meta">Москва, Россия</div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="review-card">
+                  <div class="review-stars" aria-label="5 stars">
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                  </div>
+                  <p class="review-text">«Процесс был прозрачным от начала до конца. Ребята знают свое дело и не торгуют качеством»</p>
+                  <div class="review-author">
+                    <span class="review-author__avatar" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z" />
+                        <path
+                          d="M12 13.5C8.96243 13.5 6.5 15.9624 6.5 19H7.9C7.9 16.7356 9.73563 14.9 12 14.9C14.2644 14.9 16.1 16.7356 16.1 19H17.5C17.5 15.9624 15.0376 13.5 12 13.5Z"
+                        />
+                      </svg>
+                    </span>
+                    <div>
+                      <div class="review-author__name">Сергей Петров</div>
+                      <div class="review-author__meta">Санкт-Петербург, Россия</div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="review-card">
+                  <div class="review-stars" aria-label="5 stars">
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                  </div>
+                  <p class="review-text">«Доставили быстро, машина выглядит лучше, чем на фото. Спасибо за честный подход»</p>
+                  <div class="review-author">
+                    <span class="review-author__avatar" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z" />
+                        <path
+                          d="M12 13.5C8.96243 13.5 6.5 15.9624 6.5 19H7.9C7.9 16.7356 9.73563 14.9 12 14.9C14.2644 14.9 16.1 16.7356 16.1 19H17.5C17.5 15.9624 15.0376 13.5 12 13.5Z"
+                        />
+                      </svg>
+                    </span>
+                    <div>
+                      <div class="review-author__name">Александр Морозов</div>
+                      <div class="review-author__meta">Казань, Россия</div>
+                    </div>
+                  </div>
+                </article>
+                
+                <article class="review-card">
+                  <div class="review-stars" aria-label="5 stars">
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                  </div>
+                  <p class="review-text">«Я не верил, что можно найти такой автомобиль по этой цене. ARTEX сделал невозможное реальностью»</p>
+                  <div class="review-author">
+                    <span class="review-author__avatar" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z" />
+                        <path
+                          d="M12 13.5C8.96243 13.5 6.5 15.9624 6.5 19H7.9C7.9 16.7356 9.73563 14.9 12 14.9C14.2644 14.9 16.1 16.7356 16.1 19H17.5C17.5 15.9624 15.0376 13.5 12 13.5Z"
+                        />
+                      </svg>
+                    </span>
+                    <div>
+                      <div class="review-author__name">Дмитрий Волков</div>
+                      <div class="review-author__meta">Москва, Россия</div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="review-card">
+                  <div class="review-stars" aria-label="5 stars">
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                  </div>
+                  <p class="review-text">«Процесс был прозрачным от начала до конца. Ребята знают свое дело и не торгуют качеством»</p>
+                  <div class="review-author">
+                    <span class="review-author__avatar" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z" />
+                        <path
+                          d="M12 13.5C8.96243 13.5 6.5 15.9624 6.5 19H7.9C7.9 16.7356 9.73563 14.9 12 14.9C14.2644 14.9 16.1 16.7356 16.1 19H17.5C17.5 15.9624 15.0376 13.5 12 13.5Z"
+                        />
+                      </svg>
+                    </span>
+                    <div>
+                      <div class="review-author__name">Сергей Петров</div>
+                      <div class="review-author__meta">Санкт-Петербург, Россия</div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="review-card">
+                  <div class="review-stars" aria-label="5 stars">
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                  </div>
+                  <p class="review-text">«Доставили быстро, машина выглядит лучше, чем на фото. Спасибо за честный подход»</p>
+                  <div class="review-author">
+                    <span class="review-author__avatar" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z" />
+                        <path
+                          d="M12 13.5C8.96243 13.5 6.5 15.9624 6.5 19H7.9C7.9 16.7356 9.73563 14.9 12 14.9C14.2644 14.9 16.1 16.7356 16.1 19H17.5C17.5 15.9624 15.0376 13.5 12 13.5Z"
+                        />
+                      </svg>
+                    </span>
+                    <div>
+                      <div class="review-author__name">Александр Морозов</div>
+                      <div class="review-author__meta">Казань, Россия</div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="review-card">
+                  <div class="review-stars" aria-label="5 stars">
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                  </div>
+                  <p class="review-text">«Я не верил, что можно найти такой автомобиль по этой цене. ARTEX сделал невозможное реальностью»</p>
+                  <div class="review-author">
+                    <span class="review-author__avatar" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z" />
+                        <path
+                          d="M12 13.5C8.96243 13.5 6.5 15.9624 6.5 19H7.9C7.9 16.7356 9.73563 14.9 12 14.9C14.2644 14.9 16.1 16.7356 16.1 19H17.5C17.5 15.9624 15.0376 13.5 12 13.5Z"
+                        />
+                      </svg>
+                    </span>
+                    <div>
+                      <div class="review-author__name">Дмитрий Волков</div>
+                      <div class="review-author__meta">Москва, Россия</div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="review-card">
+                  <div class="review-stars" aria-label="5 stars">
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                  </div>
+                  <p class="review-text">«Процесс был прозрачным от начала до конца. Ребята знают свое дело и не торгуют качеством»</p>
+                  <div class="review-author">
+                    <span class="review-author__avatar" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z" />
+                        <path
+                          d="M12 13.5C8.96243 13.5 6.5 15.9624 6.5 19H7.9C7.9 16.7356 9.73563 14.9 12 14.9C14.2644 14.9 16.1 16.7356 16.1 19H17.5C17.5 15.9624 15.0376 13.5 12 13.5Z"
+                        />
+                      </svg>
+                    </span>
+                    <div>
+                      <div class="review-author__name">Сергей Петров</div>
+                      <div class="review-author__meta">Санкт-Петербург, Россия</div>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="review-card">
+                  <div class="review-stars" aria-label="5 stars">
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                    <svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 1.5L12.62 6.81L18.48 7.66L14.24 11.8L15.24 17.64L10 14.88L4.76 17.64L5.76 11.8L1.52 7.66L7.38 6.81L10 1.5Z" />
+                    </svg>
+                  </div>
+                  <p class="review-text">«Доставили быстро, машина выглядит лучше, чем на фото. Спасибо за честный подход»</p>
+                  <div class="review-author">
+                    <span class="review-author__avatar" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 12C13.6569 12 15 10.6569 15 9C15 7.34315 13.6569 6 12 6C10.3431 6 9 7.34315 9 9C9 10.6569 10.3431 12 12 12Z" />
+                        <path
+                          d="M12 13.5C8.96243 13.5 6.5 15.9624 6.5 19H7.9C7.9 16.7356 9.73563 14.9 12 14.9C14.2644 14.9 16.1 16.7356 16.1 19H17.5C17.5 15.9624 15.0376 13.5 12 13.5Z"
+                        />
+                      </svg>
+                    </span>
+                    <div>
+                      <div class="review-author__name">Александр Морозов</div>
+                      <div class="review-author__meta">Казань, Россия</div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div id="reviews_bottom_wrapper">
+          <div class="reviews-bottom-shell">
+            <div class="reviews-bottom-top">
+              <h2 class="reviews-bottom-title">
+                Цифры, которые
+                <br />
+                говорят о нашей
+                <br />
+                надежности и опыте
+              </h2>
+              <p class="reviews-bottom-copy">
+                Более пяти лет мы помогаем клиентам из России и стран СНГ
+                найти и доставить автомобили из Южной Кореи. Каждый проданный
+                автомобиль — это история доверия и качества.
+              </p>
+            </div>
+
+            <div class="reviews-bottom-stats">
+              <article class="reviews-bottom-stat">
+                <div class="reviews-bottom-value">2500+</div>
+                <p class="reviews-bottom-label">
+                  Автомобилей
+                  <br />
+                  доставлено
+                </p>
+              </article>
+
+              <article class="reviews-bottom-stat">
+                <div class="reviews-bottom-value">4.9</div>
+                <p class="reviews-bottom-label">
+                  Средний рейтинг
+                  <br />
+                  клиентов
+                </p>
+              </article>
+
+              <article class="reviews-bottom-stat">
+                <div class="reviews-bottom-value">98%</div>
+                <p class="reviews-bottom-label">
+                  Клиентов рекомендуют
+                  <br />
+                  нас друзьям
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#111] text-white pt-16 pb-8 font-sans">
+      <div class="container-custom">
+        <!-- Top Part -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+          <!-- Brand & Logo -->
+          <div class="lg:col-span-1">
+            <div class="mb-4">
+              <img width="100" src="../assets/photos/vektor_logo.svg" alt="artex logo" />
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <h4 class="font-bold text-lg mb-6">Полезные ссылки</h4>
+            <ul class="space-y-2 text-white">
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Главная</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">О компании</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Каталог</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Услуги</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Блог</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Статьи</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="font-bold text-lg mb-6">Быстрые ссылки</h4>
+            <ul class="space-y-2 text-white">
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Связаться с нами</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Центр помощи</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Онлайн чат</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Как это работает</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Our Brands -->
+          <div>
+            <h4 class="font-bold text-lg mb-6">Наши бренды</h4>
+            <ul class="space-y-2 text-white">
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Aston Martin</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Audi</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">BMW</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Ferrari</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Mercedes</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Lamborghini</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Jaguar</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Vehicles Type -->
+          <div>
+            <h4 class="font-bold text-lg mb-6">Блог</h4>
+            <ul class="space-y-2 text-white">
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Как проверить авто из Кореи перед покупкой: чек-лист на 10 пунктов</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Рейтинг электромобилей 2025: ТОП-10 моделей по запасу хода, цене и характеристикам</a>
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors">Сколько реально стоит привоз авто из Кореи в 2026 году</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-6">
+          <div class="flex gap-8 text-sm font-medium text-white">
+            <img width="120" src="../assets/photos/jeywa_logo.png" alt="created" />
+          </div>
+          <div>
+            <div class="flex gap-3">
+              <a href="#" class="w-10 h-10 rounded-full bg-[#A87429] flex items-center justify-center text-white hover:opacity-80 transition-opacity">
+                <img class="invert" width="20" src="../assets/photos/socials/telegram.png" alt="" />
+              </a>
+              <a href="#" class="w-10 h-10 rounded-full bg-[#A87429] flex items-center justify-center text-white hover:opacity-80 transition-opacity">
+                <img class="invert" width="20" src="../assets/photos/socials/youtube.png" alt="" />
+              </a>
+              <a href="#" class="w-10 h-10 rounded-full bg-[#A87429] flex items-center justify-center text-white hover:opacity-80 transition-opacity">
+                <img class="invert" width="20" src="../assets/photos/socials/instagram.png" alt="" />
+              </a>
+              <a href="#" class="w-10 h-10 rounded-full bg-[#A87429] flex items-center justify-center text-white hover:opacity-80 transition-opacity">
+                <img class="invert" width="20" src="../assets/photos/socials/whatsapp.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <button
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+            class="flex cursor-pointer items-center gap-2 bg-black text-white border border-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition-colors shadow-sm group"
+          >
+            <span class="text-sm font-bold">Наверх</span>
+            <div class="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all duration-300">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 19V5M5 12l7-7 7 7" />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
