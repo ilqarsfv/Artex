@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="../assets/photos/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artex Услуги Full Page</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/font-face.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Site Preloader -->
+    <div id="site-preloader" class="preloader">
+      <div class="preloader-inner">
+        <div class="preloader-logo-container">
+          <img
+            src="../assets/photos/vektor_logo.svg"
+            alt="Artex Logo"
+            class="preloader-logo"
+          />
+          <div class="preloader-scan-line"></div>
+        </div>
+        <div class="preloader-progress-wrap">
+          <div class="preloader-progress-bar" id="preloaderBar"></div>
+          <div class="preloader-percentage" id="preloaderPerc">0%</div>
+        </div>
+        <div class="preloader-loading-text">ИНЖЕНЕРНОЕ СОВЕРШЕНСТВО</div>
+      </div>
+    </div>
+
+    <header>
+      <div class="site-header bg-[#111111] py-5 fixed top-0 left-0 w-full z-50">
+        <div class="container-custom text-white">
+          <div class="flex items-center justify-between">
+            <a href="https://ilqarsfv.github.io/Artex/">
+              <img
+                class="logo"
+                width="80"
+                src="../assets/photos/vektor_logo.svg"
+                alt="vektor_logo"
+              />
+            </a>
+            <nav
+              class="flex items-center space-x-5 list-none text-[16px] menu_wrapper font-[600]"
+            >
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="">Каталог</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/">Главная</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/about/">О компании</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/services/">Услуги</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/how-to-work/"
+                  >Как мы работаем</a
+                >
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/reviews/">Отзывы</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/articles/">Статьи</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/contact/">Контакты</a>
+              </li>
+            </nav>
+            <div class="flex items-center space-x-3 social_item_wrapper">
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out"
+                  href="https://t.me/Artex_manager"
+                  target="_blank"
+                >
+                  <img
+                    width="15"
+                    src="../assets/photos/socials/telegram.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out"
+                  href="https://www.instagram.com/artex_carexport?igsh=MW1ubGh3YTUzc3B1ZQ%3D%3D&utm_source=qr"
+                  target="_blank"
+                >
+                  <img
+                    width="15"
+                    src="../assets/photos/socials/instagram.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out"
+                  href="https://youtube.com/channel/UCtKEyzJ5AXjOP1odo0WIiAA?si=XSh45G-KBg_aLJVa"
+                  target="_blank"
+                >
+                  <img
+                    width="15"
+                    src="../assets/photos/socials/youtube.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out"
+                  href="https://wa.me/821080979291"
+                  target="_blank"
+                >
+                  <img
+                    width="15"
+                    src="../assets/photos/socials/whatsapp.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="section_margin"></div>
+      <section>
+        <div
+          id="services_wrapper_top"
+          class="py-[110px] px-[64px] text-white h-[350px]"
+        >
+          <div class="container-custom">
+            <div class="text-center relative z-2">
+              <h1
+                class="text-[54px] font-[700] leading-[100%] tracking-[-0.01em] uppercase"
+              >
+                Подбор и инспекция автомобилей
+              </h1>
+              <p class="mt-[18px] text-[19px]">
+                Подбор автомобиля — это ответственный процесс, который требует
+                внимания к деталям, опыта и знаний. Наша команда поможет вам
+                найти идеальный автомобиль, соответствующий вашим потребностям и
+                бюджету.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="bg-[#0B0B0B]">
+          <div class="container-custom">
+            <div class="py-12 max-w-[900px] mx-auto">
+              <div class="h-[500px] overflow-hidden rounded-[32px]">
+                <img
+                  class="w-full h-full object-cover"
+                  src="../assets/photos/offers/offer-1.jpg"
+                  alt=""
+                />
+              </div>
+              <div
+                class="mt-12 text-white blog_content text-[22px] [&_p:first-child::first-letter]:text-[54px]"
+              >
+                <p>
+                  Покупка автомобиля — это важное решение, которое требует
+                  внимательности, опыта и глубокого понимания технических
+                  нюансов. На первый взгляд машина может выглядеть ухоженной,
+                  чистой и полностью исправной, но за красивым внешним видом
+                  нередко скрываются серьезные проблемы: следы ДТП,
+                  некачественный ремонт, скрученный пробег, неисправности
+                  двигателя, коробки передач, подвески или электроники.
+                </p>
+
+                <p>
+                  Именно поэтому услуга
+                  <strong>подбора и инспекции автомобилей</strong>
+                  становится незаменимой для тех, кто хочет купить надежный
+                  автомобиль, избежать лишних расходов после покупки и быть
+                  уверенным в своем выборе.
+                </p>
+
+                <h2>Что включает услуга подбора автомобиля?</h2>
+
+                <p>
+                  Подбор автомобиля начинается с понимания ваших потребностей.
+                  Мы учитываем бюджет, желаемую марку и модель, год выпуска, тип
+                  кузова, коробку передач, объем двигателя, расход топлива,
+                  комплектацию, пробег и другие важные критерии.
+                </p>
+
+                <p>
+                  Также мы обращаем внимание на то, для каких целей вам нужен
+                  автомобиль: для ежедневной городской езды, семейных поездок,
+                  бизнеса, дальних маршрутов или активного использования.
+                </p>
+
+                <p>
+                  После этого проводится анализ рынка. Мы изучаем актуальные
+                  предложения, сравниваем цены, проверяем адекватность стоимости
+                  и отбираем только те варианты, которые действительно
+                  заслуживают внимания. Наша задача — не просто найти
+                  автомобиль, а подобрать лучший вариант в рамках вашего
+                  бюджета.
+                </p>
+
+                <h2>Почему важна инспекция автомобиля перед покупкой?</h2>
+
+                <p>
+                  Инспекция автомобиля — это детальная проверка состояния машины
+                  перед заключением сделки. Даже если автомобиль выглядит
+                  хорошо, без профессиональной проверки невозможно точно понять
+                  его реальное состояние. Многие дефекты могут быть скрыты или
+                  временно замаскированы продавцом.
+                </p>
+
+                <p>
+                  Во время инспекции проводится комплексная оценка автомобиля.
+                  Проверяется кузов, лакокрасочное покрытие, двигатель, коробка
+                  передач, ходовая часть, тормозная система, электроника, салон,
+                  документы и история эксплуатации.
+                </p>
+
+                <h2>Проверка кузова и лакокрасочного покрытия</h2>
+
+                <p>
+                  Кузов — один из самых важных элементов автомобиля при покупке.
+                  Даже если машина технически исправна, серьезные кузовные
+                  повреждения в прошлом могут значительно снизить ее стоимость и
+                  безопасность.
+                </p>
+
+                <p>
+                  При инспекции мы проверяем толщину лакокрасочного покрытия
+                  специальным прибором, выявляем перекрашенные детали, следы
+                  шпаклевки, ремонта, замены элементов и возможные последствия
+                  аварий.
+                </p>
+
+                <h2>Диагностика двигателя и коробки передач</h2>
+
+                <p>
+                  Двигатель и коробка передач — это самые дорогие узлы
+                  автомобиля. Их ремонт может стоить очень дорого, поэтому перед
+                  покупкой необходимо убедиться в их исправности.
+                </p>
+
+                <p>
+                  Во время инспекции проверяется запуск двигателя, стабильность
+                  работы, наличие посторонних шумов, вибраций, утечек масла или
+                  охлаждающей жидкости. Также оценивается состояние коробки
+                  передач, плавность переключений, отсутствие рывков, задержек и
+                  ошибок.
+                </p>
+
+                <h2>Проверка ходовой части и тормозной системы</h2>
+
+                <p>
+                  Комфорт и безопасность движения напрямую зависят от состояния
+                  подвески, рулевого управления и тормозной системы. При осмотре
+                  автомобиля проверяются амортизаторы, рычаги, сайлентблоки,
+                  шаровые опоры, рулевые тяги, тормозные диски, колодки и другие
+                  элементы.
+                </p>
+
+                <p>
+                  Наличие стуков, люфтов, неравномерного износа шин или вибраций
+                  может указывать на необходимость ремонта. Мы заранее выявляем
+                  эти моменты, чтобы клиент понимал реальное состояние
+                  автомобиля и мог использовать результаты проверки при торге с
+                  продавцом.
+                </p>
+
+                <h2>Компьютерная диагностика</h2>
+
+                <p>
+                  Современные автомобили оснащены большим количеством
+                  электронных систем. Ошибки в блоках управления могут указывать
+                  на проблемы с двигателем, коробкой передач, подушками
+                  безопасности, ABS, ESP, климат-контролем, мультимедиа и
+                  другими системами.
+                </p>
+
+                <p>
+                  Компьютерная диагностика позволяет считать ошибки, проверить
+                  параметры работы автомобиля и выявить неисправности, которые
+                  не всегда видны при обычном осмотре.
+                </p>
+
+                <h2>Проверка документов и истории автомобиля</h2>
+
+                <p>
+                  Помимо технического состояния, важно проверить юридическую
+                  чистоту автомобиля. Мы обращаем внимание на документы,
+                  соответствие VIN-кода, данные владельца, историю регистрации,
+                  возможные ограничения, залоги, штрафы и другие риски.
+                </p>
+
+                <p>
+                  Проверка истории также помогает понять, как эксплуатировалась
+                  машина, были ли у нее аварии, частая смена владельцев,
+                  коммерческое использование или подозрительные изменения
+                  пробега.
+                </p>
+
+                <h2>Экономия времени и денег</h2>
+
+                <p>
+                  Самостоятельный поиск автомобиля может занять недели или даже
+                  месяцы. Нужно просматривать объявления, звонить продавцам,
+                  договариваться о встречах, ездить на осмотры и каждый раз
+                  пытаться понять, стоит ли машина внимания.
+                </p>
+
+                <p>
+                  Услуга подбора автомобиля позволяет значительно сократить этот
+                  процесс. Мы берем на себя поиск, первичный отбор, переговоры с
+                  продавцами и профессиональную проверку. Клиент получает только
+                  проверенные варианты и не тратит время на автомобили с
+                  очевидными проблемами.
+                </p>
+
+                <h2>Для кого подходит эта услуга?</h2>
+
+                <p>
+                  Подбор и инспекция автомобилей подойдут всем, кто хочет купить
+                  машину безопасно и без лишнего риска. Особенно полезна эта
+                  услуга для тех, кто не разбирается в технических деталях,
+                  покупает автомобиль впервые, рассматривает дорогую модель или
+                  хочет избежать мошенничества на вторичном рынке.
+                </p>
+
+                <h2>Почему стоит обратиться к специалистам?</h2>
+
+                <p>
+                  Профессиональный автоэксперт знает, на что обращать внимание
+                  при осмотре автомобиля. Он видит детали, которые обычный
+                  покупатель может не заметить. Опыт позволяет быстро
+                  определить, был ли автомобиль в ДТП, насколько качественно он
+                  обслуживался, есть ли скрытые дефекты и соответствует ли цена
+                  реальному состоянию машины.
+                </p>
+
+                <p>
+                  Продавец заинтересован в продаже, поэтому не всегда
+                  рассказывает всю правду об автомобиле. Задача независимого
+                  специалиста — защищать интересы покупателя. Мы оцениваем
+                  автомобиль объективно и честно, без давления и эмоций.
+                </p>
+
+                <h2>Наш подход</h2>
+
+                <p>
+                  Мы работаем внимательно, прозрачно и ответственно. Для нас
+                  важно, чтобы клиент купил не просто автомобиль, а надежный
+                  вариант, который будет приносить удовольствие и не потребует
+                  неожиданных крупных вложений сразу после покупки.
+                </p>
+
+                <p>
+                  После проверки клиент получает понятное объяснение состояния
+                  автомобиля: какие есть плюсы, какие минусы, какие расходы
+                  могут возникнуть и стоит ли покупать данный вариант. Мы не
+                  навязываем решение, а предоставляем факты, на основе которых
+                  покупатель может сделать правильный выбор.
+                </p>
+
+                <h2>Итог</h2>
+
+                <p>
+                  Подбор и инспекция автомобилей — это надежный способ защитить
+                  себя от неудачной покупки. Такая услуга помогает избежать
+                  автомобилей после серьезных аварий, машин со скрытыми
+                  дефектами, скрученным пробегом, юридическими проблемами или
+                  завышенной ценой.
+                </p>
+
+                <p>
+                  Если вы хотите купить автомобиль без риска, переплат и
+                  неприятных сюрпризов, профессиональный подбор и инспекция —
+                  это правильное решение. Мы поможем найти автомобиль, который
+                  соответствует вашим требованиям, бюджету и ожиданиям.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#111] text-white pt-16 pb-8 font-sans">
+      <div class="container-custom">
+        <!-- Top Part -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+          <!-- Brand & Logo -->
+          <div class="lg:col-span-1">
+            <div class="mb-4">
+              <img
+                width="100"
+                src="../assets/photos/vektor_logo.svg"
+                alt="artex logo"
+              />
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <h4 class="font-bold text-lg mb-6">Полезные ссылки</h4>
+            <ul class="space-y-2 text-white">
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Главная</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >О компании</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Каталог</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Услуги</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Блог</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Статьи</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Links -->
+          <div>
+            <h4 class="font-bold text-lg mb-6">Быстрые ссылки</h4>
+            <ul class="space-y-2 text-white">
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Связаться с нами</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Центр помощи</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Онлайн чат</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Как это работает</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Our Brands -->
+          <div>
+            <h4 class="font-bold text-lg mb-6">Наши бренды</h4>
+            <ul class="space-y-2 text-white">
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Aston Martin</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Audi</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >BMW</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Ferrari</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Mercedes</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Lamborghini</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Jaguar</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Vehicles Type -->
+          <div>
+            <h4 class="font-bold text-lg mb-6">Блог</h4>
+            <ul class="space-y-2 text-white">
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Как проверить авто из Кореи перед покупкой: чек-лист на 10
+                  пунктов</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Рейтинг электромобилей 2025: ТОП-10 моделей по запасу хода,
+                  цене и характеристикам</a
+                >
+              </li>
+              <li>
+                <a href="#" class="hover:text-[#A87429] transition-colors"
+                  >Сколько реально стоит привоз авто из Кореи в 2026 году</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div
+          class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-6"
+        >
+          <div class="flex gap-8 text-sm font-medium text-white">
+            <img
+              width="120"
+              src="../assets/photos/jeywa_logo.png"
+              alt="created"
+            />
+          </div>
+          <div>
+            <div class="flex gap-3">
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-[#A87429] flex items-center justify-center text-white hover:opacity-80 transition-opacity"
+              >
+                <img
+                  class="invert"
+                  width="20"
+                  src="../assets/photos/socials/telegram.png"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-[#A87429] flex items-center justify-center text-white hover:opacity-80 transition-opacity"
+              >
+                <img
+                  class="invert"
+                  width="20"
+                  src="../assets/photos/socials/youtube.png"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-[#A87429] flex items-center justify-center text-white hover:opacity-80 transition-opacity"
+              >
+                <img
+                  class="invert"
+                  width="20"
+                  src="../assets/photos/socials/instagram.png"
+                  alt=""
+                />
+              </a>
+              <a
+                href="#"
+                class="w-10 h-10 rounded-full bg-[#A87429] flex items-center justify-center text-white hover:opacity-80 transition-opacity"
+              >
+                <img
+                  class="invert"
+                  width="20"
+                  src="../assets/photos/socials/whatsapp.png"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
+          <button
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+            class="flex cursor-pointer items-center gap-2 bg-black text-white border border-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition-colors shadow-sm group"
+          >
+            <span class="text-sm font-bold">Наверх</span>
+            <div
+              class="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all duration-300"
+            >
+              <svg
+                width="12"
+                height="12"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M12 19V5M5 12l7-7 7 7" />
+              </svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
