@@ -2871,3 +2871,11 @@ body {
     font-size: 20px;
   }
 }
+
+.blog_content p,
+.blog_content p a,
+.blog_content span,
+.blog_content li {
+  margin-top: 15px;
+  text-align: justify;
+}
