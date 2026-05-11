@@ -582,11 +582,11 @@ body {
 .faq-btn {
   cursor: pointer;
   overflow: hidden;
-  transition: all 0.25s ease;
+  transition: all .3s ease-in-out;
 }
 
 .faq-title {
-  color: #fff;
+  color: #000
   transition: color 0.25s ease;
 }
 .faq-btn:hover {
