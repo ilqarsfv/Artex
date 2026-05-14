@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../assets/css/font-face.css" />
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
-  <body>
+  <body class="bg-white">
     <!-- Site Preloader -->
     <div id="site-preloader" class="preloader">
       <div class="preloader-inner">
@@ -49,10 +49,10 @@
               class="flex items-center space-x-5 list-none text-[16px] menu_wrapper font-[600]"
             >
               <li class="duration-300 ease-in-out hover:text-[#A87429]">
-                <a href="">Каталог</a>
+                <a href="https://ilqarsfv.github.io/Artex/">Главная</a>
               </li>
               <li class="duration-300 ease-in-out hover:text-[#A87429]">
-                <a href="https://ilqarsfv.github.io/Artex/">Главная</a>
+                <a href="">Каталог</a>
               </li>
               <li class="duration-300 ease-in-out hover:text-[#A87429]">
                 <a href="https://ilqarsfv.github.io/Artex/about/">О компании</a>
@@ -76,7 +76,7 @@
             <div class="flex items-center space-x-3 social_item_wrapper">
               <div class="social_item">
                 <a
-                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out"
+                  class="bg-white rounded-full w-[30px] h-[30px] flex items-center justify-center duration-300 ease-in-out"
                   href="https://t.me/Artex_manager"
                   target="_blank"
                 >
@@ -89,7 +89,7 @@
               </div>
               <div class="social_item">
                 <a
-                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out"
+                  class="bg-white rounded-full w-[30px] h-[30px] flex items-center justify-center duration-300 ease-in-out"
                   href="https://www.instagram.com/artex_carexport?igsh=MW1ubGh3YTUzc3B1ZQ%3D%3D&utm_source=qr"
                   target="_blank"
                 >
@@ -102,7 +102,7 @@
               </div>
               <div class="social_item">
                 <a
-                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out"
+                  class="bg-white rounded-full w-[30px] h-[30px] flex items-center justify-center duration-300 ease-in-out"
                   href="https://youtube.com/channel/UCtKEyzJ5AXjOP1odo0WIiAA?si=XSh45G-KBg_aLJVa"
                   target="_blank"
                 >
@@ -115,7 +115,7 @@
               </div>
               <div class="social_item">
                 <a
-                  class="bg-white rounded-[8px] w-[30px] h-[30px] flex items-center justify-center hover:bg-[#EACC6B] duration-300 ease-in-out"
+                  class="bg-white rounded-full w-[30px] h-[30px] flex items-center justify-center duration-300 ease-in-out"
                   href="https://wa.me/821080979291"
                   target="_blank"
                 >
@@ -135,20 +135,39 @@
     <main>
       <div class="section_margin"></div>
       <section>
-        <div class="bg-[#0B0B0B]">
+        <div class="bg-white">
           <div
             id="services_wrapper_top"
-            class="py-[112px] px-[64px] text-white h-[475px]"
+            class="services-index-hero py-[112px] px-6 sm:px-12 lg:px-[64px] text-white h-[560px]"
           >
-            <div class="container-custom">
-              <div class="text-center relative z-2">
-                <h1
-                  class="text-[84px] font-[700] leading-[100%] tracking-[-0.01em] uppercase"
+            <div class="container-custom relative z-[2]">
+              <div
+                class="page-hero-inner fade-in-up relative z-[2] mx-auto max-w-[920px] text-center"
+              >
+                <div
+                  class="page-hero-eyebrow-row mb-7 flex items-center justify-center gap-3 sm:mb-8 sm:gap-5"
                 >
-                  Наши услуги <br />
-                  ARTEX
+                  <span class="page-hero-rule" aria-hidden="true"></span>
+                  <span
+                    class="text-[11px] font-semibold uppercase tracking-[0.38em] text-[#e8cf96]"
+                    >Услуги</span
+                  >
+                  <span class="page-hero-rule" aria-hidden="true"></span>
+                </div>
+                <h1 class="font-bold uppercase">
+                  <span
+                    class="page-hero-title-line block text-[clamp(2rem,6.2vw,4.25rem)] leading-[1.05] tracking-[-0.03em]"
+                  >
+                    Наши услуги
+                  </span>
+                  <span
+                    class="page-hero-brand mt-3 block text-[clamp(2.85rem,9.5vw,6.25rem)] leading-none sm:mt-4"
+                    >Artex</span
+                  >
                 </h1>
-                <p class="mt-[18px] text-[19px]">
+                <p
+                  class="page-hero-lead mx-auto mt-9 max-w-[34rem] text-[17px] font-normal leading-relaxed text-white/88 sm:mt-10 sm:text-[19px]"
+                >
                   Полное сопровождение от выбора авто до доставки в Россию и
                   страны СНГ
                 </p>
@@ -157,26 +176,24 @@
           </div>
           <div id="services_wrapper">
             <div class="py-[112px]">
-              <div class="container-custom text-white">
+              <div class="container-custom text-[#111]">
                 <div class="text-center">
-                  <span class="text-[14px]">Услуги</span>
-                  <p
-                    class="uppercase mt-4 leading-[100%] text-[60px] font-[600]"
-                  >
-                    Полный спектр <br />
-                    автомобильных <br />
+                  <span class="u-section-eyebrow">Услуги</span>
+                  <p class="u-section-title">
+                    Полный спектр 
+                    автомобильных 
                     решений
                   </p>
-                  <p class="mt-6 text-[21px]">
+                  <p class="u-section-lead">
                     От поиска до доставки, мы управляем каждым этапом
                   </p>
                 </div>
-                <div class="grid grid-cols-3 mt-16 gap-8">
+                <div class="grid grid-cols-3 mt-16 gap-8 items-stretch">
                   <a
                     href="https://ilqarsfv.github.io/Artex/service-full/"
-                    class="p-12 rounded-[12px] overflow-hidden service_item bg-[#111] text-white"
+                    class="group flex flex-col h-full p-8 rounded-[12px] overflow-hidden service_item border border-neutral-200 bg-white text-[#111] shadow-[0_4px_24px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:border-[#A87429]/35 hover:shadow-[0_8px_32px_rgba(168,116,41,0.12)]"
                   >
-                    <div>
+                    <div class="text-[#A87429]">
                       <svg
                         width="36"
                         height="40"
@@ -188,40 +205,40 @@
                           fill-rule="evenodd"
                           clip-rule="evenodd"
                           d="M35.46 10.24L35.18 9.74C34.8188 9.13538 34.3094 8.63286 33.7 8.28L20.28 0.54C19.6724 0.1875 18.9826 0.00124 18.28 0H17.7C16.9974 0.00124 16.3076 0.1875 15.7 0.54L2.28 8.3C1.67394 8.65052 1.17052 9.15394 0.82 9.76L0.54 10.26C0.1875 10.8677 0.00124 11.5575 0 12.26V27.76C0.00124 28.4626 0.1875 29.1524 0.54 29.76L0.82 30.26C1.17958 30.859 1.68098 31.3604 2.28 31.72L15.72 39.46C16.3246 39.8198 17.0164 40.0066 17.72 40H18.28C18.9826 39.9988 19.6724 39.8126 20.28 39.46L33.7 31.7C34.312 31.3574 34.8174 30.852 35.16 30.24L35.46 29.74C35.8082 29.1306 35.9942 28.442 36 27.74V12.24C35.9988 11.5375 35.8126 10.8477 35.46 10.24ZM17.7 4H18.28L30 10.76L18 17.68L6 10.76L17.7 4ZM20 35L31.7 28.24L32 27.74V14.22L20 21.16V35Z"
-                          fill="white"
+                          fill="currentColor"
                         />
                       </svg>
                     </div>
                     <p
-                      class="text-[40px] font-[600] uppercase leading-[120%] my-6"
+                      class="service-card-title font-[600] uppercase mt-4 text-[#111]"
                     >
                       Подбор и инспекция автомобилей
                     </p>
-                    <p class="text-[18px]">
+                    <p class="text-[16px] flex-1 min-h-0 text-neutral-600">
                       Тщательная проверка каждого авто перед покупкой
                     </p>
-                    <div class="flex items-center gap-4 mt-6 text-[18px]">
+                    <div class="flex items-center gap-4 pt-4 mt-auto text-[18px] text-[#111]">
                       <span>Подробнее</span>
                       <svg
-                        width="7"
-                        height="12"
-                        viewBox="0 0 7 12"
-                        fill="none"
                         xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 256"
+                        width="14"
+                        height="14"
+                        class="shrink-0 text-[#A87429] transition-transform duration-300 ease-out group-hover:translate-x-2"
+                        aria-hidden="true"
                       >
                         <path
-                          d="M0.876953 0.5C0.977777 0.5 1.05475 0.530412 1.13281 0.608398L6.07715 5.55273C6.13104 5.60665 6.15622 5.64863 6.16797 5.67676V5.67773C6.18275 5.71329 6.19141 5.75306 6.19141 5.80176C6.19141 5.85046 6.18275 5.89022 6.16797 5.92578V5.92676C6.15621 5.95488 6.13103 5.99687 6.07715 6.05078L1.1084 11.0195C1.03063 11.0973 0.963489 11.1192 0.882812 11.1162C0.788784 11.1127 0.707921 11.0809 0.62207 10.9951C0.543947 10.917 0.512697 10.8402 0.512695 10.7393C0.512695 10.6384 0.543945 10.5615 0.62207 10.4834L5.30371 5.80176L0.59668 1.09473C0.519014 1.01703 0.497072 0.95072 0.5 0.870117C0.503448 0.77585 0.536015 0.694453 0.62207 0.608398C0.699995 0.530589 0.776363 0.500076 0.876953 0.5Z"
-                          fill="white"
-                          stroke="white"
+                          fill="currentColor"
+                          d="M228.992 146.827 48.594 250.051c-17.497 9.998-38.04-7.264-31.166-26.206l34.642-95.842L17.428 32.16C10.554 13.178 31.097-4.045 48.594 5.953l180.398 103.224c14.606 8.319 14.568 29.331 0 37.65z"
                         />
                       </svg>
                     </div>
                   </a>
                   <a
                     href=""
-                    class="p-12 rounded-[12px] overflow-hidden service_item bg-[#111] text-white"
+                    class="group flex flex-col h-full p-8 rounded-[12px] overflow-hidden service_item border border-neutral-200 bg-white text-[#111] shadow-[0_4px_24px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:border-[#A87429]/35 hover:shadow-[0_8px_32px_rgba(168,116,41,0.12)]"
                   >
-                    <div>
+                    <div class="text-[#A87429]">
                       <svg
                         width="36"
                         height="40"
@@ -233,40 +250,40 @@
                           fill-rule="evenodd"
                           clip-rule="evenodd"
                           d="M35.46 10.24L35.18 9.74C34.8188 9.13538 34.3094 8.63286 33.7 8.28L20.28 0.54C19.6724 0.1875 18.9826 0.00124 18.28 0H17.7C16.9974 0.00124 16.3076 0.1875 15.7 0.54L2.28 8.3C1.67394 8.65052 1.17052 9.15394 0.82 9.76L0.54 10.26C0.1875 10.8677 0.00124 11.5575 0 12.26V27.76C0.00124 28.4626 0.1875 29.1524 0.54 29.76L0.82 30.26C1.17958 30.859 1.68098 31.3604 2.28 31.72L15.72 39.46C16.3246 39.8198 17.0164 40.0066 17.72 40H18.28C18.9826 39.9988 19.6724 39.8126 20.28 39.46L33.7 31.7C34.312 31.3574 34.8174 30.852 35.16 30.24L35.46 29.74C35.8082 29.1306 35.9942 28.442 36 27.74V12.24C35.9988 11.5375 35.8126 10.8477 35.46 10.24ZM17.7 4H18.28L30 10.76L18 17.68L6 10.76L17.7 4ZM20 35L31.7 28.24L32 27.74V14.22L20 21.16V35Z"
-                          fill="white"
+                          fill="currentColor"
                         />
                       </svg>
                     </div>
                     <p
-                      class="text-[40px] font-[600] uppercase leading-[120%] my-6"
+                      class="service-card-title font-[600] uppercase mt-4 text-[#111]"
                     >
                       Таможенное оформление и логистика
                     </p>
-                    <p class="text-[18px]">
+                    <p class="text-[16px] flex-1 min-h-0 text-neutral-600">
                       Безопасная доставка в Россию и страны СНГ
                     </p>
-                    <div class="flex items-center gap-4 mt-6 text-[18px]">
+                    <div class="flex items-center gap-4 pt-4 mt-auto text-[18px] text-[#111]">
                       <span>Подробнее</span>
                       <svg
-                        width="7"
-                        height="12"
-                        viewBox="0 0 7 12"
-                        fill="none"
                         xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 256"
+                        width="14"
+                        height="14"
+                        class="shrink-0 text-[#A87429] transition-transform duration-300 ease-out group-hover:translate-x-2"
+                        aria-hidden="true"
                       >
                         <path
-                          d="M0.876953 0.5C0.977777 0.5 1.05475 0.530412 1.13281 0.608398L6.07715 5.55273C6.13104 5.60665 6.15622 5.64863 6.16797 5.67676V5.67773C6.18275 5.71329 6.19141 5.75306 6.19141 5.80176C6.19141 5.85046 6.18275 5.89022 6.16797 5.92578V5.92676C6.15621 5.95488 6.13103 5.99687 6.07715 6.05078L1.1084 11.0195C1.03063 11.0973 0.963489 11.1192 0.882812 11.1162C0.788784 11.1127 0.707921 11.0809 0.62207 10.9951C0.543947 10.917 0.512697 10.8402 0.512695 10.7393C0.512695 10.6384 0.543945 10.5615 0.62207 10.4834L5.30371 5.80176L0.59668 1.09473C0.519014 1.01703 0.497072 0.95072 0.5 0.870117C0.503448 0.77585 0.536015 0.694453 0.62207 0.608398C0.699995 0.530589 0.776363 0.500076 0.876953 0.5Z"
-                          fill="white"
-                          stroke="white"
+                          fill="currentColor"
+                          d="M228.992 146.827 48.594 250.051c-17.497 9.998-38.04-7.264-31.166-26.206l34.642-95.842L17.428 32.16C10.554 13.178 31.097-4.045 48.594 5.953l180.398 103.224c14.606 8.319 14.568 29.331 0 37.65z"
                         />
                       </svg>
                     </div>
                   </a>
                   <a
                     href=""
-                    class="p-12 rounded-[12px] overflow-hidden service_item bg-[#111] text-white"
+                    class="group flex flex-col h-full p-8 rounded-[12px] overflow-hidden service_item border border-neutral-200 bg-white text-[#111] shadow-[0_4px_24px_rgba(0,0,0,0.06)] transition-shadow duration-300 hover:border-[#A87429]/35 hover:shadow-[0_8px_32px_rgba(168,116,41,0.12)]"
                   >
-                    <div>
+                    <div class="text-[#A87429]">
                       <svg
                         width="36"
                         height="40"
@@ -278,31 +295,31 @@
                           fill-rule="evenodd"
                           clip-rule="evenodd"
                           d="M35.46 10.24L35.18 9.74C34.8188 9.13538 34.3094 8.63286 33.7 8.28L20.28 0.54C19.6724 0.1875 18.9826 0.00124 18.28 0H17.7C16.9974 0.00124 16.3076 0.1875 15.7 0.54L2.28 8.3C1.67394 8.65052 1.17052 9.15394 0.82 9.76L0.54 10.26C0.1875 10.8677 0.00124 11.5575 0 12.26V27.76C0.00124 28.4626 0.1875 29.1524 0.54 29.76L0.82 30.26C1.17958 30.859 1.68098 31.3604 2.28 31.72L15.72 39.46C16.3246 39.8198 17.0164 40.0066 17.72 40H18.28C18.9826 39.9988 19.6724 39.8126 20.28 39.46L33.7 31.7C34.312 31.3574 34.8174 30.852 35.16 30.24L35.46 29.74C35.8082 29.1306 35.9942 28.442 36 27.74V12.24C35.9988 11.5375 35.8126 10.8477 35.46 10.24ZM17.7 4H18.28L30 10.76L18 17.68L6 10.76L17.7 4ZM20 35L31.7 28.24L32 27.74V14.22L20 21.16V35Z"
-                          fill="white"
+                          fill="currentColor"
                         />
                       </svg>
                     </div>
                     <p
-                      class="text-[40px] font-[600] uppercase leading-[120%] my-6"
+                      class="service-card-title font-[600] uppercase mt-4 text-[#111]"
                     >
                       Консультация и поддержка клиентов
                     </p>
-                    <p class="text-[18px]">
+                    <p class="text-[16px] flex-1 min-h-0 text-neutral-600">
                       Помощь на каждом этапе вашего пути
                     </p>
-                    <div class="flex items-center gap-4 mt-6 text-[18px]">
+                    <div class="flex items-center gap-4 pt-4 mt-auto text-[18px] text-[#111]">
                       <span>Подробнее</span>
                       <svg
-                        width="7"
-                        height="12"
-                        viewBox="0 0 7 12"
-                        fill="none"
                         xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 256 256"
+                        width="14"
+                        height="14"
+                        class="shrink-0 text-[#A87429] transition-transform duration-300 ease-out group-hover:translate-x-2"
+                        aria-hidden="true"
                       >
                         <path
-                          d="M0.876953 0.5C0.977777 0.5 1.05475 0.530412 1.13281 0.608398L6.07715 5.55273C6.13104 5.60665 6.15622 5.64863 6.16797 5.67676V5.67773C6.18275 5.71329 6.19141 5.75306 6.19141 5.80176C6.19141 5.85046 6.18275 5.89022 6.16797 5.92578V5.92676C6.15621 5.95488 6.13103 5.99687 6.07715 6.05078L1.1084 11.0195C1.03063 11.0973 0.963489 11.1192 0.882812 11.1162C0.788784 11.1127 0.707921 11.0809 0.62207 10.9951C0.543947 10.917 0.512697 10.8402 0.512695 10.7393C0.512695 10.6384 0.543945 10.5615 0.62207 10.4834L5.30371 5.80176L0.59668 1.09473C0.519014 1.01703 0.497072 0.95072 0.5 0.870117C0.503448 0.77585 0.536015 0.694453 0.62207 0.608398C0.699995 0.530589 0.776363 0.500076 0.876953 0.5Z"
-                          fill="white"
-                          stroke="white"
+                          fill="currentColor"
+                          d="M228.992 146.827 48.594 250.051c-17.497 9.998-38.04-7.264-31.166-26.206l34.642-95.842L17.428 32.16C10.554 13.178 31.097-4.045 48.594 5.953l180.398 103.224c14.606 8.319 14.568 29.331 0 37.65z"
                         />
                       </svg>
                     </div>
@@ -311,10 +328,10 @@
 
                 <div id="services_bottom_wrapper" class="mt-[120px]">
                   <div
-                    class="flex flex-col lg:flex-row justify-between items-center gap-[60px] lg:gap-[100px]"
+                    class="flex w-full flex-col lg:flex-row justify-start items-center gap-10 lg:gap-12"
                   >
                     <!-- Left Column -->
-                    <div class="flex flex-col gap-[48px] w-full lg:w-[45%]">
+                    <div class="flex flex-col gap-[48px] w-full lg:w-[42%] lg:min-w-0">
                       <!-- Item 1 -->
                       <div class="flex gap-6 items-start">
                         <div class="mt-1 flex-shrink-0">
@@ -323,7 +340,7 @@
                             height="42"
                             viewBox="0 0 24 24"
                             fill="none"
-                            stroke="white"
+                            stroke="#171717"
                             stroke-width="1.5"
                             stroke-linecap="round"
                             stroke-linejoin="round"
@@ -343,7 +360,7 @@
                               cx="18"
                               cy="18"
                               r="5.5"
-                              fill="#0B0B0B"
+                              fill="#e5e7eb"
                               stroke="none"
                             ></circle>
                             <circle
@@ -351,24 +368,24 @@
                               cy="18"
                               r="4.5"
                               fill="none"
-                              stroke="white"
+                              stroke="#171717"
                               stroke-width="1.5"
                             ></circle>
                             <path
                               d="M18 16v2l1.5 1"
-                              stroke="white"
+                              stroke="#171717"
                               stroke-width="1.5"
                             ></path>
                           </svg>
                         </div>
                         <div class="flex flex-col pt-1">
                           <h3
-                            class="text-white text-[24px] font-[700] uppercase leading-none tracking-wide"
+                            class="text-[#111] text-[24px] font-[700] uppercase leading-none tracking-wide"
                           >
                             ОПЫТ И ЗНАНИЕ
                           </h3>
                           <p
-                            class="text-[#D1D1D1] text-[15px] mt-3 leading-[1.5] max-w-[360px]"
+                            class="text-neutral-600 text-[15px] mt-3 leading-[1.5] max-w-[360px]"
                           >
                             Десять лет работы на рынке импорта автомобилей из
                             Южной Кореи
@@ -384,7 +401,7 @@
                             height="42"
                             viewBox="0 0 24 24"
                             fill="none"
-                            stroke="white"
+                            stroke="#171717"
                             stroke-width="1.5"
                             stroke-linecap="round"
                             stroke-linejoin="round"
@@ -402,12 +419,12 @@
                         </div>
                         <div class="flex flex-col pt-1">
                           <h3
-                            class="text-white text-[24px] font-[700] uppercase leading-none tracking-wide"
+                            class="text-[#111] text-[24px] font-[700] uppercase leading-none tracking-wide"
                           >
                             ПОЛНАЯ ПРОЗРАЧНОСТЬ
                           </h3>
                           <p
-                            class="text-[#D1D1D1] text-[15px] mt-3 leading-[1.5] max-w-[360px]"
+                            class="text-neutral-600 text-[15px] mt-3 leading-[1.5] max-w-[360px]"
                           >
                             Каждый этап сделки видим и понятен вам от начала до
                             конца
@@ -427,18 +444,18 @@
                           >
                             <path
                               d="M21.5001 44.4785C21.0361 44.4785 20.6443 44.3175 20.3246 43.9955C20.0046 43.6738 19.8446 43.2796 19.8446 42.813C19.8446 42.3463 20.0046 41.9533 20.3246 41.634C20.6443 41.315 21.0361 41.1555 21.5001 41.1555H44.5001C44.9674 41.1555 45.3621 41.3171 45.6841 41.6405C46.0064 41.9638 46.1676 42.36 46.1676 42.829C46.1676 43.298 46.0064 43.6901 45.6841 44.0055C45.3621 44.3208 44.9674 44.4785 44.5001 44.4785H21.5001ZM21.8446 38.1555C21.8446 35.3758 22.6926 32.9616 24.3886 30.913C26.0846 28.8643 28.2366 27.591 30.8446 27.093V25.997C30.8446 25.4003 31.0524 24.8925 31.4681 24.4735C31.8838 24.0541 32.3924 23.8445 32.9941 23.8445C33.6048 23.8445 34.1196 24.0541 34.5386 24.4735C34.9579 24.8925 35.1676 25.4053 35.1676 26.012V27.0985C37.7343 27.5928 39.8759 28.8643 41.5926 30.913C43.3093 32.9616 44.1676 35.3758 44.1676 38.1555H21.8446ZM25.9326 34.8445H40.0176C39.4343 33.4731 38.5128 32.3508 37.2531 31.4775C35.9938 30.6041 34.5781 30.1675 33.0061 30.1675C31.3978 30.1675 29.9621 30.6041 28.6991 31.4775C27.4364 32.3508 26.5143 33.4731 25.9326 34.8445ZM1.6416 22.661V8.96096C1.6416 8.0553 1.96093 7.28296 2.5996 6.64396C3.2386 6.0053 4.01094 5.68596 4.9166 5.68596H9.6731C10.4954 5.68596 11.2119 5.9533 11.8226 6.48796C12.4329 7.02263 12.7621 7.6893 12.8101 8.48796L27.2586 4.35996C27.5709 4.2773 27.8956 4.23596 28.2326 4.23596C28.5696 4.23596 28.8914 4.2773 29.1981 4.35996L43.4046 8.72947C43.6519 8.80413 43.8469 8.93963 43.9896 9.13596C44.1323 9.33196 44.2036 9.55146 44.2036 9.79446V10.937C44.2036 12.3303 43.7003 13.5243 42.6936 14.519C41.6869 15.5136 40.4613 16.011 39.0166 16.011H33.6036V15.915C33.6036 17.0723 33.2983 18.1381 32.6876 19.1125C32.0769 20.0868 31.2278 20.7693 30.1401 21.16L17.9981 25.712C17.8074 25.7866 17.6084 25.8426 17.4011 25.88C17.1938 25.9173 16.9949 25.936 16.8046 25.936H4.9166C4.01094 25.936 3.2386 25.6165 2.5996 24.9775C1.96093 24.3388 1.6416 23.5666 1.6416 22.661ZM4.9166 15.811V22.661H9.4731V8.96096H4.9166V15.811ZM12.8101 17.293V22.661H16.8786L29.1286 18.011C29.4286 17.911 29.6703 17.6276 29.8536 17.161C30.0369 16.6943 30.1286 16.311 30.1286 16.011H26.2666L21.9261 17.451C21.5611 17.583 21.1953 17.5593 20.8286 17.38C20.4619 17.2006 20.1953 16.9276 20.0286 16.561C19.8696 16.1123 19.8818 15.6898 20.0651 15.2935C20.2484 14.8971 20.5544 14.6328 20.9831 14.5005L25.8426 13.011H39.0136C39.4726 13.011 39.8878 12.8465 40.2591 12.5175C40.6308 12.1885 40.8166 11.803 40.8166 11.361L28.0286 7.46096L12.8101 11.925V17.293Z"
-                              fill="white"
+                              fill="#111111"
                             />
                           </svg>
                         </div>
                         <div class="flex flex-col pt-1">
                           <h3
-                            class="text-white text-[24px] font-[700] uppercase leading-none tracking-wide"
+                            class="text-[#111] text-[24px] font-[700] uppercase leading-none tracking-wide"
                           >
                             ЛИЧНОЕ СОПРОВОЖДЕНИЕ
                           </h3>
                           <p
-                            class="text-[#D1D1D1] text-[15px] mt-3 leading-[1.5] max-w-[360px]"
+                            class="text-neutral-600 text-[15px] mt-3 leading-[1.5] max-w-[360px]"
                           >
                             Наш менеджер рядом с вами на каждом шаге пути
                           </p>
@@ -448,26 +465,27 @@
                       <!-- Buttons -->
                       <div class="flex items-center gap-8 mt-2">
                         <button
-                          class="bg-[#3A3A3A] text-[#FFFFFF] px-8 py-[12px] rounded-full text-[15px] font-[500] hover:bg-[#4A4A4A] transition-colors duration-300"
+                          class="bg-[#111] text-white px-8 py-[12px] rounded-full text-[15px] font-[500] hover:bg-[#A87429] transition-colors duration-300"
                         >
                           Заказать
                         </button>
                         <a
                           href="#"
-                          class="text-[#FFFFFF] text-[15px] font-[500] flex items-center gap-2 hover:text-[#D1D1D1] transition-colors duration-300"
+                          class="group inline-flex items-center gap-2 rounded-full border border-black px-7 py-[10px] text-[15px] font-[500] text-[#111] transition-colors duration-300 hover:border-[#A87429] hover:text-[#A87429]"
                         >
                           Подробнее
                           <svg
-                            width="16"
-                            height="16"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 256 256"
+                            width="14"
+                            height="14"
+                            class="shrink-0 transition-transform duration-300 ease-out group-hover:translate-x-2"
+                            aria-hidden="true"
                           >
-                            <path d="m9 18 6-6-6-6" />
+                            <path
+                              fill="currentColor"
+                              d="M228.992 146.827 48.594 250.051c-17.497 9.998-38.04-7.264-31.166-26.206l34.642-95.842L17.428 32.16C10.554 13.178 31.097-4.045 48.594 5.953l180.398 103.224c14.606 8.319 14.568 29.331 0 37.65z"
+                            />
                           </svg>
                         </a>
                       </div>
@@ -475,10 +493,10 @@
 
                     <!-- Right Column -->
                     <div
-                      class="w-full lg:w-[55%] flex justify-center lg:justify-end"
+                      class="w-full lg:flex-1 lg:min-w-0 flex justify-center lg:justify-end"
                     >
                       <div
-                        class="bg-[#DFDFDF] overflow-hidden w-full max-w-[550px] aspect-[1/1] rounded-[24px] flex justify-center items-center"
+                        class="bg-[#DFDFDF] overflow-hidden w-full max-w-[min(100%,640px)] lg:max-w-none aspect-[1/1] rounded-[24px] flex justify-center items-center"
                       >
                         <img
                           class="w-full h-full object-cover"
@@ -494,7 +512,72 @@
           </div>
         </div>
       </section>
+      
     </main>
+
+    <section class="reviews-page-cta">
+      <div class="container-custom">
+        <form class="contact_card inViewAnimBottom" style="transform: none; opacity: 1;">
+          <div class="contact_card__left">
+            <h2 class="contact_card__title">
+              Поможем подобрать автомобиль и&nbsp;ответим на&nbsp;все ваши вопросы
+            </h2>
+            <p class="contact_card__subtitle">
+              Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;течение
+              <span class="contact_card__highlight">пяти минут</span>
+            </p>
+
+            <div class="contact_card__fields">
+              <label class="contact_field">
+                <span class="contact_field__label">Как к&nbsp;вам обращаться?</span>
+                <input class="contact_field__input" type="text" name="name" placeholder="Ваше имя">
+              </label>
+              <label class="contact_field">
+                <span class="contact_field__label">Ваш номер телефона</span>
+                <input class="contact_field__input" type="tel" name="phone" placeholder="+7 (___) ___-__-__">
+              </label>
+            </div>
+          </div>
+
+          <div class="contact_card__operator" aria-hidden="true">
+            <img src="../assets/photos/operator.webp" alt="">
+          </div>
+
+          <aside class="contact_card__right">
+            <p class="contact_card__right_title">
+              Через какой мессенджер с&nbsp;вами связаться?
+            </p>
+
+            <div class="contact_messengers">
+              <label class="contact_radio">
+                <input type="radio" name="messenger" value="whatsapp" checked="">
+                <span class="contact_radio__mark" aria-hidden="true"></span>
+                <span class="contact_radio__label">WhatsApp</span>
+              </label>
+              <label class="contact_radio">
+                <input type="radio" name="messenger" value="telegram">
+                <span class="contact_radio__mark" aria-hidden="true"></span>
+                <span class="contact_radio__label">Telegram</span>
+              </label>
+            </div>
+
+            <p class="contact_card__policy">
+              Нажимая на кнопку «Отправить» вы&nbsp;даёте согласие на
+              <a href="#">обработку персональных данных</a>
+              и соглашаетесь с
+              <a href="#">политикой конфиденциальности</a>
+            </p>
+
+            <button type="submit" class="contact_submit">
+              <span>Отправить</span>
+              <svg class="contact_submit__icon icon-arrow-triangle" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M228.992 146.827 48.594 250.051c-17.497 9.998-38.04-7.264-31.166-26.206l34.642-95.842L17.428 32.16C10.554 13.178 31.097-4.045 48.594 5.953l180.398 103.224c14.606 8.319 14.568 29.331 0 37.65z" fill="currentColor"></path>
+              </svg>
+            </button>
+          </aside>
+        </form>
+      </div>
+    </section>
 
     <footer class="bg-[#111] text-white pt-16 pb-8 font-sans">
       <div class="container-custom">
@@ -708,18 +791,7 @@
             <div
               class="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all duration-300"
             >
-              <svg
-                width="12"
-                height="12"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="3"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path d="M12 19V5M5 12l7-7 7 7" />
-              </svg>
+              <svg class="icon-arrow-triangle icon-arrow-triangle--up" width="12" height="12" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M228.992 146.827 48.594 250.051c-17.497 9.998-38.04-7.264-31.166-26.206l34.642-95.842L17.428 32.16C10.554 13.178 31.097-4.045 48.594 5.953l180.398 103.224c14.606 8.319 14.568 29.331 0 37.65z" fill="currentColor"/></svg>
             </div>
           </button>
         </div>

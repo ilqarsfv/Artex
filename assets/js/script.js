@@ -2,6 +2,16 @@
 // Site Preloader Logic
 // ==========================================
 (function () {
+  /** Временно отключить прелоадер на всех страницах — поставьте false, чтобы снова включить */
+  const PRELOADER_DISABLED = true;
+
+  if (PRELOADER_DISABLED) {
+    const preloader = document.getElementById("site-preloader");
+    if (preloader) preloader.remove();
+    document.body.classList.remove("overflow-hidden");
+    return;
+  }
+
   const preloader = document.getElementById("site-preloader");
   const preloaderBar = document.getElementById("preloaderBar");
   const preloaderPerc = document.getElementById("preloaderPerc");
@@ -101,26 +111,19 @@ animate(
 );
 
 const siteHeader = document.querySelector(".site-header");
-let lastScrollY = window.scrollY;
 
-window.addEventListener(
-  "scroll",
-  () => {
-    if (!siteHeader) return;
+function updateHeaderScrollState() {
+  if (!siteHeader) return;
+  const y = window.scrollY;
+  if (y > 48) {
+    siteHeader.classList.add("is-scrolled");
+  } else {
+    siteHeader.classList.remove("is-scrolled");
+  }
+}
 
-    const currentScrollY = window.scrollY;
-    const isScrollingDown = currentScrollY > lastScrollY;
-
-    if (currentScrollY > 40 && isScrollingDown) {
-      siteHeader.classList.add("is-scrolled");
-    } else if (currentScrollY <= 20 || !isScrollingDown) {
-      siteHeader.classList.remove("is-scrolled");
-    }
-
-    lastScrollY = currentScrollY;
-  },
-  { passive: true },
-);
+window.addEventListener("scroll", updateHeaderScrollState, { passive: true });
+updateHeaderScrollState();
 
 animate(
   ".fadein_one",
@@ -467,7 +470,7 @@ faqItems.forEach((item) => {
       nextBtn.textContent = "Получить результат";
       nextBtn.classList.add("quiz-finish");
     } else {
-      nextBtn.innerHTML = `Далее <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>`;
+      nextBtn.innerHTML = `Далее <svg class="icon-arrow-triangle" width="18" height="18" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M228.992 146.827 48.594 250.051c-17.497 9.998-38.04-7.264-31.166-26.206l34.642-95.842L17.428 32.16C10.554 13.178 31.097-4.045 48.594 5.953l180.398 103.224c14.606 8.319 14.568 29.331 0 37.65z" fill="currentColor"></path></svg>`;
       nextBtn.classList.remove("quiz-finish");
     }
   }
@@ -642,5 +645,13 @@ faqItems.forEach((item) => {
         ease: [0.22, 1, 0.36, 1],
       },
     );
+  });
+})();
+
+(function () {
+  document.querySelectorAll(".prefooter-cta__form").forEach(function (form) {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+    });
   });
 })();
