@@ -660,8 +660,9 @@ faqItems.forEach((item) => {
   const carPage = document.querySelector(".page-car-full");
   if (!carPage) return;
 
-  if (typeof Swiper !== "undefined") {
-    new Swiper(".carFullGallery", {
+  const carSlider = document.querySelector(".carFullGallery");
+  if (carSlider && typeof Swiper !== "undefined") {
+    new Swiper(carSlider, {
       slidesPerView: 1,
       spaceBetween: 18,
       speed: 850,
@@ -692,12 +693,27 @@ faqItems.forEach((item) => {
     });
   }
 
+  if (typeof Fancybox !== "undefined") {
+    Fancybox.bind('[data-fancybox="car-gallery"]', {
+      Thumbs: {
+        type: "classic",
+      },
+      Toolbar: {
+        display: {
+          left: [],
+          middle: [],
+          right: ["close"],
+        },
+      },
+    });
+  }
+
   if (typeof inView === "function" && typeof animate === "function") {
     document.querySelectorAll(".car-full-motion").forEach((item, index) => {
       inView(
         item,
         () => {
-          animate(
+          const animation = animate(
             item,
             { opacity: [0, 1], y: [34, 0] },
             {
@@ -706,9 +722,18 @@ faqItems.forEach((item) => {
               ease: "easeOut",
             },
           );
+          if (animation && animation.finished) {
+            animation.finished.then(() => {
+              item.classList.add("is-visible");
+            });
+          }
         },
         { margin: "0px 0px -12% 0px" },
       );
+    });
+  } else {
+    document.querySelectorAll(".car-full-motion").forEach((item) => {
+      item.classList.add("is-visible");
     });
   }
 })();
