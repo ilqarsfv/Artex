@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="../assets/photos/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artex Каталог автомобилей</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../assets/css/font-face.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body class="page-car-list bg-white">
+    <div id="site-preloader" class="preloader">
+      <div class="preloader-inner">
+        <div class="preloader-logo-container">
+          <img
+            src="../assets/photos/vektor_logo.svg"
+            alt="Artex Logo"
+            class="preloader-logo"
+          />
+          <div class="preloader-scan-line"></div>
+        </div>
+        <div class="preloader-progress-wrap">
+          <div class="preloader-progress-bar" id="preloaderBar"></div>
+          <div class="preloader-percentage" id="preloaderPerc">0%</div>
+        </div>
+        <div class="preloader-loading-text">Подбор и доставка из Южной Кореи</div>
+      </div>
+    </div>
+
+    <header>
+      <div class="site-header bg-[#111111] py-5 fixed top-0 left-0 w-full z-50">
+        <div class="container-custom text-white">
+          <div class="flex items-center justify-between">
+            <a href="https://ilqarsfv.github.io/Artex/">
+              <img
+                class="logo"
+                width="80"
+                src="../assets/photos/vektor_logo.svg"
+                alt="vektor_logo"
+              />
+            </a>
+            <nav
+              class="flex items-center space-x-5 list-none text-[16px] menu_wrapper font-[600]"
+            >
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/">Главная</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/car/">Каталог</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/about/">О компании</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/services/">Услуги</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/how-to-work/">Как мы работаем</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/reviews/">Отзывы</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/articles/">Статьи</a>
+              </li>
+              <li class="duration-300 ease-in-out hover:text-[#A87429]">
+                <a href="https://ilqarsfv.github.io/Artex/contact/">Контакты</a>
+              </li>
+            </nav>
+            <div class="flex items-center space-x-3 social_item_wrapper">
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-full w-[30px] h-[30px] flex items-center justify-center duration-300 ease-in-out"
+                  href="https://t.me/Artex_manager"
+                  target="_blank"
+                >
+                  <img
+                    width="15"
+                    src="../assets/photos/socials/telegram.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-full w-[30px] h-[30px] flex items-center justify-center duration-300 ease-in-out"
+                  href="https://www.instagram.com/artex_carexport?igsh=MW1ubGh3YTUzc3B1ZQ%3D%3D&utm_source=qr"
+                  target="_blank"
+                >
+                  <img
+                    width="15"
+                    src="../assets/photos/socials/instagram.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-full w-[30px] h-[30px] flex items-center justify-center duration-300 ease-in-out"
+                  href="https://youtube.com/channel/UCtKEyzJ5AXjOP1odo0WIiAA?si=XSh45G-KBg_aLJVa"
+                  target="_blank"
+                >
+                  <img
+                    width="15"
+                    src="../assets/photos/socials/youtube.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+              <div class="social_item">
+                <a
+                  class="bg-white rounded-full w-[30px] h-[30px] flex items-center justify-center duration-300 ease-in-out"
+                  href="https://wa.me/821080979291"
+                  target="_blank"
+                >
+                  <img
+                    width="15"
+                    src="../assets/photos/socials/whatsapp.png"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="section_margin"></div>
+
+      <section class="car-list-hero">
+        <div class="container-custom">
+          <div class="car-list-hero__inner">
+            <div>
+              <span class="u-section-eyebrow">Каталог Artex</span>
+              <h1>Автомобили из Южной Кореи</h1>
+              <p>
+                Подборка проверенных автомобилей с расчетом стоимости под ключ,
+                понятными характеристиками и быстрым переходом к карточке авто.
+              </p>
+            </div>
+            <div class="car-list-hero__stats">
+              <div><strong>8</strong><span>актуальных вариантов</span></div>
+              <div><strong>40%</strong><span>выгода относительно рынка</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="prem-offers-section" class="car-list-offers">
+        <div class="prem-offers__bg">
+          <div class="container-custom">
+            <div id="prem-offers-header" class="prem-offers__header">
+              <div class="prem-offers__header-left">
+                <div class="prem-offers__eyebrow">В наличии</div>
+                <h2 class="prem-offers__title font_DespairDisplay">
+                  Каталог<br />автомобилей
+                </h2>
+              </div>
+              <div class="prem-offers__header-right">
+                <p class="prem-offers__subtitle">
+                  Выберите автомобиль и оставьте заявку, чтобы менеджер подготовил
+                  точный расчет доставки, оформления и итоговой цены.
+                </p>
+              </div>
+            </div>
+
+            <div id="prem-offers-grid" class="prem-offers__grid">
+              <div class="prem-card-wrap">
+                <a href="https://ilqarsfv.github.io/Artex/car-full/" class="prem-card">
+                  <div class="prem-card__img-wrap">
+                    <img class="prem-card__img" src="../assets/photos/offers/offer-1.jpg" alt="2021 Hyundai Sonata" />
+                    <div class="prem-card__badge">Горячее</div>
+                  </div>
+                  <div class="prem-card__body">
+                    <div class="prem-card__top">
+                      <p class="prem-card__name line-clamp-1">2021 Hyundai Sonata</p>
+                      <span class="prem-card__type">Седан</span>
+                    </div>
+                    <ul class="prem-card__specs">
+                      <li><span>Комплектация</span><b>Luxe</b></li>
+                      <li><span>Трансмиссия</span><b>АКПП 8</b></li>
+                      <li><span>Двигатель</span><b>Бензин 2.5</b></li>
+                      <li><span>Пробег</span><b>48 200 км</b></li>
+                    </ul>
+                    <div class="prem-card__footer">
+                      <div class="prem-card__price-wrap">
+                        <span class="prem-card__price-label">Стоимость под ключ</span>
+                        <span class="prem-card__price">1 890 000 ₽</span>
+                      </div>
+                      <div class="prem-card__arrow">
+                        <svg class="icon-arrow-triangle" width="16" height="16" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M228.992 146.827 48.594 250.051c-17.497 9.998-38.04-7.264-31.166-26.206l34.642-95.842L17.428 32.16C10.554 13.178 31.097-4.045 48.594 5.953l180.398 103.224c14.606 8.319 14.568 29.331 0 37.65z" fill="currentColor"/></svg>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="prem-card-wrap">
+                <a href="https://ilqarsfv.github.io/Artex/car-full/" class="prem-card">
+                  <div class="prem-card__img-wrap">
+                    <img class="prem-card__img" src="../assets/photos/offers/offer-2.jpg" alt="2022 Kia K5" />
+                  </div>
+                  <div class="prem-card__body">
+                    <div class="prem-card__top">
+                      <p class="prem-card__name line-clamp-1">2022 Kia K5</p>
+                      <span class="prem-card__type">Седан</span>
+                    </div>
+                    <ul class="prem-card__specs">
+                      <li><span>Комплектация</span><b>GT-Line</b></li>
+                      <li><span>Трансмиссия</span><b>АКПП 8</b></li>
+                      <li><span>Двигатель</span><b>Бензин 2.0</b></li>
+                      <li><span>Пробег</span><b>32 100 км</b></li>
+                    </ul>
+                    <div class="prem-card__footer">
+                      <div class="prem-card__price-wrap">
+                        <span class="prem-card__price-label">Стоимость под ключ</span>
+                        <span class="prem-card__price">2 050 000 ₽</span>
+                      </div>
+                      <div class="prem-card__arrow">
+                        <svg class="icon-arrow-triangle" width="16" height="16" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M228.992 146.827 48.594 250.051c-17.497 9.998-38.04-7.264-31.166-26.206l34.642-95.842L17.428 32.16C10.554 13.178 31.097-4.045 48.594 5.953l180.398 103.224c14.606 8.319 14.568 29.331 0 37.65z" fill="currentColor"/></svg>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="prem-card-wrap">
+                <a href="https://ilqarsfv.github.io/Artex/car-full/" class="prem-card">
+                  <div class="prem-card__img-wrap">
+                    <img class="prem-card__img" src="../assets/photos/offers/offer-3.jpg" alt="2021 Genesis G70" />
+                    <div class="prem-card__badge prem-card__badge--gold">Premium</div>
+                  </div>
+                  <div class="prem-card__body">
+                    <div class="prem-card__top">
+                      <p class="prem-card__name line-clamp-1">2021 Genesis G70</p>
+                      <span class="prem-card__type">Седан</span>
+                    </div>
+                    <ul class="prem-card__specs">
+                      <li><span>Комплектация</span><b>Sport</b></li>
+                      <li><span>Трансмиссия</span><b>АКПП 8</b></li>
+                      <li><span>Двигатель</span><b>Бензин 2.0T</b></li>
+                      <li><span>Пробег</span><b>41 800 км</b></li>
+                    </ul>
+                    <div class="prem-card__footer">
+                      <div class="prem-card__price-wrap">
+                        <span class="prem-card__price-label">Стоимость под ключ</span>
+                        <span class="prem-card__price">2 680 000 ₽</span>
+                      </div>
+                      <div class="prem-card__arrow">
+                        <svg class="icon-arrow-triangle" width="16" height="16" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M228.992 146.827 48.594 250.051c-17.497 9.998-38.04-7.264-31.166-26.206l34.642-95.842L17.428 32.16C10.554 13.178 31.097-4.045 48.594 5.953l180.398 103.224c14.606 8.319 14.568 29.331 0 37.65z" fill="currentColor"/></svg>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="prem-card-wrap">
+                <a href="https://ilqarsfv.github.io/Artex/car-full/" class="prem-card">
+                  <div class="prem-card__img-wrap">
+                    <img class="prem-card__img" src="../assets/photos/offers/offer-4.jpg" alt="2023 Hyundai Tucson" />
+                  </div>
+                  <div class="prem-card__body">
+                    <div class="prem-card__top">
+                      <p class="prem-card__name line-clamp-1">2023 Hyundai Tucson</p>
+                      <span class="prem-card__type">Кроссовер</span>
+                    </div>
+                    <ul class="prem-card__specs">
+                      <li><span>Комплектация</span><b>Smartstream</b></li>
+                      <li><span>Трансмиссия</span><b>АКПП 7</b></li>
+                      <li><span>Двигатель</span><b>1.6 T-GDI</b></li>
+                      <li><span>Пробег</span><b>18 500 км</b></li>
+                    </ul>
+                    <div class="prem-card__footer">
+                      <div class="prem-card__price-wrap">
+                        <span class="prem-card__price-label">Стоимость под ключ</span>
+                        <span class="prem-card__price">2 340 000 ₽</span>
+                      </div>
+                      <div class="prem-card__arrow">
+                        <svg class="icon-arrow-triangle" width="16" height="16" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M228.992 146.827 48.594 250.051c-17.497 9.998-38.04-7.264-31.166-26.206l34.642-95.842L17.428 32.16C10.554 13.178 31.097-4.045 48.594 5.953l180.398 103.224c14.606 8.319 14.568 29.331 0 37.65z" fill="currentColor"/></svg>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="prem-card-wrap">
+                <a href="https://ilqarsfv.github.io/Artex/car-full/" class="prem-card">
+                  <div class="prem-card__img-wrap">
+                    <img class="prem-card__img" src="../assets/photos/offers/offer-5.jpg" alt="2022 Kia Sportage" />
+                  </div>
+                  <div class="prem-card__body">
+                    <div class="prem-card__top">
+                      <p class="prem-card__name line-clamp-1">2022 Kia Sportage</p>
+                      <span class="prem-card__type">Кроссовер</span>
+                    </div>
+                    <ul class="prem-card__specs">
+                      <li><span>Комплектация</span><b>Prestige</b></li>
+                      <li><span>Трансмиссия</span><b>АКПП 6</b></li>
+                      <li><span>Двигатель</span><b>Бензин 2.0</b></li>
+                      <li><span>Пробег</span><b>55 000 км</b></li>
+                    </ul>
+                    <div class="prem-card__footer">
+                      <div class="prem-card__price-wrap">
+                        <span class="prem-card__price-label">Стоимость под ключ</span>
+                        <span class="prem-card__price">2 120 000 ₽</span>
+                      </div>
+                      <div class="prem-card__arrow">
+                        <svg class="icon-arrow-triangle" width="16" height="16" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M228.992 146.827 48.594 250.051c-17.497 9.998-38.04-7.264-31.166-26.206l34.642-95.842L17.428 32.16C10.554 13.178 31.097-4.045 48.594 5.953l180.398 103.224c14.606 8.319 14.568 29.331 0 37.65z" fill="currentColor"/></svg>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="prem-card-wrap">
+                <a href="https://ilqarsfv.github.io/Artex/car-full/" class="prem-card">
+                  <div class="prem-card__img-wrap">
+                    <img class="prem-card__img" src="../assets/photos/offers/offer-6.jpg" alt="2021 Hyundai Palisade" />
+                    <div class="prem-card__badge">Топ</div>
+                  </div>
+                  <div class="prem-card__body">
+                    <div class="prem-card__top">
+                      <p class="prem-card__name line-clamp-1">2021 Hyundai Palisade</p>
+                      <span class="prem-card__type">Внедорожник</span>
+                    </div>
+                    <ul class="prem-card__specs">
+                      <li><span>Комплектация</span><b>HTRAC</b></li>
+                      <li><span>Трансмиссия</span><b>АКПП 8</b></li>
+                      <li><span>Двигатель</span><b>Бензин 3.8</b></li>
+                      <li><span>Пробег</span><b>62 400 км</b></li>
+                    </ul>
+                    <div class="prem-card__footer">
+                      <div class="prem-card__price-wrap">
+                        <span class="prem-card__price-label">Стоимость под ключ</span>
+                        <span class="prem-card__price">3 450 000 ₽</span>
+                      </div>
+                      <div class="prem-card__arrow">
+                        <svg class="icon-arrow-triangle" width="16" height="16" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M228.992 146.827 48.594 250.051c-17.497 9.998-38.04-7.264-31.166-26.206l34.642-95.842L17.428 32.16C10.554 13.178 31.097-4.045 48.594 5.953l180.398 103.224c14.606 8.319 14.568 29.331 0 37.65z" fill="currentColor"/></svg>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="prem-card-wrap">
+                <a href="https://ilqarsfv.github.io/Artex/car-full/" class="prem-card">
+                  <div class="prem-card__img-wrap">
+                    <img class="prem-card__img" src="../assets/photos/offers/offer-7.jpg" alt="2022 Genesis GV80" />
+                    <div class="prem-card__badge prem-card__badge--gold">Luxury</div>
+                  </div>
+                  <div class="prem-card__body">
+                    <div class="prem-card__top">
+                      <p class="prem-card__name line-clamp-1">2022 Genesis GV80</p>
+                      <span class="prem-card__type">Кроссовер</span>
+                    </div>
+                    <ul class="prem-card__specs">
+                      <li><span>Комплектация</span><b>Luxury</b></li>
+                      <li><span>Трансмиссия</span><b>АКПП 8</b></li>
+                      <li><span>Двигатель</span><b>2.5 T-GDI</b></li>
+                      <li><span>Пробег</span><b>29 900 км</b></li>
+                    </ul>
+                    <div class="prem-card__footer">
+                      <div class="prem-card__price-wrap">
+                        <span class="prem-card__price-label">Стоимость под ключ</span>
+                        <span class="prem-card__price">4 100 000 ₽</span>
+                      </div>
+                      <div class="prem-card__arrow">
+                        <svg class="icon-arrow-triangle" width="16" height="16" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M228.992 146.827 48.594 250.051c-17.497 9.998-38.04-7.264-31.166-26.206l34.642-95.842L17.428 32.16C10.554 13.178 31.097-4.045 48.594 5.953l180.398 103.224c14.606 8.319 14.568 29.331 0 37.65z" fill="currentColor"/></svg>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="prem-card-wrap">
+                <a href="https://ilqarsfv.github.io/Artex/car-full/" class="prem-card">
+                  <div class="prem-card__img-wrap">
+                    <img class="prem-card__img" src="../assets/photos/offers/offer-8.jpg" alt="2022 Kia Sorento" />
+                  </div>
+                  <div class="prem-card__body">
+                    <div class="prem-card__top">
+                      <p class="prem-card__name line-clamp-1">2022 Kia Sorento</p>
+                      <span class="prem-card__type">Кроссовер</span>
+                    </div>
+                    <ul class="prem-card__specs">
+                      <li><span>Комплектация</span><b>Prestige</b></li>
+                      <li><span>Трансмиссия</span><b>АКПП 8</b></li>
+                      <li><span>Двигатель</span><b>Бензин 2.5</b></li>
+                      <li><span>Пробег</span><b>44 600 км</b></li>
+                    </ul>
+                    <div class="prem-card__footer">
+                      <div class="prem-card__price-wrap">
+                        <span class="prem-card__price-label">Стоимость под ключ</span>
+                        <span class="prem-card__price">2 780 000 ₽</span>
+                      </div>
+                      <div class="prem-card__arrow">
+                        <svg class="icon-arrow-triangle" width="16" height="16" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M228.992 146.827 48.594 250.051c-17.497 9.998-38.04-7.264-31.166-26.206l34.642-95.842L17.428 32.16C10.554 13.178 31.097-4.045 48.594 5.953l180.398 103.224c14.606 8.319 14.568 29.331 0 37.65z" fill="currentColor"/></svg>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#111] text-white pt-16 pb-8 font-sans">
+      <div class="container-custom">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
+          <div class="lg:col-span-1">
+            <div class="mb-4">
+              <img
+                width="100"
+                src="../assets/photos/vektor_logo.svg"
+                alt="artex logo"
+              />
+            </div>
+          </div>
+
+          <div class="space-y-4">
+            <h4 class="font-bold text-lg mb-6">Полезные ссылки</h4>
+            <ul class="space-y-2 text-white">
+              <li><a href="https://ilqarsfv.github.io/Artex/" class="hover:text-[#A87429] transition-colors">Главная</a></li>
+              <li><a href="https://ilqarsfv.github.io/Artex/about/" class="hover:text-[#A87429] transition-colors">О компании</a></li>
+              <li><a href="https://ilqarsfv.github.io/Artex/car/" class="hover:text-[#A87429] transition-colors">Каталог</a></li>
+              <li><a href="https://ilqarsfv.github.io/Artex/services/" class="hover:text-[#A87429] transition-colors">Услуги</a></li>
+              <li><a href="https://ilqarsfv.github.io/Artex/articles/" class="hover:text-[#A87429] transition-colors">Статьи</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-lg mb-6">Быстрые ссылки</h4>
+            <ul class="space-y-2 text-white">
+              <li><a href="https://ilqarsfv.github.io/Artex/contact/" class="hover:text-[#A87429] transition-colors">Связаться с нами</a></li>
+              <li><a href="https://t.me/Artex_manager" class="hover:text-[#A87429] transition-colors">Онлайн чат</a></li>
+              <li><a href="https://ilqarsfv.github.io/Artex/how-to-work/" class="hover:text-[#A87429] transition-colors">Как это работает</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-lg mb-6">Наши бренды</h4>
+            <ul class="space-y-2 text-white">
+              <li><a href="#" class="hover:text-[#A87429] transition-colors">Hyundai</a></li>
+              <li><a href="#" class="hover:text-[#A87429] transition-colors">Kia</a></li>
+              <li><a href="#" class="hover:text-[#A87429] transition-colors">Genesis</a></li>
+              <li><a href="#" class="hover:text-[#A87429] transition-colors">BMW</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="font-bold text-lg mb-6">Каталог</h4>
+            <ul class="space-y-2 text-white">
+              <li><a href="#" class="hover:text-[#A87429] transition-colors">Седаны</a></li>
+              <li><a href="#" class="hover:text-[#A87429] transition-colors">Кроссоверы</a></li>
+              <li><a href="#" class="hover:text-[#A87429] transition-colors">Внедорожники</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div
+          class="pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-6"
+        >
+          <div class="flex gap-8 text-sm font-medium text-white">
+            <img
+              width="120"
+              src="../assets/photos/jeywa_logo.png"
+              alt="created"
+            />
+          </div>
+          <button
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+            class="flex cursor-pointer items-center gap-2 bg-black text-white border border-white py-2 px-6 rounded-full hover:bg-white hover:text-black transition-colors shadow-sm group"
+          >
+            <span class="text-sm font-bold">Наверх</span>
+            <div
+              class="w-8 h-8 rounded-full bg-white text-black flex items-center justify-center group-hover:bg-black group-hover:text-white transition-all duration-300"
+            >
+              <svg class="icon-arrow-triangle icon-arrow-triangle--up" width="12" height="12" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M228.992 146.827 48.594 250.051c-17.497 9.998-38.04-7.264-31.166-26.206l34.642-95.842L17.428 32.16C10.554 13.178 31.097-4.045 48.594 5.953l180.398 103.224c14.606 8.319 14.568 29.331 0 37.65z" fill="currentColor"/></svg>
+            </div>
+          </button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/motion@latest/dist/motion.js"></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

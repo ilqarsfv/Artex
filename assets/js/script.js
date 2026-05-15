@@ -655,3 +655,60 @@ faqItems.forEach((item) => {
     });
   });
 })();
+
+(function () {
+  const carPage = document.querySelector(".page-car-full");
+  if (!carPage) return;
+
+  if (typeof Swiper !== "undefined") {
+    new Swiper(".carFullGallery", {
+      slidesPerView: 1,
+      spaceBetween: 18,
+      speed: 850,
+      loop: true,
+      grabCursor: true,
+      autoplay: {
+        delay: 3200,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".car-full-gallery-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".car-full-gallery-next",
+        prevEl: ".car-full-gallery-prev",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 1.15,
+          spaceBetween: 22,
+        },
+        1200: {
+          slidesPerView: 1.28,
+          spaceBetween: 24,
+        },
+      },
+    });
+  }
+
+  if (typeof inView === "function" && typeof animate === "function") {
+    document.querySelectorAll(".car-full-motion").forEach((item, index) => {
+      inView(
+        item,
+        () => {
+          animate(
+            item,
+            { opacity: [0, 1], y: [34, 0] },
+            {
+              duration: 0.58,
+              delay: Math.min(index * 0.04, 0.18),
+              ease: "easeOut",
+            },
+          );
+        },
+        { margin: "0px 0px -12% 0px" },
+      );
+    });
+  }
+})();
