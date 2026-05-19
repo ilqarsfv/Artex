@@ -7,7 +7,6 @@ new Swiper(".carGallerySwiper", {
     clickable: true,
   },
 });
-Fancybox.bind('[data-fancybox="car_gallery"]', {});
 
 // ==========================================
 // Site Preloader Logic
