@@ -3684,8 +3684,7 @@ input[type="reset"]:disabled,
 
 /* Страница отзывов: верхний отступ у секции формы (как у prefooter); часть зазора перенесена с padding-bottom блока «Цифры» */
 .reviews-page-cta {
-  padding-top: 52px;
-  padding-bottom: 88px;
+  padding-block: 52px;
 }
 
 @media (max-width: 1199px) {
