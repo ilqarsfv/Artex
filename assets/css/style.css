@@ -1196,10 +1196,6 @@ input[type="reset"]:disabled,
   border-left: 2px solid rgba(255, 255, 255, 0.14);
 }
 
-.page-how-to-work .contact_card__operator img {
-  filter: grayscale(1) contrast(1.06);
-}
-
 @media (max-width: 992px) {
   .page-how-to-work .contact_card__left {
     padding: 36px 28px 32px;
