@@ -339,84 +339,70 @@
         </div>
       </section>
     </main>
-    <section class="prefooter-cta" aria-labelledby="prefooter-cta-title">
-      <div class="container-custom">
-        <form class="prefooter-cta__form" action="#" method="post">
-          <div class="prefooter-cta__shell">
-            <div class="prefooter-cta__white">
-              <h2 class="prefooter-cta__title" id="prefooter-cta-title">
-                Поможем подобрать автомобиль и ответим на все ваши вопросы
+    <div class="section_margin"></div>
+    <section>
+        <div class="container-custom">
+          <form class="contact_card inViewAnimBottom" style="transform: none; opacity: 1;">
+            <div class="contact_card__left">
+              <h2 class="contact_card__title">
+                Поможем подобрать автомобиль и&nbsp;ответим на&nbsp;все ваши вопросы
               </h2>
-            </div>
-            <div class="prefooter-cta__figure">
-              <img
-                src="../assets/photos/cta-consultant.png"
-                width="520"
-                height="700"
-                alt="Консультант Artex"
-              />
-            </div>
-            <div class="prefooter-cta__black">
-              <p class="prefooter-cta__sub">
-                Мы свяжемся с вами в течение
-                <span class="prefooter-cta__sub-accent">пяти минут</span>
+              <p class="contact_card__subtitle">
+                Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;течение
+                <span class="contact_card__highlight">пяти минут</span>
               </p>
-              <div class="prefooter-cta__fields">
-                <div class="prefooter-cta__field">
-                  <label class="prefooter-cta__label" for="prefooter-name">Как к вам обращаться?</label>
-                  <input
-                    class="prefooter-cta__input"
-                    id="prefooter-name"
-                    name="prefooter_name"
-                    type="text"
-                    autocomplete="name"
-                    placeholder="Ваше имя"
-                  />
-                </div>
-                <div class="prefooter-cta__field">
-                  <label class="prefooter-cta__label" for="prefooter-phone">Ваш номер телефона</label>
-                  <input
-                    class="prefooter-cta__input"
-                    id="prefooter-phone"
-                    name="prefooter_phone"
-                    type="tel"
-                    autocomplete="tel"
-                    placeholder="+7 (___) ___-__-__"
-                  />
-                </div>
+
+              <div class="contact_card__fields">
+                <label class="contact_field">
+                  <span class="contact_field__label">Как к&nbsp;вам обращаться?</span>
+                  <input class="contact_field__input" type="text" name="name" placeholder="Ваше имя">
+                </label>
+                <label class="contact_field">
+                  <span class="contact_field__label">Ваш номер телефона</span>
+                  <input class="contact_field__input" type="tel" name="phone" placeholder="+7 (___) ___-__-__">
+                </label>
               </div>
             </div>
-            <div class="prefooter-cta__right">
-              <h3 class="prefooter-cta__right-title">Через какой мессенджер с вами связаться?</h3>
-              <div class="prefooter-cta__radios" role="group" aria-label="Мессенджер">
-                <label class="prefooter-cta__radio">
-                  <input class="prefooter-cta__radio-input" type="radio" name="prefooter_messenger" value="whatsapp" checked />
-                  <span class="prefooter-cta__radio-text"
-                    ><span class="prefooter-cta__radio-ui"></span>WhatsApp</span
-                  >
+
+            <div class="contact_card__operator" aria-hidden="true">
+              <img src="./assets/photos/operator.webp" alt="">
+            </div>
+
+            <aside class="contact_card__right">
+              <p class="contact_card__right_title">
+                Через какой мессенджер с&nbsp;вами связаться?
+              </p>
+
+              <div class="contact_messengers">
+                <label class="contact_radio">
+                  <input type="radio" name="messenger" value="whatsapp" checked="">
+                  <span class="contact_radio__mark" aria-hidden="true"></span>
+                  <span class="contact_radio__label">WhatsApp</span>
                 </label>
-                <label class="prefooter-cta__radio">
-                  <input class="prefooter-cta__radio-input" type="radio" name="prefooter_messenger" value="telegram" />
-                  <span class="prefooter-cta__radio-text"
-                    ><span class="prefooter-cta__radio-ui"></span>Telegram</span
-                  >
+                <label class="contact_radio">
+                  <input type="radio" name="messenger" value="telegram">
+                  <span class="contact_radio__mark" aria-hidden="true"></span>
+                  <span class="contact_radio__label">Telegram</span>
                 </label>
               </div>
-              <p class="prefooter-cta__legal">
-                Нажимая на кнопку «Отправить» вы даёте согласие на
+
+              <p class="contact_card__policy">
+                Нажимая на кнопку «Отправить» вы&nbsp;даёте согласие на
                 <a href="#">обработку персональных данных</a>
                 и соглашаетесь с
-                <a href="#">политикой конфиденциальности</a>.
+                <a href="#">политикой конфиденциальности</a>
               </p>
-              <button class="prefooter-cta__submit" type="submit">
+
+              <button type="submit" class="contact_submit">
                 <span>Отправить</span>
-                <svg class="icon-arrow-triangle prefooter-cta__chev" width="14" height="14" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M228.992 146.827 48.594 250.051c-17.497 9.998-38.04-7.264-31.166-26.206l34.642-95.842L17.428 32.16C10.554 13.178 31.097-4.045 48.594 5.953l180.398 103.224c14.606 8.319 14.568 29.331 0 37.65z" fill="currentColor"/></svg>
+                <svg class="contact_submit__icon icon-arrow-triangle" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M228.992 146.827 48.594 250.051c-17.497 9.998-38.04-7.264-31.166-26.206l34.642-95.842L17.428 32.16C10.554 13.178 31.097-4.045 48.594 5.953l180.398 103.224c14.606 8.319 14.568 29.331 0 37.65z" fill="currentColor"></path>
+                </svg>
               </button>
-            </div>
-          </div>
-        </form>
-      </div>
-    </section>
+            </aside>
+          </form>
+        </div>
+      </section>
 
     <footer class="bg-[#111] text-white pt-16 pb-8 font-sans">
       <div class="container-custom">
