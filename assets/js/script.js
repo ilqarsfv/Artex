@@ -689,3 +689,13 @@ faqItems.forEach((item) => {
     });
   }
 })();
+
+let burgerMenu = document.querySelector("#get_menu_btn");
+let mobileMenu = document.querySelector("#mobile_header_menu");
+let closeMenuBtn = document.querySelector("#close_mobile_menu");
+burgerMenu.addEventListener("click", () => {
+  mobileMenu.classList.add("active");
+})
+closeMenuBtn.addEventListener("click", () => {
+  mobileMenu.classList.remove("active");
+})

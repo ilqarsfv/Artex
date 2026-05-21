@@ -1,0 +1,653 @@
+/* Mobile and tablet overrides for Artex pages */
+
+@media (max-width: 1199px) {
+  .section_margin {
+    padding-top: 86px;
+  }
+
+  .section_title {
+    max-width: 100%;
+    font-size: 42px !important;
+    line-height: 1.08;
+  }
+
+  .prem-offers__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .prem-card {
+    opacity: 1;
+    transform: none;
+  }
+
+  .quiz-cta__card {
+    grid-template-columns: minmax(0, 1fr) 340px;
+  }
+
+  .quiz-cta__left {
+    padding: 36px;
+  }
+
+  #services_wrapper .grid,
+  #services_bottom_wrapper .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  #nasi_rezultati_wrapper .grid,
+  #artex_employers .grid,
+  #wrapper_single_types .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .article-full {
+    gap: 28px;
+  }
+
+  .article_left_content {
+    width: 66% !important;
+  }
+
+  #other_articles {
+    width: 31% !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .site-header .container-custom > .flex {
+    align-items: center;
+  }
+
+  .site-header .menu_wrapper {
+    max-width: calc(100vw - 112px);
+  }
+
+  #banner_wrapper {
+    height: auto !important;
+    min-height: 760px;
+    overflow: hidden;
+    padding: 34px 0 80px;
+  }
+
+  #banner_wrapper .swiper,
+  #banner_wrapper .swiper-wrapper,
+  #banner_wrapper .swiper-slide {
+    height: auto !important;
+  }
+
+  #banner_wrapper .swiper-slide > .flex {
+    min-height: 620px;
+    align-items: center;
+  }
+
+  .slider_left {
+    width: 62% !important;
+    position: relative;
+    z-index: 3;
+  }
+
+  .slider_right {
+    width: 38% !important;
+  }
+
+  .banner_photo {
+    width: 72% !important;
+    right: -16% !important;
+    bottom: -6% !important;
+    opacity: 0.55;
+  }
+
+  .main-banner-die {
+    right: 0;
+    bottom: 12%;
+  }
+
+  .quiz-cta__card,
+  .contact_card,
+  .service-full-intro__grid,
+  .service-full-visual__grid,
+  .service-full-checks__layout,
+  .car-full-hero__grid,
+  .car-full-overview__grid,
+  .car-list-hero__inner {
+    grid-template-columns: 1fr !important;
+  }
+
+  .quiz-cta__right {
+    min-height: 330px;
+  }
+
+  .contact_card__left,
+  .page-how-to-work .contact_card__left {
+    padding: 34px 26px 30px;
+  }
+
+  .contact_card__right,
+  .page-how-to-work .contact_card__right {
+    padding: 28px 26px;
+  }
+
+  .prefooter-cta__shell {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog_grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .article-full {
+    flex-direction: column;
+  }
+
+  .article_left_content,
+  #other_articles {
+    width: 100% !important;
+  }
+
+  #other_articles .sticky {
+    position: static;
+  }
+
+  #other_articles .mt-5 {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .page-car-full main > section:nth-of-type(2) .container-custom > .flex {
+    flex-direction: column;
+  }
+
+  .page-car-full .left_container,
+  #car_form_wrapper {
+    width: 100% !important;
+  }
+
+  #car_form_wrapper {
+    position: static !important;
+    margin-top: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  body {
+    min-width: 320px;
+  }
+
+  .container-custom,
+  .container-fluid-custom {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .section_margin {
+    padding-top: 72px;
+  }
+
+  .u-section-eyebrow,
+  .prem-offers__eyebrow,
+  .quiz-cta__label {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+  }
+
+  .u-section-title,
+  .section_title,
+  .prem-offers__title,
+  .quiz-cta__title {
+    font-size: 31px !important;
+    line-height: 1.08 !important;
+  }
+
+  .u-section-lead,
+  .prem-offers__subtitle {
+    font-size: 16px;
+    line-height: 1.55;
+  }
+
+  .site-header {
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+  }
+
+  .site-header .container-custom {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .site-header .logo {
+    width: 54px !important;
+  }
+
+  .site-header .menu_wrapper {
+    max-width: calc(100vw - 84px);
+    gap: 16px;
+    font-size: 13px !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  #about_wrapper_top,
+  #contact-top-wrapper,
+  #how_to_work_wrapper_top,
+  #reviews_wrapper_top,
+  #blogs_wrapper_top,
+  #services_wrapper_top {
+    height: auto !important;
+    min-height: 440px;
+    padding: 92px 0 56px !important;
+    background-attachment: scroll !important;
+  }
+
+  .page-hero-inner {
+    padding: 24px 18px 26px;
+    border-radius: 16px;
+  }
+
+  .page-hero-title-line,
+  .page-hero-title-long {
+    font-size: clamp(1.55rem, 8vw, 2.15rem) !important;
+    line-height: 1.08 !important;
+  }
+
+  .page-hero-brand {
+    font-size: clamp(2.7rem, 17vw, 4.8rem) !important;
+    letter-spacing: 0.08em;
+  }
+
+  .page-hero-lead {
+    margin-top: 22px !important;
+    font-size: 16px !important;
+    line-height: 1.55 !important;
+  }
+
+  #banner_wrapper {
+    min-height: 720px;
+    padding: 22px 0 58px;
+  }
+
+  #banner_text_background {
+    top: 19%;
+    font-size: 30vw;
+    letter-spacing: 2px;
+  }
+
+  #banner_wrapper .swiper-slide > .flex {
+    min-height: 590px;
+    align-content: flex-start;
+  }
+
+  .slider_left,
+  .slider_right {
+    width: 100% !important;
+  }
+
+  .slider_left {
+    justify-content: flex-start !important;
+    padding-top: 42px;
+  }
+
+  .slider_left > p:first-child {
+    font-size: clamp(42px, 13vw, 58px) !important;
+    line-height: 1.02 !important;
+  }
+
+  .slider_left > p:nth-child(2) {
+    max-width: 92%;
+    font-size: 18px !important;
+    line-height: 1.45 !important;
+  }
+
+  .glass-card {
+    width: min(100%, 320px);
+    margin-top: 28px !important;
+  }
+
+  .banner_photo {
+    width: 105% !important;
+    right: -34% !important;
+    bottom: -3% !important;
+    opacity: 0.48;
+  }
+
+  .main-banner-die {
+    display: none;
+  }
+
+  .section_all_link {
+    padding: 12px 18px;
+    font-size: 13px;
+  }
+
+  .main_brands_wrapper {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  .brand-card a {
+    min-height: 120px;
+  }
+
+  .quiz-cta__heading {
+    margin-bottom: 24px;
+  }
+
+  .quiz-cta__card {
+    border-radius: 22px;
+  }
+
+  .quiz-cta__left,
+  .quiz-cta__right {
+    padding: 24px 18px;
+  }
+
+  .quiz-cta__left-title,
+  .quiz-cta__q-title {
+    font-size: 17px;
+  }
+
+  .quiz-cta__progress-track {
+    height: 38px;
+  }
+
+  .quiz-cta__step {
+    font-size: 11px;
+  }
+
+  .quiz-cta__options {
+    grid-template-columns: 1fr;
+  }
+
+  .quiz-cta__option {
+    border-radius: 16px;
+    padding: 13px 14px;
+    text-align: left;
+  }
+
+  .quiz-cta__nav {
+    flex-direction: column;
+  }
+
+  .quiz-cta__nav-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .quiz-cta__right {
+    min-height: 0;
+  }
+
+  .quiz-cta__stats,
+  .quiz-cta__promo-box {
+    align-items: stretch;
+  }
+
+  .quiz-cta__promo-box {
+    flex-direction: column;
+  }
+
+  .prem-offers__header {
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 26px;
+  }
+
+  .prem-offers__header-right {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .prem-offers__grid,
+  #services_wrapper .grid,
+  #services_bottom_wrapper .grid,
+  #nasi_rezultati_wrapper .grid,
+  #artex_employers .grid,
+  #wrapper_single_types .grid,
+  .blog_grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .prem-card {
+    border-radius: 18px;
+  }
+
+  .prem-card__img-wrap {
+    height: 210px;
+    border-radius: 18px 18px 0 0;
+  }
+
+  .prem-card__footer {
+    align-items: flex-start;
+  }
+
+  .prem-card__price {
+    font-size: 18px;
+  }
+
+  .contact_card,
+  .prefooter-cta__shell,
+  .service-full-summary,
+  .service-full-visual__panel,
+  .service-full-cta__box,
+  .car-full-hero__card,
+  .car-full-description,
+  .car-full-inspection,
+  .car-full-detail-card,
+  .car-full-cta__box {
+    border-radius: 18px;
+  }
+
+  .contact_card__fields,
+  .prefooter-cta__fields,
+  .service-full-steps__grid,
+  .service-full-checks__grid,
+  .car-full-details .container-custom {
+    grid-template-columns: 1fr !important;
+  }
+
+  .contact_card__operator,
+  .prefooter-cta__figure {
+    display: none;
+  }
+
+  .contact_messengers,
+  .prefooter-cta__radios {
+    gap: 14px;
+  }
+
+  .contact_submit,
+  .prefooter-cta__submit {
+    min-height: 50px;
+    padding: 14px 18px;
+    font-size: 13px;
+  }
+
+  .prefooter-cta {
+    padding: 40px 0;
+  }
+
+  .prefooter-cta__white,
+  .prefooter-cta__black,
+  .prefooter-cta__right {
+    padding: 24px 20px;
+  }
+
+  .prefooter-cta__white {
+    border-radius: 18px 18px 14px 14px;
+  }
+
+  .car-list-hero,
+  .service-full-intro,
+  .service-full-visual,
+  .service-full-steps,
+  .service-full-checks,
+  .car-full-gallery,
+  .car-full-overview,
+  .car-full-details {
+    padding: 56px 0;
+  }
+
+  .car-list-hero h1,
+  .service-full-cta__box h2,
+  .car-full-cta__box h2 {
+    font-size: clamp(30px, 11vw, 46px);
+    line-height: 1.04;
+  }
+
+  .service-full-visual__image,
+  .carFullGallery .swiper-slide {
+    min-height: 0;
+    height: 300px;
+    border-radius: 18px;
+  }
+
+  .service-full-cta__box,
+  .car-full-cta__box,
+  .car-full-gallery__head {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .article-full {
+    padding-top: 30px !important;
+  }
+
+  .article-full__image {
+    height: 280px !important;
+  }
+
+  .article-full__content {
+    font-size: 17px !important;
+  }
+
+  #other_articles .mt-5 {
+    grid-template-columns: 1fr;
+  }
+
+  #reviews_wrapper .reviews-title,
+  #reviews_bottom_wrapper .reviews-bottom-title,
+  #how_to_work_wrap .how-work-title,
+  #artex_advantages_wrapper .advantages-title {
+    font-size: 31px !important;
+    line-height: 1.08 !important;
+  }
+
+  #reviews_wrapper .review-card,
+  #reviews_bottom_wrapper .reviews-bottom-stat,
+  #artex_advantages_wrapper .adv-card {
+    border-radius: 18px;
+  }
+
+  .page-car-full main > .mt-36 {
+    margin-top: 96px !important;
+  }
+
+  .page-car-full .carDetailMainSwiper .swiper-slide,
+  .page-car-full .car_gallery_wrapper .swiper-slide {
+    height: 290px !important;
+  }
+
+  .page-car-full .carDetailThumb {
+    width: 104px !important;
+    height: 72px !important;
+  }
+
+  .page-car-full .left_container > .flex,
+  .page-car-full .left_container .mt-8 .flex.justify-between {
+    gap: 10px;
+  }
+
+  .page-car-full .left_container .w-\[32\%\],
+  .page-car-full .left_container .w-\[49\%\] {
+    width: 100% !important;
+  }
+
+  #car_form_wrapper {
+    padding: 18px !important;
+  }
+  .menu_wrapper {
+    display: none;
+  }
+  .site-header.is-scrolled .logo {
+    width: 44px !important;
+  }
+  #get_menu_btn {
+    display: block;
+  }
+  .section_all_link {
+    margin-top: 15px;
+  }
+  .faq-content.is-open {
+    max-height: fit-content;
+  }
+  .contact_card__subtitle {
+    background: #000;
+    padding: 10px;
+  }
+  #mobile_header_menu.active {
+    left: 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .container-custom,
+  .container-fluid-custom {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .site-header .menu_wrapper {
+    gap: 13px;
+  }
+
+  #banner_wrapper {
+    min-height: 690px;
+  }
+
+  .slider_left > p:first-child {
+    font-size: clamp(38px, 12vw, 50px) !important;
+  }
+
+  .glass-card {
+    width: 100%;
+  }
+
+  .glass-card .btn-blue {
+    width: calc(100% - 36px);
+  }
+
+  .main_brands_wrapper {
+    grid-template-columns: 1fr !important;
+  }
+
+  .prem-card__top,
+  .prem-card__footer,
+  .car-full-spec-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .prem-card__specs li {
+    gap: 14px;
+  }
+
+  .prem-card__specs li b,
+  .car-full-spec-list b {
+    max-width: 100%;
+    text-align: left;
+  }
+
+  .question_list li {
+    width: 100%;
+  }
+
+  .quiz-left,
+  .quiz_right {
+    width: 100%;
+    max-width: none;
+    margin-left: 0;
+  }
+}
